@@ -521,7 +521,7 @@
           "16131300457e5a9b91-0": {
             "type": "testimonial",
             "settings": {
-              "text": "<p>I love KondaSoft Shopify Themes, not only they are beautiful and attractive but they are super-fast as well. I have tried different theme providers before but with KondaSoft&#x27;s themes I could finish my store very quickly (within 1 week). I can recommend KondaSoft, that&#x27;s for sure... A+++<\/p>",
+              "text": "<p>I love Shopify Shopify Themes, not only they are beautiful and attractive but they are super-fast as well. I have tried different theme providers before but with Shopify&#x27;s themes I could finish my store very quickly (within 1 week). I can recommend Shopify, that&#x27;s for sure... A+++<\/p>",
               "name": "John Doe",
               "img": "shopify:\/\/shop_images\/avatar.jpg"
             }
@@ -529,7 +529,7 @@
           "16131300457e5a9b91-1": {
             "type": "testimonial",
             "settings": {
-              "text": "<p>I have been successfully running my store with KondaSoft&#x27;s theme, KS WatchShop for 2 months now, and I&#x27;m really impressed with the performance and speed it has. The speed-rank for my Shopify store has increased dramatically after I switched to this theme...<\/p>",
+              "text": "<p>I have been successfully running my store with Shopify&#x27;s theme, KS WatchShop for 2 months now, and I&#x27;m really impressed with the performance and speed it has. The speed-rank for my Shopify store has increased dramatically after I switched to this theme...<\/p>",
               "name": "Jane Doe",
               "img": "shopify:\/\/shop_images\/avatar.jpg"
             }
@@ -537,7 +537,7 @@
           "16131300457e5a9b91-2": {
             "type": "testimonial",
             "settings": {
-              "text": "<p>I thought to try KondaSoft Themes for one of my new Ecommerce adventures (a gift shop for my fiancé) and oh i was really blown away by the performance. They are just fast. Also, their themes have many sections available so that i can adjust the homepage exactly as I want to....<\/p>",
+              "text": "<p>I thought to try Shopify Themes for one of my new Ecommerce adventures (a gift shop for my fiancé) and oh i was really blown away by the performance. They are just fast. Also, their themes have many sections available so that i can adjust the homepage exactly as I want to....<\/p>",
               "name": "Jim Doe",
               "img": "shopify:\/\/shop_images\/avatar.jpg"
             }
@@ -907,16 +907,16 @@
           "c4c94464-ebb5-4d24-a49f-192eb027cc26": {
             "type": "richtext",
             "settings": {
-              "heading": "About KS BootShop",
-              "description": "<p>The best Free Shopify Theme powered by Bootstrap framework, developed respecting Shopify Themes Requirements, optimized for maximum page-speed and that can be easily customized for any store.<\/p><p><a href=\"https:\/\/www.kondasoft.com\/collections\/shopify-themes\/products\/ks-bootshop\" title=\"https:\/\/www.kondasoft.com\/collections\/shopify-themes\/products\/ks-bootshop\" target=\"_blank\">Download Themes »<\/a><br\/> <\/p>",
+              "heading": "About US",
+              "description": "<p>Its about us section<\/p>",
               "heading_size": "h5"
             }
           },
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5": {
             "type": "richtext",
             "settings": {
-              "heading": "About KondaSoft",
-              "description": "<p>Premium Shopify Themes, that are awesome to your customers, blazing-fast in loading time and built-in with the necessary features to increase your store conversion rates (CVR) and average order value (AOV).<\/p><p><a href=\"https:\/\/www.kondasoft.com\/collections\/shopify-themes\">Browse Themes »<\/a><\/p>",
+              "heading": "About Shopify",
+              "description": "<p>Shopify worlds biggest eccomerce platform<\/p>",
               "heading_size": "h5"
             }
           },

@@ -1,6 +1,6 @@
 /* 
-    © 2021 KondaSoft
-    https://www.kondasoft.com
+    © 2021 Shopify
+    ***
 */
 
 // https://www.shopify.com/partners/blog/related-products

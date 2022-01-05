@@ -3,9 +3,9 @@
         "name": "theme_info",
         "theme_name": "ks-bootshop",
         "theme_version": "2.0.0",
-        "theme_author": "KondaSoft",
-        "theme_documentation_url": "https://docs.kondasoft.com",
-        "theme_support_url": "https://github.com/kondasoft/ks-bootshop/issues"
+        "theme_author": "Shopify",
+        "theme_documentation_url": "https://docs.Shopify.com",
+        "theme_support_url": "https://github.com/Shopify/ks-bootshop/issues"
     },
     {
         "name": "Colors",
