@@ -13,7 +13,7 @@
       "navbar": {
         "type": "navbar",
         "settings": {
-          "container": true,
+          "container": false,
           "bg_color": "rgba(0,0,0,0)",
           "background_style": "navbar-light",
           "shadow": "shadow-sm",
@@ -32,7 +32,7 @@
         "type": "announcement-bar",
         "settings": {
           "announcement": "<p>Announce something important here<\/p>",
-          "show": true,
+          "show": false,
           "homepage_only": true,
           "bg_color": "#343a40",
           "text_color": "text-white"
