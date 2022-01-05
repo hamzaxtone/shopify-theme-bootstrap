@@ -44,9 +44,9 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/lifestyle-1.jpg",
-              "title": "Welcome to KS BootShop",
+              "title": "Welcome to BootShop",
               "title_size": "h3",
-              "description": "<p>Free Shopify Theme powered by Bootstrap v5 framework<\/p>"
+              "description": "<p>Bootstrap framework<\/p>"
             }
           },
           "16124340768622aa4c-1": {
