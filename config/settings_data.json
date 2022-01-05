@@ -44,23 +44,15 @@
           "16124340768622aa4c-0": {
             "type": "image",
             "settings": {
-              "title": "Welcome to BootShop",
+              "image": "shopify:\/\/shop_images\/banner.png",
+              "title": "HERITAGE WHEEL TIMELESS DESIGN",
               "title_size": "h3",
-              "description": "<p>Bootstrap framework<\/p>"
-            }
-          },
-          "16124340768622aa4c-1": {
-            "type": "image",
-            "settings": {
-              "title": "Modern, Fast and Simple",
-              "title_size": "h3",
-              "description": "<p>Free Shopify Theme powered by Bootstrap v5 framework<\/p>"
+              "description": "<p>Lorem Ipsum is simply dummy text<\/p>"
             }
           }
         },
         "block_order": [
-          "16124340768622aa4c-0",
-          "16124340768622aa4c-1"
+          "16124340768622aa4c-0"
         ],
         "settings": {
           "container": false,
