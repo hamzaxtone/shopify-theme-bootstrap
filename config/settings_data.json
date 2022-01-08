@@ -951,7 +951,7 @@
           "show_sep": false,
           "sep_color": "#ffffff",
           "padding_top": 0,
-          "padding_bottom": 10,
+          "padding_bottom": 3,
           "margin_top": 0,
           "margin_bottom": 0
         }
