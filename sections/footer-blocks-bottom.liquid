@@ -59,6 +59,8 @@
                                 </ul>
                             </div>
                         {% endif %}
+                      {% if block.type == 'menu' %}
+                      {% endif %}
 
                         {% if block.type == 'social_menu' %}
                             <div class="social-menu">
@@ -287,7 +289,7 @@
         },
 		{
             "type": "text",
-            "name": "Newletter",
+            "name": "Newsletter",
             "settings": [
                 {
                     "type": "text",
