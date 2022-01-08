@@ -951,7 +951,7 @@
           "show_theme_by": false,
           "show_payment_icons": true,
           "show_sep": true,
-          "sep_color": "#5a6066",
+          "sep_color": "#fff",
           "padding_top": 10,
           "padding_bottom": 10,
           "margin_top": 0,
