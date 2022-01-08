@@ -1278,7 +1278,8 @@
           "08e02935-39d1-4ed4-a900-7db0deafd62a": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled-2.png"
+              "img": "shopify:\/\/shop_images\/Untitled-2.png",
+              "btn_url": ""
             }
           }
         },
