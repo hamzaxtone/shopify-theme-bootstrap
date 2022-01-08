@@ -49,12 +49,14 @@
     <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
       <div class="row">
         <div class="col-md-3">
-          <div class="collection-list">
-            <h3>Product Categories</h3>
-            <ul>{% for collection in collections %}
-              <li>{{ collection.title | link_to: collection.url }}</li>
-              	{% endfor %}
-            </ul>
+          <div class="filter-collection">
+            <div class="collection-list">
+              <h3>Product Categories</h3>
+              <ul>{% for collection in collections %}
+                <li>{{ collection.title | link_to: collection.url }}</li>
+                  {% endfor %}
+              </ul>
+            </div>
           </div>
         </div>
         
