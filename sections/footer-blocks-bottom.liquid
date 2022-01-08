@@ -29,7 +29,7 @@
                 
                 {% for block in section.blocks %}
                     <li 
-                        class="footer-blocks-grid-item col pb-4"
+                        class="footer-blocks-grid-item col pb-4 {{block.name}}"
                         role="listitem">
                         
                         {% unless block.settings.heading == blank %}
