@@ -16,7 +16,7 @@
 
 <section 
     id="gallery-{{ section.id }}" 
-    class="gallery {% if section.settings.light_bg %}bg-light{% endif %} {{ section.settings.overlay_style }} {{ section.settings.overlay_opacity }} {% if section.settings.overlay_blur %}overlay-blur{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }}">
+    class="gallery {% if section.settings.light_bg %}bg-light{% endif %} {{ section.settings.overlay_style }} {{ section.settings.overlay_opacity }} {% if section.settings.overlay_blur %}overlay-blur{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }} {% if section.settings.classes %}{{section.settings.classes}}{% endif %}">
     <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
 
         {% if section.settings.heading != blank or section.settings.subheading != blank %}
@@ -345,7 +345,12 @@
             "max": 12,
             "step": 1,
             "default": 7
-        }
+        },
+		{
+            "type": "text",
+            "id": "classes",
+            "label": "Class"
+		}
     ],
     "blocks": [
         {
