@@ -688,7 +688,6 @@
       },
       "16134715004dcac0f0": {
         "type": "html",
-        "disabled": true,
         "settings": {
           "html": "<p class=\"alert alert-info\">Hello world!<\/p>",
           "heading": "HTML",
@@ -1309,6 +1308,70 @@
           "margin_top": 0,
           "margin_bottom": 0
         }
+      },
+      "16416780431bbd7218": {
+        "type": "logo-list",
+        "blocks": {
+          "a77e6441-522a-4474-9e22-ec4dedbbff08": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13.png",
+              "url": ""
+            }
+          },
+          "3922168b-5942-4f8c-85da-45b25cef3ac0": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy.png",
+              "url": ""
+            }
+          },
+          "5e157e90-9cbe-49e2-a5e9-6bfeec44824c": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy_2.png",
+              "url": ""
+            }
+          },
+          "a1e517ad-8afd-4738-933a-38ad414c2405": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy_3.png",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "a77e6441-522a-4474-9e22-ec4dedbbff08",
+          "3922168b-5942-4f8c-85da-45b25cef3ac0",
+          "5e157e90-9cbe-49e2-a5e9-6bfeec44824c",
+          "a1e517ad-8afd-4738-933a-38ad414c2405"
+        ],
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "container": true,
+          "light_bg": true,
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "subheading_size": "",
+          "img_width": "320",
+          "img_height": "320",
+          "img_thumbnail": false,
+          "row_": 2,
+          "row_sm": 3,
+          "row_md": 4,
+          "row_lg": 4,
+          "row_xl": 4,
+          "row_xxl": 4,
+          "gutter_mobile": 3,
+          "gutter_tablet": 3,
+          "gutter_desktop": 4,
+          "padding_top": 7,
+          "padding_bottom": 5,
+          "margin_top": 0,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
@@ -1334,7 +1397,8 @@
       "1613737250d2b7859f",
       "16131223138a584ff0",
       "1613465098c76677b8",
-      "16134715004dcac0f0"
+      "16134715004dcac0f0",
+      "16416780431bbd7218"
     ]
   },
   "presets": {
