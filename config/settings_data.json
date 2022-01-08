@@ -477,6 +477,7 @@
       },
       "16131223138a584ff0": {
         "type": "newsletter",
+        "disabled": true,
         "settings": {
           "heading": "Newsletter subscribe",
           "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
@@ -649,6 +650,7 @@
       },
       "1613465098c76677b8": {
         "type": "richtext",
+        "disabled": true,
         "settings": {
           "heading": "Richtext",
           "subheading": "<p>Write something catchy for this section.<\/p>",
@@ -688,6 +690,7 @@
       },
       "16134715004dcac0f0": {
         "type": "html",
+        "disabled": true,
         "settings": {
           "html": "<p class=\"alert alert-info\">Hello world!<\/p>",
           "heading": "HTML",
@@ -957,6 +960,7 @@
       },
       "1613737250d2b7859f": {
         "type": "separator",
+        "disabled": true,
         "settings": {
           "container": true,
           "bg_color": "#dee2e6",
