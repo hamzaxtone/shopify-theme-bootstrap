@@ -21,11 +21,11 @@
         class="overflow-hidden {{ pt }} {{ pb }} {{ mt }} {{ mb }} {{ section.settings.bg_style }}"
         style="{{ section.settings.bg_color | prepend: 'background-color: ' | append: ';' }}">
       
-    <hr class="seprator"    >  
+    <hr class="seprator mx-auto mb-3" >  
       
       
         <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
-
+<hr class="seprator mx-auto mb-3" >
             <ul class="footer-blocks-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
                 
                 {% for block in section.blocks %}
