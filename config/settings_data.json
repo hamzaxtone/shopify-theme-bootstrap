@@ -944,15 +944,15 @@
         "type": "footer",
         "settings": {
           "container": true,
-          "bg_color": "#343a40",
+          "bg_color": "#22222a",
           "bg_style": "text-white",
-          "show_powered_by": true,
-          "show_theme_by": true,
+          "show_powered_by": false,
+          "show_theme_by": false,
           "show_payment_icons": true,
           "show_sep": true,
           "sep_color": "#5a6066",
-          "padding_top": 6,
-          "padding_bottom": 2,
+          "padding_top": 10,
+          "padding_bottom": 10,
           "margin_top": 0,
           "margin_bottom": 0
         }
