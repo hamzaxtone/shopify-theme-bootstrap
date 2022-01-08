@@ -934,7 +934,7 @@
           "gutter_tablet": 4,
           "gutter_desktop": 6,
           "padding_top": 11,
-          "padding_bottom": 6,
+          "padding_bottom": 0,
           "margin_top": 0,
           "margin_bottom": 0
         }
@@ -1286,7 +1286,7 @@
           "gutter_mobile": 3,
           "gutter_tablet": 4,
           "gutter_desktop": 6,
-          "padding_top": 8,
+          "padding_top": 3,
           "padding_bottom": 0,
           "margin_top": 0,
           "margin_bottom": 0
