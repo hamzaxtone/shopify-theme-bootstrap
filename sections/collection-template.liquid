@@ -47,7 +47,7 @@
     </div> -->
 
     <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
-
+      <div class="row">
         <!-- Collection Utitilies -->
         {% if section.settings.enable_sorting or section.settings.enable_filtering %}
             <div 
@@ -164,7 +164,7 @@
             {% endpaginate %}
 
         {% endif %}
-
+</div>
     </div>
 
 </div>
