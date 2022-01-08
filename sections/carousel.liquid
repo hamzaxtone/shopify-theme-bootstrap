@@ -7,7 +7,6 @@
     {% assign interval = false %}
 {% endif %}
 
-a sdasdasd
 <div
     id="{{ 'carousel-wrapper' | append: section.id }}"    
     class="{% if section.settings.container %}container{% endif %} {{ mt }} {{ mb }}">
@@ -56,16 +55,17 @@ a sdasdasd
 
                     {% if block.settings.title != blank or block.settings.description != blank %}
                         <div class="carousel-caption">
+                          {% unless block.settings.description == blank %}
+                                <div class="rte">
+                                    {{ block.settings.description }}
+                                </div>
+                            {% endunless %}
                             {% unless block.settings.title == blank %}
                                 <h3 class="{{ block.settings.title_size }}">
                                     {{ block.settings.title }}
                                 </h3>
                             {% endunless %}
-                            {% unless block.settings.description == blank %}
-                                <div class="rte">
-                                    {{ block.settings.description }}
-                                </div>
-                            {% endunless %}
+                          <a class="btn btn-transparent">Shop Now</a>
                         </div>
                     {% endif %}
 
