@@ -890,7 +890,7 @@
           "b4097452-7361-46b5-8f88-a21eaccf5c63": {
             "type": "social_menu",
             "settings": {
-              "menu": "",
+              "menu": "my-account",
               "heading": "MY ACCOUNT",
               "heading_size": "h5",
               "direction": "flex-column",
