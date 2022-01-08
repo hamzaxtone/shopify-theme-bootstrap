@@ -111,6 +111,7 @@
       },
       "161281990869fdf1c2": {
         "type": "collection-list",
+        "disabled": true,
         "blocks": {
           "172b7cd3-88f9-40fa-8018-0dc4ae8969b5": {
             "type": "collection",
@@ -175,6 +176,7 @@
       },
       "16129467980997b2cd": {
         "type": "image-with-text",
+        "disabled": true,
         "settings": {
           "container": true,
           "light_bg": false,
@@ -199,6 +201,7 @@
       },
       "1612951102935a69c3": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "container": false,
           "section_height": "section-height-md",
@@ -222,6 +225,7 @@
       },
       "1613034094b1e14cbd": {
         "type": "logo-list",
+        "disabled": true,
         "blocks": {
           "e1cf75d0-157b-4a2e-a182-2e4a6d5ef5a0": {
             "type": "logo",
@@ -296,6 +300,7 @@
       },
       "1613036274b5bc23d7": {
         "type": "gallery",
+        "disabled": true,
         "blocks": {
           "4542108e-43c9-4d88-b996-7fd9b750fad4": {
             "type": "image",
@@ -440,6 +445,7 @@
       },
       "1613036565184adb1d": {
         "type": "separator",
+        "disabled": true,
         "settings": {
           "container": true,
           "bg_color": "#dee2e6",
@@ -449,6 +455,7 @@
       },
       "16130473820c97e316": {
         "type": "featured-product",
+        "disabled": true,
         "settings": {
           "product": "bag-series-1",
           "container": true,
@@ -494,6 +501,7 @@
       },
       "16131300457e5a9b91": {
         "type": "testimonials",
+        "disabled": true,
         "blocks": {
           "16131300457e5a9b91-0": {
             "type": "testimonial",
@@ -624,6 +632,7 @@
       },
       "1613321883059203ae": {
         "type": "map",
+        "disabled": true,
         "settings": {
           "heading": "Our physical address",
           "subheading": "<p>Come and say Hello. We will be happy to meet your in person.<\/p>",
@@ -669,6 +678,7 @@
       },
       "161346609112cd0f90": {
         "type": "video",
+        "disabled": true,
         "settings": {
           "heading": "Video",
           "subheading": "<p>Write something catchy for this section.<\/p>",
@@ -801,6 +811,7 @@
       },
       "16136830093258d47c": {
         "type": "separator",
+        "disabled": true,
         "settings": {
           "container": true,
           "bg_color": "#dee2e6",
@@ -810,6 +821,7 @@
       },
       "161368561105e641b5": {
         "type": "faq",
+        "disabled": true,
         "blocks": {
           "161368561105e641b5-0": {
             "type": "text",
