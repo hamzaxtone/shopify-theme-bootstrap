@@ -9,7 +9,9 @@
 {% assign gutter_tablet  = section.settings.gutter_tablet | prepend: 'g-sm-' %}
 {% assign gutter_desktop = section.settings.gutter_desktop | prepend: 'g-xl-' %}
 
-<ul class="items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+
+{{section.settings.class}}
+<ul class=" items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
 
     {% for item in items limit: limit %}
         {% if item.object_type == 'product' %}
