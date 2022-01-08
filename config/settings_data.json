@@ -1256,6 +1256,43 @@
           "margin_bottom": 10,
           "classes": "slider-product"
         }
+      },
+      "footer-blocks-bottom": {
+        "type": "footer-blocks-bottom",
+        "blocks": {
+          "d2dabd83-cd21-4a71-b405-c09f01c45f3d": {
+            "type": "social_menu",
+            "settings": {
+              "menu": "social",
+              "heading": "Follow us",
+              "heading_size": "h5",
+              "direction": "flex-column",
+              "icon_size": "18",
+              "show_only_icons": true
+            }
+          }
+        },
+        "block_order": [
+          "d2dabd83-cd21-4a71-b405-c09f01c45f3d"
+        ],
+        "settings": {
+          "container": true,
+          "bg_color": "#343a40",
+          "bg_style": "text-white",
+          "row_": 1,
+          "row_sm": 2,
+          "row_md": 2,
+          "row_lg": 4,
+          "row_xl": 4,
+          "row_xxl": 4,
+          "gutter_mobile": 3,
+          "gutter_tablet": 4,
+          "gutter_desktop": 6,
+          "padding_top": 8,
+          "padding_bottom": 0,
+          "margin_top": 0,
+          "margin_bottom": 0
+        }
       }
     },
     "content_for_index": [
