@@ -878,6 +878,15 @@
       "footer-blocks": {
         "type": "footer-blocks",
         "blocks": {
+          "84d98f57-a71d-49ea-a1a3-3fab0b59ff64": {
+            "type": "menu",
+            "settings": {
+              "menu": "main-menu",
+              "heading": "QUICK LINK",
+              "heading_size": "h5",
+              "direction": "flex-column"
+            }
+          },
           "c4c94464-ebb5-4d24-a49f-192eb027cc26": {
             "type": "richtext",
             "settings": {
@@ -894,15 +903,6 @@
               "heading_size": "h5"
             }
           },
-          "84d98f57-a71d-49ea-a1a3-3fab0b59ff64": {
-            "type": "menu",
-            "settings": {
-              "menu": "footer",
-              "heading": "QUICK LINK",
-              "heading_size": "h5",
-              "direction": ""
-            }
-          },
           "b4097452-7361-46b5-8f88-a21eaccf5c63": {
             "type": "social_menu",
             "settings": {
@@ -916,9 +916,9 @@
           }
         },
         "block_order": [
+          "84d98f57-a71d-49ea-a1a3-3fab0b59ff64",
           "c4c94464-ebb5-4d24-a49f-192eb027cc26",
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5",
-          "84d98f57-a71d-49ea-a1a3-3fab0b59ff64",
           "b4097452-7361-46b5-8f88-a21eaccf5c63"
         ],
         "settings": {
