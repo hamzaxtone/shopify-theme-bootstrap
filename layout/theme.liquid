@@ -116,6 +116,8 @@
     {% endif %}
     <span class="icon" aria-hidden="true">/</span>
     <span>{{ product.title }}</span>
+  {% elsif template contains 'collection' %}
+  asdasddass
   {% elsif template contains 'collection' and collection.handle %}
     <span class="icon" aria-hidden="true">/</span>
     {% if current_tags %}
