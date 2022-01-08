@@ -562,18 +562,20 @@
           "161313402064cf991c-2": {
             "type": "content",
             "settings": {
-              "heading": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-              "btn_label": "Learn more",
+              "img": "shopify:\/\/shop_images\/safe-payment.png",
+              "heading": "SAFE PAYMENT",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing  tempor incididunt ut labore et dolore <\/p>",
+              "btn_label": "",
               "btn_url": "#"
             }
           },
           "161313402064cf991c-3": {
             "type": "content",
             "settings": {
-              "heading": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-              "btn_label": "Learn more",
+              "img": "shopify:\/\/shop_images\/loyalty-customer.png",
+              "heading": "LOYALTY CUSTOMER",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing  tempor incididunt ut labore et dolore <\/p>",
+              "btn_label": "",
               "btn_url": "#"
             }
           }
@@ -585,8 +587,8 @@
           "161313402064cf991c-3"
         ],
         "settings": {
-          "heading": "Text column with image",
-          "subheading": "<p>Write something catchy for this section.<\/p>",
+          "heading": "",
+          "subheading": "",
           "container": true,
           "light_bg": false,
           "heading_size": "h2",
