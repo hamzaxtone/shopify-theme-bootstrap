@@ -7,7 +7,7 @@
 
 <section 
     id="featured-product-{{ section.id }}" 
-    class="featured-product {% if section.settings.light_bg %}bg-light{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }}">
+    class="featured-product {% if section.settings.light_bg %}bg-light{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }} {% if section.settings.classes %}{{section.settings.classes}}{% endif %}">
     <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
 
 
@@ -334,7 +334,12 @@
             "max": 12,
             "step": 1,
             "default": 7
-        }
+        },
+		{
+            "type": "text",
+            "id": "classes",
+            "label": "Class"
+		}
     ],
     "presets": [
         {
