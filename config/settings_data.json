@@ -542,9 +542,10 @@
           "161313402064cf991c-0": {
             "type": "content",
             "settings": {
-              "heading": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-              "btn_label": "Learn more",
+              "img": "shopify:\/\/shop_images\/freeshipping.png",
+              "heading": "FREE SHIPPING",
+              "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing  tempor incididunt ut labore et dolore <\/p>",
+              "btn_label": "",
               "btn_url": "#"
             }
           },
@@ -590,9 +591,9 @@
           "heading_size": "h2",
           "heading_alignment": "text-center",
           "subheading_size": "",
-          "img_width": "480",
-          "img_height": "480",
-          "img_thumbnail": true,
+          "img_width": "auto",
+          "img_height": "auto",
+          "img_thumbnail": false,
           "block_text_alignment": "text-start",
           "block_heading_size": "h5",
           "btn_color": "btn-outline-secondary",
