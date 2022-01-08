@@ -104,8 +104,8 @@
           "gutter_desktop": 4,
           "padding_top": 0,
           "padding_bottom": 0,
-          "margin_top": 0,
-          "margin_bottom": 6,
+          "margin_top": 10,
+          "margin_bottom": 10,
           "classes": "slider-product"
         }
       },
@@ -453,6 +453,7 @@
           "product": "bag-series-1",
           "container": true,
           "light_bg": false,
+          "slider": false,
           "badge": "Featured product",
           "badge_color": "bg-light text-secondary",
           "heading_size": "h2",
