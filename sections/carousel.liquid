@@ -9,7 +9,7 @@
 
 <div
     id="{{ 'carousel-wrapper' | append: section.id }}"    
-    class="{% if section.settings.container %}container{% endif %} {{ mt }} {{ mb }}">
+    class="{% if section.settings.container %}container{% endif %} {{ mt }} {{ mb }} {% if section.settings.classes %}{{section.settings.classes}}{% endif %}">
 
     <!-- Carousel -->
     <div
@@ -213,7 +213,12 @@
             "max": 12,
             "step": 1,
             "default": 7
-        }
+        },
+		{
+            "type": "text",
+            "id": "classes",
+            "label": "Class"
+		}
     ],
     "blocks": [
         {
