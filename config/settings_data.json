@@ -898,7 +898,7 @@
             "type": "menu",
             "settings": {
               "menu": "footer",
-              "heading": "Footer menu",
+              "heading": "QUICK LINK",
               "heading_size": "h5",
               "direction": ""
             }
@@ -923,7 +923,7 @@
         ],
         "settings": {
           "container": true,
-          "bg_color": "#343a40",
+          "bg_color": "#22222a",
           "bg_style": "text-white",
           "row_": 1,
           "row_sm": 2,
@@ -934,8 +934,8 @@
           "gutter_mobile": 3,
           "gutter_tablet": 4,
           "gutter_desktop": 6,
-          "padding_top": 8,
-          "padding_bottom": 0,
+          "padding_top": 11,
+          "padding_bottom": 6,
           "margin_top": 0,
           "margin_bottom": 0
         }
