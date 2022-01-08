@@ -102,10 +102,12 @@
       <header>  
       {% section 'navbar' %}
         
-      
+        {% comment %}  
+        {% unless template == 'index' or template == 'cart' or template == 'list-collections' %} {% endunless %}
+        {% endcomment %}
        
         
-        {% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+        {% unless template == 'index' %}
 <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
   <a href="/" title="Home">Home</a>
   {% if template contains 'page' %}
