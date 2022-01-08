@@ -63,7 +63,7 @@
           "interval": 6,
           "img_width": "1920",
           "img_height": "1080",
-          "image_min_height": "360",
+          "image_min_height": "500",
           "margin_top": 0,
           "margin_bottom": 8,
           "classes": "custom-carousel"
