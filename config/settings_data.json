@@ -594,7 +594,7 @@
           "img_width": "auto",
           "img_height": "auto",
           "img_thumbnail": false,
-          "block_text_alignment": "text-start",
+          "block_text_alignment": "text-center",
           "block_heading_size": "h5",
           "btn_color": "btn-outline-secondary",
           "btn_size": "btn-sm",
