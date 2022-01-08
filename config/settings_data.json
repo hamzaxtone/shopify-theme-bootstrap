@@ -371,7 +371,8 @@
           "padding_top": 0,
           "padding_bottom": 0,
           "margin_top": 0,
-          "margin_bottom": 7
+          "margin_bottom": 7,
+          "classes": "no-spacing-gallery"
         }
       },
       "1613036565184adb1d": {
@@ -1120,7 +1121,8 @@
           "padding_top": 0,
           "padding_bottom": 0,
           "margin_top": 10,
-          "margin_bottom": 10
+          "margin_bottom": 10,
+          "classes": ""
         }
       },
       "164167052216794509": {
