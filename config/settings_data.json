@@ -948,7 +948,7 @@
           "show_powered_by": false,
           "show_theme_by": false,
           "show_payment_icons": true,
-          "show_sep": true,
+          "show_sep": false,
           "sep_color": "#fff",
           "padding_top": 10,
           "padding_bottom": 10,
