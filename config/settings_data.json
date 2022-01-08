@@ -949,7 +949,7 @@
           "show_theme_by": false,
           "show_payment_icons": true,
           "show_sep": false,
-          "sep_color": "#fff",
+          "sep_color": "#ffffff",
           "padding_top": 10,
           "padding_bottom": 10,
           "margin_top": 0,
@@ -1269,18 +1269,16 @@
               "direction": ""
             }
           },
-          "4943a3df-5afe-45f8-bc20-a4986fd5c4a5": {
-            "type": "richtext",
+          "609f61f4-255c-45e6-827b-6fa5d726a3d9": {
+            "type": "Newsletter",
             "settings": {
-              "heading": "",
-              "description": "",
-              "heading_size": "h5"
+              "heading": "DON'T MISS OUT ON THE LATEST"
             }
           }
         },
         "block_order": [
           "13ed76b0-a0d0-476e-a09a-43d42a13f68a",
-          "4943a3df-5afe-45f8-bc20-a4986fd5c4a5"
+          "609f61f4-255c-45e6-827b-6fa5d726a3d9"
         ],
         "settings": {
           "container": true,
