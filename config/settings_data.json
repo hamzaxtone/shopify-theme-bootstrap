@@ -57,7 +57,7 @@
         "settings": {
           "container": false,
           "controls": true,
-          "indicators": true,
+          "indicators": false,
           "style": "",
           "transition": "slide",
           "interval": 6,
