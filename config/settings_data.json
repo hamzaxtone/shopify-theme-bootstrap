@@ -901,7 +901,7 @@
           "468f5cea-de04-4404-8c8e-da00b85cee28": {
             "type": "menu",
             "settings": {
-              "menu": "",
+              "menu": "information",
               "heading": "Information",
               "heading_size": "h5",
               "direction": "flex-column"
@@ -910,8 +910,8 @@
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5": {
             "type": "richtext",
             "settings": {
-              "heading": "About Shopify",
-              "description": "<p>Shopify worlds biggest eccomerce platform<\/p>",
+              "heading": "About Us",
+              "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus  facilisis. <\/p><p><br\/>ADDRESS : HERITAGE WHEEL, 5159 BROOKS ST, SUITE G, \t                    MONTCLAIR CA 91763PRINTING <\/p><p>EMAIL : INFO@HERITAGEWHEEL.COM<\/p>",
               "heading_size": "h5"
             }
           }
