@@ -1274,11 +1274,18 @@
             "settings": {
               "heading": "DON'T MISS OUT ON THE LATEST"
             }
+          },
+          "08e02935-39d1-4ed4-a900-7db0deafd62a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled-2.png"
+            }
           }
         },
         "block_order": [
           "13ed76b0-a0d0-476e-a09a-43d42a13f68a",
-          "609f61f4-255c-45e6-827b-6fa5d726a3d9"
+          "609f61f4-255c-45e6-827b-6fa5d726a3d9",
+          "08e02935-39d1-4ed4-a900-7db0deafd62a"
         ],
         "settings": {
           "container": true,
