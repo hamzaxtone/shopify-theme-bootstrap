@@ -887,15 +887,13 @@
               "direction": "flex-column"
             }
           },
-          "b4097452-7361-46b5-8f88-a21eaccf5c63": {
-            "type": "social_menu",
+          "9f673a8b-4319-4dcd-aa1c-5a7fe8562e4f": {
+            "type": "menu",
             "settings": {
               "menu": "my-account",
               "heading": "MY ACCOUNT",
               "heading_size": "h5",
-              "direction": "flex-column",
-              "icon_size": "18",
-              "show_only_icons": false
+              "direction": "flex-column"
             }
           },
           "468f5cea-de04-4404-8c8e-da00b85cee28": {
@@ -918,7 +916,7 @@
         },
         "block_order": [
           "84d98f57-a71d-49ea-a1a3-3fab0b59ff64",
-          "b4097452-7361-46b5-8f88-a21eaccf5c63",
+          "9f673a8b-4319-4dcd-aa1c-5a7fe8562e4f",
           "468f5cea-de04-4404-8c8e-da00b85cee28",
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5"
         ],
