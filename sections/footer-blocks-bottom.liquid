@@ -95,7 +95,19 @@
                           {% endform %}
                       {% endif %}
                       {% if block.type == 'image' %}
-                      <a></a>
+                      	<!-- Image -->
+                          {% if block.settings.img == blank %}
+                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg bg-light img-fluid' }}
+                          {% else %}
+                              {% assign img_size = block.settings.img_width | append: 'x' | append: block.settings.img_height %}
+                              <img 
+                                  class="image-with-text-img img-fluid mb-3 mb-md-0 {% if block.settings.img_thumbnail %}img-thumbnail{% else %}rounded{% endif %}"
+                                  src="{{ block.settings.img | img_url: img_size, crop: 'center' }}"
+                                  alt="{{ block.settings.img.alt | escape }}" 
+                                  width="{{ block.settings.img_width }}"
+                                  height="{{ block.settings.img_height }}" 
+                                  loading="lazy">
+                          {% endif %}
                       {% endif %}
                         {% if block.type == 'social_menu' %}
                             <div class="social-menu">
