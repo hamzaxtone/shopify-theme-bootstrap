@@ -887,6 +887,17 @@
               "direction": "flex-column"
             }
           },
+          "b4097452-7361-46b5-8f88-a21eaccf5c63": {
+            "type": "social_menu",
+            "settings": {
+              "menu": "",
+              "heading": "MY ACCOUNT",
+              "heading_size": "h5",
+              "direction": "flex-column",
+              "icon_size": "18",
+              "show_only_icons": false
+            }
+          },
           "c4c94464-ebb5-4d24-a49f-192eb027cc26": {
             "type": "richtext",
             "settings": {
@@ -902,24 +913,13 @@
               "description": "<p>Shopify worlds biggest eccomerce platform<\/p>",
               "heading_size": "h5"
             }
-          },
-          "b4097452-7361-46b5-8f88-a21eaccf5c63": {
-            "type": "social_menu",
-            "settings": {
-              "menu": "",
-              "heading": "Follow us",
-              "heading_size": "h5",
-              "direction": "flex-column",
-              "icon_size": "18",
-              "show_only_icons": false
-            }
           }
         },
         "block_order": [
           "84d98f57-a71d-49ea-a1a3-3fab0b59ff64",
+          "b4097452-7361-46b5-8f88-a21eaccf5c63",
           "c4c94464-ebb5-4d24-a49f-192eb027cc26",
-          "e00e2603-5c9c-4373-9917-00d8e58fb8f5",
-          "b4097452-7361-46b5-8f88-a21eaccf5c63"
+          "e00e2603-5c9c-4373-9917-00d8e58fb8f5"
         ],
         "settings": {
           "container": true,
