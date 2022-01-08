@@ -94,7 +94,9 @@
                               </div>
                           {% endform %}
                       {% endif %}
-
+                      {% if block.type == 'image' %}
+                      <a></a>
+                      {% endif %}
                         {% if block.type == 'social_menu' %}
                             <div class="social-menu">
                                 <ul class="nav mb-4 {{ block.settings.direction }}">
@@ -437,7 +439,12 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "Image"
-                }
+                },
+				{
+                    "type": "url",
+                    "id": "btn_url",
+                    "label": "Button link"
+              	}
             ]
         }
     ],
