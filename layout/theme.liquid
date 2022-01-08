@@ -99,8 +99,9 @@
         </a>
         
         {% section 'announcement-bar' %}
-        {% section 'navbar' %}
-
+      <header>  
+      {% section 'navbar' %}
+</header>
         <main 
             id="main"
             class="{% if request.page_type != 'index' %}py-7{% endif %}"
