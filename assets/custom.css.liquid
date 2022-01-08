@@ -7,13 +7,8 @@ body,h1,h2,h3,h4,h5,h6,p,a,button,input{
 p{
 	font-size:16px;
 }
-.template-index div#shopify-section-navbar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  max-width: 100%;
+body:not(.template-index) div#shopify-section-navbar {
+  position: relative;
 }
 .template-index ul#navbar-nav li a {
 color:#fff;
