@@ -59,7 +59,40 @@
                                 </ul>
                             </div>
                         {% endif %}
-                      {% if block.type == 'menu' %}
+                      {% if block.type == 'Newsletter' %}
+                          <!-- Newsletter form -->
+                          {% form 'customer' %}
+                              <input type="hidden" name="contact[tags]" value="newsletter">
+
+                              {{ form.errors | default_errors }}
+
+                              {% if form.posted_successfully? %}
+                                  <p class="newsletter-alert alert alert-success">
+                                      {{ 'general.newsletter.confirmation' | t }}
+                                  </p>
+                              {% endif %}
+
+                              <div class="input-group justify-content-center flex-nowrap">
+
+                                  <!-- Newsletter input field -->
+                                  <input 
+                                      type="email" 
+                                      name="contact[email]" 
+                                      size="30"
+                                      class="form-control w-auto flex-grow-0" 
+                                      value="{% if customer.email != blank %}{{ customer.email }}{% endif %}" 
+                                      placeholder="{{ 'general.newsletter.label' | t }}" 
+                                      aria-label="{{ 'general.newsletter.label' | t }}"
+                                      required>
+
+                                      <button 
+                                          type="submit" 
+                                          name="commit" 
+                                          class="btn flex-shrink-0 {{ section.settings.btn_color }}">
+                                      {{ 'general.newsletter.submit' | t }}
+                                  </button>
+                              </div>
+                          {% endform %}
                       {% endif %}
 
                         {% if block.type == 'social_menu' %}

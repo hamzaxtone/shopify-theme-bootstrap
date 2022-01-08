@@ -1268,10 +1268,19 @@
               "heading_size": "h5",
               "direction": ""
             }
+          },
+          "4943a3df-5afe-45f8-bc20-a4986fd5c4a5": {
+            "type": "richtext",
+            "settings": {
+              "heading": "",
+              "description": "",
+              "heading_size": "h5"
+            }
           }
         },
         "block_order": [
-          "13ed76b0-a0d0-476e-a09a-43d42a13f68a"
+          "13ed76b0-a0d0-476e-a09a-43d42a13f68a",
+          "4943a3df-5afe-45f8-bc20-a4986fd5c4a5"
         ],
         "settings": {
           "container": true,
