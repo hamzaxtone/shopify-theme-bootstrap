@@ -898,12 +898,13 @@
               "show_only_icons": false
             }
           },
-          "c4c94464-ebb5-4d24-a49f-192eb027cc26": {
-            "type": "richtext",
+          "468f5cea-de04-4404-8c8e-da00b85cee28": {
+            "type": "menu",
             "settings": {
-              "heading": "About US",
-              "description": "<p>Its about us section<\/p>",
-              "heading_size": "h5"
+              "menu": "",
+              "heading": "Information",
+              "heading_size": "h5",
+              "direction": "flex-column"
             }
           },
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5": {
@@ -918,7 +919,7 @@
         "block_order": [
           "84d98f57-a71d-49ea-a1a3-3fab0b59ff64",
           "b4097452-7361-46b5-8f88-a21eaccf5c63",
-          "c4c94464-ebb5-4d24-a49f-192eb027cc26",
+          "468f5cea-de04-4404-8c8e-da00b85cee28",
           "e00e2603-5c9c-4373-9917-00d8e58fb8f5"
         ],
         "settings": {
