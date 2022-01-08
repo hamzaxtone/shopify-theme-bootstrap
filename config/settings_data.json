@@ -1266,7 +1266,7 @@
               "menu": "social",
               "heading": "Follow Us",
               "heading_size": "h5",
-              "direction": "flex-column"
+              "direction": ""
             }
           }
         },
@@ -1275,7 +1275,7 @@
         ],
         "settings": {
           "container": true,
-          "bg_color": "#343a40",
+          "bg_color": "#22222a",
           "bg_style": "text-white",
           "row_": 1,
           "row_sm": 2,
