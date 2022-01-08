@@ -73,9 +73,12 @@
                         {% render 'article-title' with article as article, heading: 'h3' %}
                         
                         {% render 'article-excerpt' with article as article %}
+                      
                         {% render 'article-posted-in' with article as article %}
-                        {% render 'article-readmore' with article as article %}
+                      <div class="d-flex justify-content-between">  
+                      {% render 'article-readmore' with article as article %}
                       {% render 'article-meta' with article as article %}
+                        </div>
                         {% render 'social-sharing' with share_title: article.title, share_permalink: article.url, share_image: article.image %}
                     </article>
                 {% endfor %}
