@@ -1260,29 +1260,17 @@
       "footer-blocks-bottom": {
         "type": "footer-blocks-bottom",
         "blocks": {
-          "d2dabd83-cd21-4a71-b405-c09f01c45f3d": {
-            "type": "social_menu",
-            "settings": {
-              "menu": "social",
-              "heading": "Follow us",
-              "heading_size": "h5",
-              "direction": "flex-column",
-              "icon_size": "18",
-              "show_only_icons": true
-            }
-          },
           "13ed76b0-a0d0-476e-a09a-43d42a13f68a": {
             "type": "menu",
             "settings": {
               "menu": "social",
-              "heading": "Quick links",
+              "heading": "Follow Us",
               "heading_size": "h5",
               "direction": "flex-column"
             }
           }
         },
         "block_order": [
-          "d2dabd83-cd21-4a71-b405-c09f01c45f3d",
           "13ed76b0-a0d0-476e-a09a-43d42a13f68a"
         ],
         "settings": {
