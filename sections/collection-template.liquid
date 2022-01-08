@@ -51,7 +51,7 @@
         <div class="col-md-3">
           <div class="filter-collection">
             <div class="collection-list">
-              <h3>Product Categories</h3>
+              <h3 class="title-heading">Product Categories</h3>
               <ul>{% for collection in collections %}
                 <li>{{ collection.title | link_to: collection.url }}</li>
                   {% endfor %}
