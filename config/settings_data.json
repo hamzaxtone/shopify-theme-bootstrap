@@ -1279,7 +1279,10 @@
             "type": "image",
             "settings": {
               "img": "shopify:\/\/shop_images\/Untitled-2.png",
-              "btn_url": ""
+              "img_width": "205",
+              "img_height": "205",
+              "btn_url": "",
+              "img_alignment": "flex-row-reverse"
             }
           }
         },
