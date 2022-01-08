@@ -933,12 +933,14 @@
           "show_description": false,
           "description_length": "140",
           "show_price": true,
+          "show_badge_sold_out": true,
+          "show_badge_sale": true,
           "row_": 2,
           "row_sm": 2,
           "row_md": 3,
           "row_lg": 3,
           "row_xl": 3,
-          "row_xxl": 6,
+          "row_xxl": 3,
           "gutter_mobile": 3,
           "gutter_tablet": 3,
           "gutter_desktop": 4
@@ -1063,6 +1065,8 @@
           "show_description": false,
           "description_length": "70",
           "show_price": true,
+          "show_badge_sold_out": true,
+          "show_badge_sale": true,
           "row_": 2,
           "row_sm": 2,
           "row_md": 3,
@@ -1320,6 +1324,30 @@
           "padding_bottom": 6,
           "margin_top": 0,
           "margin_bottom": 0
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "heading": "Our collections",
+          "heading_size": "display-5",
+          "subheading": "<p>Write a small description here for the collections list page. <a href=\"collections\/all\">Browse all products<\/a><\/p>",
+          "subheading_size": "",
+          "container": true,
+          "paginate": 30,
+          "img_width": "480",
+          "img_height": "480",
+          "img_thumbnail": true,
+          "show_products_count": true,
+          "row_": 2,
+          "row_sm": 2,
+          "row_md": 3,
+          "row_lg": 3,
+          "row_xl": 3,
+          "row_xxl": 6,
+          "gutter_mobile": 3,
+          "gutter_tablet": 3,
+          "gutter_desktop": 4
         }
       }
     },
