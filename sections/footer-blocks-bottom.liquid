@@ -95,6 +95,7 @@
                           {% endform %}
                       {% endif %}
                       {% if block.type == 'image' %}
+                      	<a href="{{block.settings.btn_url}}">
                       	<!-- Image -->
                           {% if block.settings.img == blank %}
                               {{ 'image' | placeholder_svg_tag: 'placeholder-svg bg-light img-fluid' }}
@@ -107,6 +108,7 @@
                                   width="{{ block.settings.img_width }}"
                                   height="{{ block.settings.img_height }}" 
                                   loading="lazy">
+                        	</a>
                           {% endif %}
                       {% endif %}
                         {% if block.type == 'social_menu' %}
@@ -449,7 +451,7 @@
             "settings": [
                 {
                     "type": "image_picker",
-                    "id": "image",
+                    "id": "img",
                     "label": "Image"
                 },
 				{
