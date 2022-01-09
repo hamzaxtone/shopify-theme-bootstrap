@@ -608,7 +608,7 @@
 
             <!-- Items List/Grid -->
             {% paginate collection.products by section.settings.paginate %}
-
+<div id="CollectionProductGrid">
           <div id="main-collection-product-grid">
                 {% if layout == 'grid' %}
                     {% render 'items-grid' with items: collection.products %}
@@ -616,6 +616,7 @@
                     {% render 'items-list' with items: collection.products %}
                 {% endif %}
 </div>
+   </div>       
                 {% render 'pagination' with paginate: paginate, layout: layout %}
 
             {% endpaginate %}
