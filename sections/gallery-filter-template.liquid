@@ -115,15 +115,15 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-	$( ".event-type-select" ).change(function() {
-  var selectedEventType = this.options[this.selectedIndex].value;
-  if (selectedEventType == "all") {
-    $('.container div').removeClass('hidden');
-  } else {
-    $('.container div').addClass('hidden');
-    $('.container div[data-eventtype="' + selectedEventType + '"]').removeClass('hidden');
-  }
-});
+	$( "select" ).change(function() {
+      var selectedEventType = this.options[this.selectedIndex].value;
+      if (selectedEventType == "all") {
+        $('.gallery-grid .gallery-item').removeClass('hidden');
+      } else {
+        $('.gallery-grid .gallery-item').addClass('hidden');
+        $('.gallery-grid .gallery-item[data-wheel_model="' + selectedEventType + '"]').removeClass('hidden');
+      }
+	});
 </script>
 
 {% schema %}
