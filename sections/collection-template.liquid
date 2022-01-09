@@ -280,10 +280,10 @@
                                     </input>
                                   </label>
                                 </div>
-<!--                                 <label class="apply__button" for="apply__button--price">
+                                <label class="apply__button" for="apply__button--price">
                                   <input class="apply__button--price" type="checkbox" id="apply__button--price" />
-                                  Apply
-                                </label> -->
+                                  Filter
+                                </label>
                                 <input min="0" max="{{ filter.range_max | money_without_currency | replace: ',', '' | replace: '.00', '' }}" step="1" type="range" 
                                 {%- if filter.min_value.value -%}
                                     {%- if uses_comma_decimals -%}
