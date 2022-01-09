@@ -117,7 +117,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-	$( "select" ).change(function() {
+	$( "select" ).change( function() {
       var selectedEventType = this.options[this.selectedIndex].value;
       if (selectedEventType == "all") {
         $('.gallery-grid .gallery-item').removeClass('hidden').fadeIn();
