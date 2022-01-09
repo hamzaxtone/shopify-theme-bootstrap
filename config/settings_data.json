@@ -1438,7 +1438,10 @@
               "img": "shopify:\/\/shop_images\/Wheel_Sazuka.png",
               "url": "#0",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "2000",
+              "wheel_finish": "finishB",
+              "wheel_color": "blue"
             }
           },
           "4c98df4e-b698-4fd9-bd24-7a9dcbef2327": {
@@ -1447,7 +1450,10 @@
               "img": "shopify:\/\/shop_images\/Wheel_Ring.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           },
           "2cb6bb08-3e44-47ff-8be4-038880161424": {
@@ -1456,7 +1462,10 @@
               "img": "shopify:\/\/shop_images\/Imola_MonoC.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           },
           "b69271aa-9f2f-4c60-82be-2e42e6c19957": {
@@ -1465,7 +1474,10 @@
               "img": "shopify:\/\/shop_images\/Kokoro_monoc.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           },
           "b967c928-09b1-4768-ba51-27ac2d8ec62b": {
@@ -1474,7 +1486,10 @@
               "img": "shopify:\/\/shop_images\/Wheel_Koru.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           },
           "fe390eac-4fab-46de-ac7b-54819934e53d": {
@@ -1483,7 +1498,10 @@
               "img": "shopify:\/\/shop_images\/Sakura_MonoC.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           },
           "c48d9876-85c2-430a-bac3-21e9e514d3fd": {
@@ -1492,7 +1510,10 @@
               "img": "shopify:\/\/shop_images\/Wheel_asan.png",
               "url": "",
               "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
-              "caption_size": "h6"
+              "caption_size": "h6",
+              "wheel_model": "1999",
+              "wheel_finish": "finishA",
+              "wheel_color": "red"
             }
           }
         },
