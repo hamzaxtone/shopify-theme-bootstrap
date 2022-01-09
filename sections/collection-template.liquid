@@ -193,7 +193,8 @@
                                   {% if style_color contains filter.label %}
                                     <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %} {% if value.count == 0 and value.active %}active{% endif %}" title="{{tag}}"
                                     style="background-color: {{ tag_value }}; {% if settings.show_product_color_img %}background-image: url({{ tag_value | handle | append: '.png' | file_url }}){% endif %}">
-                                    </label>
+                                  {{tag}}  
+                                  </label>
                                   {% else %}
                                     <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                                       {{ value.label | escape }} <span class="count_value">( {{ value.count }} )</span>
