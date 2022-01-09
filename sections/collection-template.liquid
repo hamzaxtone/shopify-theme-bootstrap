@@ -222,6 +222,7 @@
             
            
                   {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+            {{filter.type}}
                   {% case filter.type %}
                   {% when 'list' %}
             
