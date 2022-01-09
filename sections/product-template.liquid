@@ -393,37 +393,7 @@
       <div class="row">
         <div class="col-md-12">
           
-          <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-  <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-  <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3>HOME</h3>
-    <p>Some content.</p>
-  </div>
-          </div>
           
-          
-          
-          <ul class="nav nav-tabs">
-            {% for block in section.blocks %}
-  				<li class="{% if forloop.index > 1 %}active{% endif %}">
-                  <a data-toggle="tab" href="#{{ block.id }}">{{ block.settings.title | escape }}</a>
-            	</li>
-            {% endfor %}
-  
-</ul>
-
-<div class="tab-content">
-  {% for block in section.blocks %}
-    <div id="{{ block.id }}" class="tab-pane fade {% if forloop.index > 1 %}in active{% endif %}">
-      {{ product.description | replace: '<img ', '<img class="img-fluid" ' }}
-    </div>
-  {% endfor %}
-</div>
         	<!-- Product accordion -->
                 <div 
                     id="product-accordion" 
