@@ -609,12 +609,13 @@
             <!-- Items List/Grid -->
             {% paginate collection.products by section.settings.paginate %}
 
+          <div id="main-collection-product-grid">
                 {% if layout == 'grid' %}
                     {% render 'items-grid' with items: collection.products %}
                 {% elsif layout == 'list' %}
                     {% render 'items-list' with items: collection.products %}
                 {% endif %}
-
+</div>
                 {% render 'pagination' with paginate: paginate, layout: layout %}
 
             {% endpaginate %}
