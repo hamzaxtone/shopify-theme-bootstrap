@@ -359,7 +359,40 @@
                     </div>
                 {% endif %}
 
-                <!-- Product accordion -->
+                
+
+                <!-- Social sharing -->
+                {% if section.settings.show_social_sharing %}
+                    <div class="product-social-sharing mb-6">
+                        {% render 'social-sharing' with share_title: product.title, share_permalink: product.url, share_image: product.featured_image %}
+                    </div>
+                {% endif %}
+
+                <!-- Tags -->
+                {% if section.settings.show_tags and product.tags.size > 0 %}
+                    <div
+                        class="product-tags d-flex align-items-center justify-content-end border-top pt-3 mb-4" 
+                        style="line-height: normal;">
+                        <p class="mb-0 me-2 small text-muted">
+                            {{ 'product.tagged' | t }}:
+                        </p>
+                        <ul class="list-unstyled list-inline m-0">
+                            {% for tag in product.tags %}
+                                {% unless tag contains '__' %}
+                                    <li class="list-inline-item mr-1">
+                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="btn btn-light btn-sm" title=' }}
+                                    </li>
+                                {% endunless %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-md-12">
+        	<!-- Product accordion -->
                 <div 
                     id="product-accordion" 
                     class="product-accordion accordion mb-5 {{ section.settings.accordion_style }}">
@@ -402,37 +435,8 @@
                     {% endfor %}
         
                 </div>
-
-                <!-- Social sharing -->
-                {% if section.settings.show_social_sharing %}
-                    <div class="product-social-sharing mb-6">
-                        {% render 'social-sharing' with share_title: product.title, share_permalink: product.url, share_image: product.featured_image %}
-                    </div>
-                {% endif %}
-
-                <!-- Tags -->
-                {% if section.settings.show_tags and product.tags.size > 0 %}
-                    <div
-                        class="product-tags d-flex align-items-center justify-content-end border-top pt-3 mb-4" 
-                        style="line-height: normal;">
-                        <p class="mb-0 me-2 small text-muted">
-                            {{ 'product.tagged' | t }}:
-                        </p>
-                        <ul class="list-unstyled list-inline m-0">
-                            {% for tag in product.tags %}
-                                {% unless tag contains '__' %}
-                                    <li class="list-inline-item mr-1">
-                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="btn btn-light btn-sm" title=' }}
-                                    </li>
-                                {% endunless %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endif %}
-
-            </div>
-
         </div>
+      </div>
     </div>
 
 </article>
