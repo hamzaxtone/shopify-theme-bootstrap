@@ -986,7 +986,7 @@
           "carousel_controls": true,
           "carousel_style": "carousel-dark",
           "carousel_thumbnails": true,
-          "carousel_img_thumbnail": true,
+          "carousel_img_thumbnail": false,
           "carousel_thumbnails_row": 5,
           "carousel_img_square": true,
           "carousel_video_ratio": "ratio-16x9",
