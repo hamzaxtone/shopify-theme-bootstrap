@@ -202,7 +202,7 @@ class CollectionFiltersForm extends HTMLElement {
     return [
       {
         id: 'main-collection-product-grid',
-        section: document.getElementById('main-collection-product-grid').dataset.id,
+        section: document.getElementById('main-collection-product-grid'),
       }
     ]
   }
