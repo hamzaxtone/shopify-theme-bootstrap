@@ -38,19 +38,38 @@ we feel will be exemplary representatives of our brand.</p>
 
             <!-- Form fields -->
             <div class="row g-3 mb-3">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <input 
                         class="form-control" 
                         type="text" 
-                        name="contact[name]" 
-                        id="ContactFormName" 
-                        value="{{ customer.name }}"  
-                        placeholder="{{ 'general.contact.name' | t }}" 
-                        aria-label="{{ 'general.contact.name' | t }}" 
+                        name="contact[first_name]" 
+                        id="ContactFormfirst_name" 
+                        value=""  
+                        placeholder="First Name" 
                         required>
                 </div>
+                <div class="form-group col-md-6">
+                      <input 
+                          class="form-control" 
+                          type="text" 
+                          name="contact[last_name]" 
+                          id="ContactFormlast_name" 
+                          value=""  
+                          placeholder="Last Name" 
+                          required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input 
+                           class="form-control" 
+                           type="text" 
+                           name="contact[company_name]" 
+                           id="ContactFormcompany_name" 
+                           value=""  
+                           placeholder="Company Name" 
+                           required>
+                  </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <input 
                         class="form-control" 
                         type="email" 
@@ -65,7 +84,7 @@ we feel will be exemplary representatives of our brand.</p>
                         required>
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <input 
                         class="form-control" 
                         type="tel" 
