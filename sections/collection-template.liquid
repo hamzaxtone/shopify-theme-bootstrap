@@ -224,12 +224,12 @@
             
            
                   {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
-            {{filter.type}}
+            
                   {% case filter.type %}
                   {% when 'list' %}
             
             
-            {{style_color}}
+            {{filter.label}}
                     <div class="js-filter widget sidebar-tags {% if style_color contains filter.label %}filter-color{% endif %} {% if style_size contains filter.label %}filter-size{% endif %}" data-index="{{ forloop.index }}">
                       <div class="widget-title {% if block.settings.number_collapse < forloop.index %}open{% endif %}">
                           <h3 class="sidebar-title">
