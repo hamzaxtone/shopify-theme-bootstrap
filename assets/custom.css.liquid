@@ -625,7 +625,35 @@ appearance:auto;
     padding: 0px 15px;
     min-width: 140px;
 }
+#product-accordion {}
 
+#product-accordion .accordion-button {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    width: auto;
+    color: #000;
+    position: relative;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none;
+}
+
+#product-accordion .accordion-header {
+    text-align: center;
+}
+
+#product-accordion .accordion-button:after {content: '';background: #000;height: 2px;width: 80%;margin: 0px auto 0px;display: block;}
+
+#product-accordion .accordion-collapse {
+    border: 1px solid #CCCCCC;
+}
+
+#product-accordion .accordion-collapse .accordion-body {
+    padding: 30px;
+}
 
 
 
