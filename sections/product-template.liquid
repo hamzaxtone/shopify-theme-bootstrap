@@ -202,7 +202,7 @@
               <p class="short-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 
                 <!-- Add to cart form -->
-                {% form 'product', product,  class: 'py-5 px-5 mb-6' %}
+                {% form 'product', product,  class: 'py-5 mb-6' %}
                     
                     {% if product.has_only_default_variant %}
                         <input type="hidden" name="id" value="{{ current_variant.id }}">
