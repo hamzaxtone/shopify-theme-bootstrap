@@ -970,9 +970,9 @@
         ],
         "settings": {
           "heading_size": "h1",
-          "show_vendor": false,
-          "show_type": false,
-          "show_sku": false,
+          "show_vendor": true,
+          "show_type": true,
+          "show_sku": true,
           "show_qty": true,
           "show_add_to_cart_button": true,
           "show_buy_it_now_button": false,
