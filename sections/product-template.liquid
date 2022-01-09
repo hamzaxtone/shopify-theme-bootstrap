@@ -337,6 +337,26 @@
                         {{ 'product.sku' | t }}: {{ current_variant.sku }}
                     </p>
                 {% endif %}
+              
+              <!-- Tags -->
+                {% if section.settings.show_tags and product.tags.size > 0 %}
+                    <div
+                        class="product-tags d-flex align-items-center justify-content-end border-top pt-3 mb-4" 
+                        style="line-height: normal;">
+                        <p class="mb-0 me-2 small text-muted">
+                            {{ 'product.tagged' | t }}:
+                        </p>
+                        <ul class="list-unstyled list-inline m-0">
+                            {% for tag in product.tags %}
+                                {% unless tag contains '__' %}
+                                    <li class="list-inline-item mr-1">
+                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="btn btn-light btn-sm" title=' }}
+                                    </li>
+                                {% endunless %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
 
                 <!-- Payment icons -->
                 {% if section.settings.show_payment_icons and shop.enabled_payment_types != empty %}
@@ -370,25 +390,7 @@
                     </div>
                 {% endif %}
 
-                <!-- Tags -->
-                {% if section.settings.show_tags and product.tags.size > 0 %}
-                    <div
-                        class="product-tags d-flex align-items-center justify-content-end border-top pt-3 mb-4" 
-                        style="line-height: normal;">
-                        <p class="mb-0 me-2 small text-muted">
-                            {{ 'product.tagged' | t }}:
-                        </p>
-                        <ul class="list-unstyled list-inline m-0">
-                            {% for tag in product.tags %}
-                                {% unless tag contains '__' %}
-                                    <li class="list-inline-item mr-1">
-                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="btn btn-light btn-sm" title=' }}
-                                    </li>
-                                {% endunless %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endif %}
+                
 
             </div>
         </div>
