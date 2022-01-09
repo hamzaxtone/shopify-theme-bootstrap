@@ -107,7 +107,18 @@
   {{ variant.metafields.ShippingWeight.shipping_weight }}
 {% endfor %}
             
-            
+            {%- for variant in product.variants -%}         
+<input 
+  type="radio" 
+  name="id" 
+  class="variant-option"
+  value="{{ variant.id }}" 
+  id="variant-option-{{ variant.id }}" 
+  {% unless variant.available %} disabled{% endunless %}
+  {% if product.selected_variant.id == variant.id %} checked{% endif %}
+>
+<label for="variant-option-{{ variant.id }}">{{ variant.title }}</label>
+{%- endfor -%}
             
             <ul class="colorlist"> 
  {% for option in product.options %}
