@@ -102,8 +102,43 @@ we feel will be exemplary representatives of our brand.</p>
                         placeholder="Website Link" 
                         required>
                 </div>
-
-                <div class="form-group col-md-6">
+<div class="form-group col-md-12">
+                    <input 
+                        class="form-control" 
+                        type="text" 
+                        name="contact[subject]" 
+                        id="ContactForm_subject" 
+                        value=""  
+                        placeholder="Subject" 
+                        required>
+                </div>
+              <div class="form-group col-md-12">
+                    <input 
+                        class="form-control" 
+                        type="text" 
+                        name="contact[first_name]" 
+                        id="ContactFormfirst_name" 
+                        value=""  
+                        placeholder="First Name" 
+                        required>
+                </div>
+              <div class="form-group col-md-12">
+                <textarea 
+                    class="form-control" 
+                    rows="3" 
+                    name="contact[body]" 
+                    id="ContactFormMessage" 
+                    placeholder="Message" 
+                    required>
+                    {%- if form.body -%}
+                        {{- form.body -}}
+                    {%- endif -%}
+                </textarea>
+            </div>
+              
+              
+              
+<!--                 <div class="form-group col-md-6">
                     <input 
                         class="form-control" 
                         type="tel" 
@@ -113,24 +148,11 @@ we feel will be exemplary representatives of our brand.</p>
                         placeholder="{{ 'general.contact.phone' | t }}" 
                         aria-label="{{ 'general.contact.phone' | t }}" 
                         pattern="[0-9\-]*">
-                </div>
+                </div> -->
             </div>
 
             <!-- Textarea -->
-            <div class="form-group mb-3">
-                <textarea 
-                    class="form-control" 
-                    rows="8" 
-                    name="contact[body]" 
-                    id="ContactFormMessage" 
-                    placeholder="{{ 'general.contact.message' | t }}" 
-                    aria-label="{{ 'general.contact.message' | t }}" 
-                    required>
-                    {%- if form.body -%}
-                        {{- form.body -}}
-                    {%- endif -%}
-                </textarea>
-            </div>
+            
 
             <!-- Submit btn -->
             <input 
