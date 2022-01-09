@@ -542,6 +542,16 @@
                                 {% render 'icon-grid' with size: 22 %}
                             </button>
                         {% else %}
+                  			<button
+                                id="collection-layout-btn"
+                                class="btn btn-transparent ms-3"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-value="layout-list"
+                                title="{{ 'collection.layout_list' | t }}"
+                                aria-hidden="true">
+                                {% render 'icon-list' with size: 22 %}
+                            </button>
                             <button
                                 id="collection-layout-btn"
                                 class="btn btn-outline-secondary btn-sm ms-3"
@@ -552,6 +562,7 @@
                                 aria-hidden="true">
                                 {% render 'icon-grid' with size: 22 %}
                             </button>
+                  
                         {% endif %}
                     {% endif %}
 
