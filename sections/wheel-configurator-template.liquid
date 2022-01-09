@@ -16,12 +16,23 @@
             <h3 class="mb-5 heading {{ section.settings.heading_size }}">
                 {{ page.title }}
             </h3>
-          <img class="mt-5" src="https://cdn.shopify.com/s/files/1/0586/8470/2877/files/wheel-tool.png" alt="wheel-tool" style="pointer-events:none;" />
+          <img class="my-5" src="https://cdn.shopify.com/s/files/1/0586/8470/2877/files/wheel-tool.png" alt="wheel-tool" style="pointer-events:none;" />
         </div>
 
         <div 
         class="container mx-auto"
         style="{{ max_width }}">
+          
+          <div class="heading-wrapper mb-0 overflow-hidden text-center">
+
+            <!-- Heading -->
+            <h3 class="mt-5 heading {{ section.settings.heading_size }}">
+                Ready For Your Set?
+            </h3>
+            <p>Fill out this form for a quote on your wheels!</p>
+            <p>Looking for our MONOC Cast wheels? Please visit the shop link here: MonoC</p>
+            <p>MSRP: 15/16: $2999 - 17/18/19: $3399 - 20/21: $3599 - 22/24:$3999</p>
+          </div>
 
         <!-- Contact form -->
         {% form 'contact', class: 'contact-form mb-8' %}
