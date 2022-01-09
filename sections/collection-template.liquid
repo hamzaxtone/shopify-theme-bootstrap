@@ -102,12 +102,15 @@
    {% endfor %}
   {% endfor %}
             
+            {% for variant in product.variants %}
+  // to display the variant metafields use {{resource.metafields.namespace.key}}
+  {{ variant.metafields.ShippingWeight.shipping_weight }}
+{% endfor %}
+            
             
             
             <ul class="colorlist"> 
  {% for option in product.options %}
-              
-              asdas
  {% if option == 'Color' %}
  {% assign index = forloop.index0 %}
  {% assign colorlist = '' %}
