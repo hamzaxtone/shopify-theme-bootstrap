@@ -89,31 +89,30 @@
               <div class="widget-content">
                   <ul>
                       {% if 1 == 1 %}
-                      {% for category in collections %}
-                      <li>{{ collection.title | link_to: collection.url }}</li>    
-                      {% endfor %}
+                        {% for category in collections %}
+                          <li>{{ collection.title | link_to: collection.url }}</li>    
+                        {% endfor %}
                      
                       {% elsif block.settings.style_categories == 'style_main_menu' %}
-                      {% comment %} Get Categories From Main Menu {% endcomment %}
+                        {% comment %} Get Categories From Main Menu {% endcomment %}
 
-                      {% for link in linklists.main-menu.links %}
-                        {%if link.url contains '/collections/'%}
-                          <li class="sidebar-link-lv1 {% if linklists[link.handle] != empty %} dropdown{% if link.active %} open{% endif %}{% endif %}">
-                              <a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>
-                                  {% render 'multilang' with link.title %}
-                              </a>
+                        {% for link in linklists.main-menu.links %}
+                          {%if link.url contains '/collections/'%}
+                            <li class="sidebar-link-lv1 {% if linklists[link.handle] != empty %} dropdown{% if link.active %} open{% endif %}{% endif %}">
+                                <a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>
+                                    {% render 'multilang' with link.title %}
+                                </a>
 
-                              {% if linklists[link.handle] != empty %}
-                              <span class="icon-dropdown">
-                                  <i class="fa fa-angle-down"></i>
-                              </span>
-                              {% assign link_child = link.handle %}
-                              {% render 'dropdown-cat' with link_child as link_child %}
-                              {% endif %}
-                          </li>   
-                        {%endif%}
-                      {%endfor%}
-
+                                {% if linklists[link.handle] != empty %}
+                                <span class="icon-dropdown">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                                {% assign link_child = link.handle %}
+                                {% render 'dropdown-cat' with link_child as link_child %}
+                                {% endif %}
+                            </li>   
+                          {%endif%}
+                        {%endfor%}
                       {% else %}
                       {% assign cat_link_list = block.settings.link_list | handleize %}
 
