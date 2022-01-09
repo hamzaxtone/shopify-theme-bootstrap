@@ -968,7 +968,7 @@
           "a002179c-cc4b-44a0-b368-e843a497174b"
         ],
         "settings": {
-          "heading_size": "display-5",
+          "heading_size": "h1",
           "show_vendor": false,
           "show_type": false,
           "show_sku": false,
