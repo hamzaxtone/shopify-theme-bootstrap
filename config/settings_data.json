@@ -1264,6 +1264,7 @@
       },
       "16416780431bbd7218": {
         "type": "logo-list",
+        "disabled": true,
         "blocks": {
           "a77e6441-522a-4474-9e22-ec4dedbbff08": {
             "type": "logo",
@@ -1348,6 +1349,70 @@
           "gutter_mobile": 3,
           "gutter_tablet": 3,
           "gutter_desktop": 4
+        }
+      },
+      "footer-logo-list": {
+        "type": "footer-logo-list",
+        "blocks": {
+          "d4169356-4914-450e-80f9-9c0bce0fa2bc": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13.png",
+              "url": ""
+            }
+          },
+          "d78ea8bf-4d27-4d1a-a740-a0c7b63a1776": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy_3.png",
+              "url": ""
+            }
+          },
+          "b2fb122c-dcd2-4355-9b0b-af4f6fd66e4d": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy.png",
+              "url": ""
+            }
+          },
+          "069167f7-34ad-4cab-be0c-a9ce7333c881": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Rectangle_13_copy_2.png",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "d4169356-4914-450e-80f9-9c0bce0fa2bc",
+          "d78ea8bf-4d27-4d1a-a740-a0c7b63a1776",
+          "b2fb122c-dcd2-4355-9b0b-af4f6fd66e4d",
+          "069167f7-34ad-4cab-be0c-a9ce7333c881"
+        ],
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "container": true,
+          "light_bg": true,
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "subheading_size": "",
+          "img_width": "320",
+          "img_height": "320",
+          "img_thumbnail": false,
+          "row_": 2,
+          "row_sm": 3,
+          "row_md": 4,
+          "row_lg": 4,
+          "row_xl": 4,
+          "row_xxl": 4,
+          "gutter_mobile": 3,
+          "gutter_tablet": 3,
+          "gutter_desktop": 4,
+          "padding_top": 8,
+          "padding_bottom": 6,
+          "margin_top": 0,
+          "margin_bottom": 0
         }
       }
     },
