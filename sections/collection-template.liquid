@@ -113,7 +113,7 @@
                         {{ size_item }} result
                       </div>
                       <div class="widget-title">
-                          <h3 class="sidebar-title">
+                          <h3 class="title-heading">
                               <span>
                                   Refine By          
                               </span>
@@ -173,7 +173,7 @@
             
                     <div class="js-filter widget sidebar-tags {% if style_color contains filter.label %}filter-color{% endif %} {% if style_size contains filter.label %}filter-size{% endif %}" data-index="{{ forloop.index }}">
                       <div class="widget-title {% if block.settings.number_collapse < forloop.index %}open{% endif %}">
-                          <h3 class="sidebar-title">
+                          <h3 class="title-heading">
                               <span>{{ filter.label | escape }}</span>
                           </h3>
                       </div>
@@ -231,7 +231,7 @@
                     %}
                     <div class="js-filter widget sidebar-tags" data-index="{{ forloop.index }}">
                       <div class="widget-title {% if block.settings.number_collapse < forloop.index %}open{% endif %}">
-                          <h3 class="sidebar-title">
+                          <h3 class="title-heading">
                               <span>Filter By Price</span>
                           </h3>
                       </div>
