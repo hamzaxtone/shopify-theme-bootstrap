@@ -48,6 +48,9 @@
 
     <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
       <div class="row">
+        
+        
+        
         <div class="col-md-3">
           <div class="filter-collection">
             <div class="collection-list">
@@ -60,31 +63,11 @@
             
             
             
-<div id="shopify-section-sidebar-filter" class="shopify-section col-12 col-xl-3 col-sidebar">
-{% liquid
-  assign sort_by = collection.sort_by | default: collection.default_sort_by
-  assign blocks = section.blocks | where: 'type', 'sidebar'
-  assign block = blocks[0]
-  assign style_color = block.settings.style_option_color
-  assign style_size = block.settings.style_option_size
-  paginate collection.products by 1000
-    assign size_item = paginate.items
-  endpaginate
-%}
+
   
 
-  {% if block.settings.display_sidebar or settings.category_layout == "right_sidebar" or template.suffix == 'right-sidebar' %}
-  {% if settings.category_layout == "right_sidebar" or settings.category_layout == "express_order" or template.suffix == 'express-order' or settings.category_layout == "mansory" or template.suffix == 'mansory' or settings.category_layout == "full_with" or template.suffix == 'fullwidth' or template.suffix == 'right-sidebar' or settings.category_layout == "with_banner" or template.suffix == 'with-banner' %}
-  <div class="sidebar-label">
-      <span class="icon-filter">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" x="0px" y="0px" viewBox="0 0 48 48" xml:space="preserve"><g><path d="M6,48c-0.552,0-1-0.447-1-1v-7c0-0.553,0.448-1,1-1s1,0.447,1,1v7C7,47.553,6.552,48,6,48z"></path><path d="M6,31c-0.552,0-1-0.447-1-1V1c0-0.553,0.448-1,1-1s1,0.447,1,1v29C7,30.553,6.552,31,6,31z"></path><g><path d="M6,41c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S9.309,41,6,41z M6,31c-2.206,0-4,1.794-4,4s1.794,4,4,4s4-1.794,4-4    S8.206,31,6,31z"></path><path d="M42,48c-0.552,0-1-0.447-1-1V26c0-0.553,0.448-1,1-1s1,0.447,1,1v21C43,47.553,42.552,48,42,48z"></path><path d="M42,17c-0.552,0-1-0.447-1-1V1c0-0.553,0.448-1,1-1s1,0.447,1,1v15C43,16.553,42.552,17,42,17z"></path><path d="M42,27c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S45.309,27,42,27z M42,17c-2.206,0-4,1.794-4,4s1.794,4,4,4    s4-1.794,4-4S44.206,17,42,17z"></path><path d="M24,48c-0.552,0-1-0.447-1-1V21c0-0.553,0.448-1,1-1s1,0.447,1,1v26C25,47.553,24.552,48,24,48z"></path><path d="M24,12c-0.552,0-1-0.447-1-1V1c0-0.553,0.448-1,1-1s1,0.447,1,1v10C25,11.553,24.552,12,24,12z"></path><path d="M24,22c-3.309,0-6-2.691-6-6s2.691-6,6-6c3.309,0,6,2.691,6,6S27.309,22,24,22z M24,12c-2.206,0-4,1.794-4,4s1.794,4,4,4    s4-1.794,4-4S26.206,12,24,12z"></path></g></g></svg>
-      </span>
-      <span class="sidebar_more">
-          {{ 'collections.sidebar.sidebar_more' | t }}
-      </span>
-  </div>
-  {% endif %}
-  <div class="sidebar {% if block.settings.sidebar_style == 'style_2' %}layout-sidebar--skin2{% endif %}" id="main-collection-filters" data-id="{{ section.id }}">
+  
+  <div class="sidebar" id="main-collection-filters" data-id="{{ section.id }}">
     
     {%- assign total_active_values = 0 -%}
     <collection-filters-form class="facets small-hide">
@@ -94,8 +77,9 @@
           </a>
           
 
-          {% if block.settings.enable_categories %}
-          <div class="widget sidebar-links" data-has-collapse>
+          
+          
+        	<div class="widget sidebar-links" data-has-collapse>
               {% if block.settings.title_categories != blank %}
               <div class="widget-title">
                   <h3 class="sidebar-title">
@@ -158,7 +142,10 @@
                   </ul>
               </div>
           </div>
-          {% endif %}
+          
+        
+        
+        
           <div class="sidebar-filter" data-has-collapse>
               {% if settings.category_layout == "right_sidebar" or settings.category_layout == "express_order" or template.suffix == 'express-order' or settings.category_layout == "mansory" or template.suffix == 'mansory' or settings.category_layout == "full_with" or template.suffix == 'fullwidth' or template.suffix == 'right-sidebar' or settings.category_layout == "with_banner" or template.suffix == 'with-banner' %}
                 <a href="javascript:void(0)" title="{{ 'cart.general.close_cart' | t }}" class="close-sidebar close">
@@ -382,7 +369,8 @@
     </collection-filters-form>
   </div>
   <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script> 
-  {% endif %}
+  
+        
   <style> 
       @media (max-width: 1199px) {  
           {% unless settings.category_layout == "right_sidebar" or template.suffix == 'right-sidebar' %}
@@ -500,7 +488,7 @@
     {% endif %}
     {% endif %}
   </style>
-</div>
+
 
 
             
