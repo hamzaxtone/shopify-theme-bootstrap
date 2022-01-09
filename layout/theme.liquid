@@ -111,6 +111,8 @@
        
         {% if template contains 'collection' %}
         	<div class="page_title"><span>Robust Ecommerce Store</span></div>
+        {% elsif template contains 'page' %}
+        	<div class="page_title"><span>{{ page.title }}</span></div>
         {% endif %}
         
         {% unless template == 'index' or template == 'list-collections' %}
