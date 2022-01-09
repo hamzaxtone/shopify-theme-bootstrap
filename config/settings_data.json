@@ -1414,6 +1414,13 @@
           "margin_top": 0,
           "margin_bottom": 0
         }
+      },
+      "become-a-dealer-template": {
+        "type": "become-a-dealer-template",
+        "settings": {
+          "max_width": "1072",
+          "heading_size": "display-5"
+        }
       }
     },
     "content_for_index": [
