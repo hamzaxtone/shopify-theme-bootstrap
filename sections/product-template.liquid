@@ -402,11 +402,12 @@
 </ul>
 
 <div class="tab-content">
-  <div id="home" class="tab-pane fade in active">
-    <h3>HOME</h3>
-    <p>Some content.</p>
-  </div>
-          </div>
+  {% for block in section.blocks %}
+    <div id="{{ block.id }}" class="tab-pane fade {% if forloop.index > 1 %}in active{% endif %}">
+      {{ product.description | replace: '<img ', '<img class="img-fluid" ' }}
+    </div>
+  {% endfor %}
+</div>
         	<!-- Product accordion -->
                 <div 
                     id="product-accordion" 
