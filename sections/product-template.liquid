@@ -328,14 +328,14 @@
                 <!-- Type -->
                 {% if section.settings.show_type and product.type != blank %}
                     <p class="product-type text-muted mb-3">
-                        {{ 'product.type' | t }}: {{ product.type }}
+                        {{ 'product.type' | t }}: <span>{{ product.type }}</span>
                     </p>
                 {% endif %}
 
                 <!-- SKU -->
                 {% if section.settings.show_sku and current_variant.sku != blank %}
                     <p class="product-sku text-muted mb-3">
-                        {{ 'product.sku' | t }}: {{ current_variant.sku }}
+                      {{ 'product.sku' | t }}: <span>{{ current_variant.sku }}</span>span>
                     </p>
                 {% endif %}
               
@@ -351,7 +351,7 @@
                             {% for tag in product.tags %}
                                 {% unless tag contains '__' %}
                                     <li class="list-inline-item mr-1">
-                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="btn btn-light btn-sm" title=' }}
+                                        {{ tag | link_to_tag: tag | replace: 'title=', 'class="" title=' }}
                                     </li>
                                 {% endunless %}
                             {% endfor %}
