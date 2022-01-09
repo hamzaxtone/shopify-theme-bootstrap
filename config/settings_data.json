@@ -1436,8 +1436,8 @@
             "type": "image",
             "settings": {
               "img": "shopify:\/\/shop_images\/Wheel_Sazuka.png",
-              "url": "",
-              "caption": "",
+              "url": "#0",
+              "caption": "OKAYAMA CHR\/POL\/RAW\/CHR",
               "caption_size": "h6"
             }
           },
