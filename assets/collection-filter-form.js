@@ -67,7 +67,7 @@ class CollectionFiltersForm extends HTMLElement {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
       const filterDataUrl = element => element.url === url;
 
-      // console.log(url);
+      console.log(url);
 
       this.filterData.some(filterDataUrl) ?
         this.renderSectionFromCache(filterDataUrl, section, event) :
