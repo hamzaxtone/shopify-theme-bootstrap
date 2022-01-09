@@ -92,11 +92,7 @@
                   <ul>
                       {% if 1 == 1 %}
                       {% for category in collections %}
-                      <li>
-                          <a href="{{ category.url }}" {% if collection.handle == category.handle %}class="active"{% endif %}>
-                              {% render 'multilang' with category.title %}
-                          </a>
-                      </li>     
+                      <li>{{ collection.title | link_to: collection.url }}</li>    
                       {% endfor %}
                      
                       {% elsif block.settings.style_categories == 'style_main_menu' %}
