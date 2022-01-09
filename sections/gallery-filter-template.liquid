@@ -37,6 +37,27 @@
             </div>
         {% endif %}
 
+      <div class="galler-filter">
+        <label>Sort By: </label>
+      	<ul>
+          <li>
+            <select name="wheel_model">
+              <option>Wheel Model</option>
+            </select>
+          </li>
+          <li>
+            <select name="wheel_finish">
+              <option>Finish</option>
+            </select>
+          </li>
+          <li>
+            <select name="wheel_color">
+              <option>Color</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      
         <ul class="gallery-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
             {% assign limit = section.settings.limit | plus: 0 %}
 
