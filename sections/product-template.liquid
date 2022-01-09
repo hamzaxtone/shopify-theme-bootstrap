@@ -351,7 +351,7 @@
                         <ul class="list-unstyled list-inline m-0">
                             {% for tag in product.tags %}
                                 {% unless tag contains '__' %}
-                                    <li class="list-inline-item mr-1">
+                                    <li class="list-inline-item text-muted mr-1">
                                         {{ tag | link_to_tag: tag | replace: 'title=', 'class="" title=' }}
                                     </li>
                                 {% endunless %}
