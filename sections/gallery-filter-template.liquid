@@ -120,10 +120,10 @@
 	$( "select" ).change(function() {
       var selectedEventType = this.options[this.selectedIndex].value;
       if (selectedEventType == "all") {
-        $('.gallery-grid .gallery-item').removeClass('hidden');
+        $('.gallery-grid .gallery-item').removeClass('hidden').fadeIn();
       } else {
-        $('.gallery-grid .gallery-item').addClass('hidden');
-        $('.gallery-grid .gallery-item[data-wheel_model="' + selectedEventType + '"]').removeClass('hidden');
+        $('.gallery-grid .gallery-item').addClass('hidden').fadeOut();
+        $('.gallery-grid .gallery-item[data-wheel_model="' + selectedEventType + '"]').removeClass('hidden').fadeIn();
       }
 	});
 </script>
