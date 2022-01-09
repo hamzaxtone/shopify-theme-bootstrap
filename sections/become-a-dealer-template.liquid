@@ -125,6 +125,26 @@ we feel will be exemplary representatives of our brand.</p>
                     {%- endif -%}
                 </textarea>
             </div>
+              <div class="form-group col-md-12">
+                <label class="form-control">Brick and mortar store?</label>
+                <label>Yes 
+                	<input 
+                        class="form-control" 
+                        type="radio" 
+                        name="contact[Brick_Mortar_Store]" 
+                        id="ContactForm_yes" 
+                        value="Yes"   >
+                </label>
+                <label>No 
+                	<input 
+                        class="form-control" 
+                        type="radio" 
+                        name="contact[Brick_Mortar_Store]" 
+                        id="ContactForm_no" 
+                        value="No"   >
+                </label>
+                    
+                </div>
               
               
               
@@ -148,7 +168,7 @@ we feel will be exemplary representatives of our brand.</p>
             <input 
                 type="submit" 
                 class="btn btn-primary" 
-                value="{{ 'general.contact.send' | t }}">
+                value="Submit Now">
         {% endform %}
 
     </div>
