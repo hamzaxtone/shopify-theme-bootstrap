@@ -531,6 +531,16 @@
                                 aria-hidden="true">
                                 {% render 'icon-list' with size: 22 %}
                             </button>
+                  			<button
+                                id="collection-layout-btn"
+                                class="btn btn-transparent ms-3"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" 
+                                data-value="layout-grid"
+                                title="{{ 'collection.layout_grid' | t }}"
+                                aria-hidden="true">
+                                {% render 'icon-grid' with size: 22 %}
+                            </button>
                         {% else %}
                             <button
                                 id="collection-layout-btn"
