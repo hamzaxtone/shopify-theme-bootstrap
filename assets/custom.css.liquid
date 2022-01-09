@@ -319,19 +319,28 @@ div#shopify-section-list-collections-template {margin-top: 50px;}
     line-height: 24px;
     font-weight: bold;
     position: relative;
-    display: inline-block;
+    display: block;
   margin-bottom: 15px;
 }
-
+.filter-collection .title-heading:before {
+	position: absolute;
+    content: '';
+    background: #9F9F9F;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
 .filter-collection .title-heading:after {
     position: relative;
     content: '';
     background: #000;
-    width: 50%;
+    width: 40%;
     height: 2px;
     display: block;
   margin-top: 15px;
+  z-index:1;
 }
+
 .filter-collection ul li a,.filter-collection ul li label {
     font-size: 15px;
     line-height: 24px;
