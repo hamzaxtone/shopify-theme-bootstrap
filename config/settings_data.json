@@ -1088,7 +1088,7 @@
           "7fd29388-510c-438c-a0f8-0abea54b34ed": {
             "type": "image",
             "settings": {
-              "img": "shopify:\/\/shop_images\/image-column-overlay_ae2f12b8-6fb5-4e56-af85-868fcfa06358.png",
+              "img": "shopify:\/\/shop_images\/Rectangle_7.png",
               "url": "",
               "caption": "",
               "caption_size": "h6"
@@ -1419,6 +1419,13 @@
         "type": "become-a-dealer-template",
         "settings": {
           "max_width": "1072",
+          "heading_size": "display-5"
+        }
+      },
+      "wheel-configurator-template": {
+        "type": "wheel-configurator-template",
+        "settings": {
+          "max_width": "",
           "heading_size": "display-5"
         }
       }
