@@ -317,6 +317,7 @@
 
                 {% endform %}
               
+              <div class="clearfix border-top"></div>
               <!-- Vendor -->
                 {% if section.settings.show_vendor and product.vendor != blank %}
                     <p class="product-vendor text-muted mb-3">
@@ -341,7 +342,7 @@
               <!-- Tags -->
                 {% if section.settings.show_tags and product.tags.size > 0 %}
                     <div
-                        class="product-tags d-flex align-items-center justify-content-end border-top pt-3 mb-4" 
+                        class="product-tags d-flex align-items-center" 
                         style="line-height: normal;">
                         <p class="mb-0 me-2 small text-muted">
                             {{ 'product.tagged' | t }}:
