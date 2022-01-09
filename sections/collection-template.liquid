@@ -63,6 +63,8 @@
             <ul>
 {% for option in product.options %}
   {% if option == "Color" or option == "Colour" %}
+              
+              asdasda da
     {% assign index = forloop.index0 %}
     {% assign colorlist = '' %}
     {% assign color = '' %}
@@ -83,7 +85,22 @@
 </ul>
             
             
-            
+              {% for product in collection.products %}
+    {% for variant in product.variants %} 
+    {% if has_sidebar %}
+      {% assign grid_item_width = 'large--one-quarter medium--one-third small--one-half' %}
+    {% else %}
+      {% assign grid_item_width = 'large--one-fifth medium--one-third small--one-half' %}
+    {% endif %}
+    {% include 'product-grid-item' %}
+
+  {% else %}
+
+    <div class="grid-item">
+      <p>{{ 'collections.general.no_matches' | t }}</p>
+    </div>
+   {% endfor %}
+  {% endfor %}
             
             
             
