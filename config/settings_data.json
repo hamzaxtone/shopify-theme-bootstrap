@@ -957,6 +957,7 @@
           },
           "a002179c-cc4b-44a0-b368-e843a497174b": {
             "type": "richtext",
+            "disabled": true,
             "settings": {
               "title": "Rich text",
               "description": "<p>Feel free to create additional blocks like this for <strong>Shipping, Payments, etc<\/strong> through the Shopify Theme editor. Also, you may easily adjust their order by dragging and dropping.<\/p>"
