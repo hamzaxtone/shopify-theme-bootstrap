@@ -1428,6 +1428,113 @@
           "max_width": "",
           "heading_size": "display-5"
         }
+      },
+      "gallery-filter-template": {
+        "type": "gallery-filter-template",
+        "blocks": {
+          "e854505f-5d01-4cdc-8ec7-fdbf34d81eed": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Wheel_Sazuka.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "4c98df4e-b698-4fd9-bd24-7a9dcbef2327": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Wheel_Ring.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "2cb6bb08-3e44-47ff-8be4-038880161424": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Imola_MonoC.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "b69271aa-9f2f-4c60-82be-2e42e6c19957": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Kokoro_monoc.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "b967c928-09b1-4768-ba51-27ac2d8ec62b": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Wheel_Koru.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "fe390eac-4fab-46de-ac7b-54819934e53d": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Sakura_MonoC.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          },
+          "c48d9876-85c2-430a-bac3-21e9e514d3fd": {
+            "type": "image",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Wheel_asan.png",
+              "url": "",
+              "caption": "",
+              "caption_size": "h6"
+            }
+          }
+        },
+        "block_order": [
+          "e854505f-5d01-4cdc-8ec7-fdbf34d81eed",
+          "4c98df4e-b698-4fd9-bd24-7a9dcbef2327",
+          "2cb6bb08-3e44-47ff-8be4-038880161424",
+          "b69271aa-9f2f-4c60-82be-2e42e6c19957",
+          "b967c928-09b1-4768-ba51-27ac2d8ec62b",
+          "fe390eac-4fab-46de-ac7b-54819934e53d",
+          "c48d9876-85c2-430a-bac3-21e9e514d3fd"
+        ],
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "container": true,
+          "light_bg": false,
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "subheading_size": "",
+          "limit": "6",
+          "img_width": "410",
+          "img_height": "273",
+          "img_thumbnail": false,
+          "overlay_style": "overlay-dark",
+          "overlay_opacity": "",
+          "overlay_blur": false,
+          "row_": 2,
+          "row_sm": 2,
+          "row_md": 2,
+          "row_lg": 4,
+          "row_xl": 4,
+          "row_xxl": 4,
+          "gutter_mobile": 3,
+          "gutter_tablet": 3,
+          "gutter_desktop": 4,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "margin_top": 0,
+          "margin_bottom": 7,
+          "classes": ""
+        }
       }
     },
     "content_for_index": [
