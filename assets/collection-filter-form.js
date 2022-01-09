@@ -125,6 +125,8 @@ class CollectionFiltersForm extends HTMLElement {
       .parseFromString(html, 'text/html')
       .getElementById('CollectionProductGrid').innerHTML;
 
+console.log(html);
+
     document.getElementById('CollectionProductGrid').innerHTML = innerHTML;
     // if (window.innerWidth > 1200 && document.querySelectorAll('.append--toolbar .toolbar').length > 0) {
     //   document.getElementById('CollectionProductGrid').querySelector('.toolbar').remove();
