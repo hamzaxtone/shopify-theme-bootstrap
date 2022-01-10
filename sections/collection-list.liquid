@@ -51,7 +51,7 @@
                         <!-- Collection Image -->
                         {% assign img_size = section.settings.img_width | append: 'x' | append: section.settings.img_height %}
                         <img 
-                            class="collection-list-item-img img-fluid mb-3 {% if section.settings.img_thumbnail %}img-thumbnail{% else %}rounded{% endif %}"
+                            class="collection-list-item-img img-fluid mb-3 {% if section.settings.img_thumbnail %}img-thumbnail{% else %}{% endif %}"
                             src="{{ image | img_url: img_size, crop: 'center' }}"
                             alt="{{ image.alt | escape }}" 
                             width="{{ section.settings.img_width }}"
@@ -100,7 +100,7 @@
                         <!-- Collection Image -->
                         {% assign img_size = section.settings.img_width | append: 'x' | append: section.settings.img_height %}
                         <img 
-                            class="collection-list-item-img img-fluid mb-3 {% if section.settings.img_thumbnail %}img-thumbnail{% else %}rounded{% endif %}"
+                            class="collection-list-item-img img-fluid mb-3 {% if section.settings.img_thumbnail %}img-thumbnail{% else %}{% endif %}"
                             src="{{ image | img_url: img_size, crop: 'center' }}"
                             alt="{{ image.alt | escape }}" 
                             width="{{ section.settings.img_width }}"
