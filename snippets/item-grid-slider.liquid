@@ -14,7 +14,7 @@
   
   
    <!-- Indicators -->
-        {% if section.settings.indicators %}
+       
             <ol class="carousel-indicators mb-3">
                 {% for block in section.blocks %}
                     <li
@@ -24,7 +24,7 @@
                     </li>
                 {% endfor %}
             </ol>
-        {% endif %}
+        
   
     {% for item in items limit: limit %}
         {% if item.object_type == 'product' %}
