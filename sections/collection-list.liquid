@@ -106,7 +106,7 @@
                             width="{{ section.settings.img_width }}"
                             height="{{ section.settings.img_height }}" 
                             loading="lazy">
-                        
+                        <div class="collection-meta">
                         <!-- Collection title -->
                         <h3 class="collection-list-item-title h6 mb-1">
                             <span>{{ collection.title }}</span>
@@ -122,6 +122,8 @@
                                 </small>
                             {% endif %}
                         </h3>
+                          <span class="btn-url">Shop Now</span>
+                      </div>
                     </a>
                 </li>
             {% else %}
