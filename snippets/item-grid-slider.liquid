@@ -179,4 +179,32 @@
     {% endfor %}
 
 </ul>
+  <a 
+                class="carousel-control-prev" 
+                href="#{{ 'carousel-' | append: section.id }}" 
+                role="button" 
+                data-bs-slide="prev">
+                <span 
+                    class="carousel-control-prev-icon" 
+                    aria-hidden="true">
+                </span>
+                <span 
+                    class="visually-hidden">
+                    {{ 'general.previous' | t }}
+                </span>
+            </a>
+            <a 
+                class="carousel-control-next" 
+                href="#{{ 'carousel-' | append: section.id }}" 
+                role="button" 
+                data-bs-slide="next">
+                <span 
+                    class="carousel-control-next-icon" 
+                    aria-hidden="true">
+                </span>
+                <span 
+                    class="visually-hidden">
+                    {{ 'general.next' | t }}
+                </span>
+            </a>
   </div>
