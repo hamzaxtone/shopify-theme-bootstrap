@@ -21,7 +21,7 @@
    <!-- Indicators -->
        
             <ol class="carousel-indicators mb-3">
-                {% for block in section.blocks %}
+                {% for item in items limit: limit %}
                     <li
                         data-bs-target="#{{ 'carousel-' | append: section.id }}"
                         data-bs-slide-to="{{ forloop.index0 }}"
