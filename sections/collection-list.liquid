@@ -35,7 +35,7 @@
 
       <div class="row">
       <!-- Collection list -->
-        <ul class="collection-list-grid list-unstyled col-12 col-md-6 row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+        <ul class="collection-list-grid list-unstyled col-12 col-md-6">
 
             {% for block in section.blocks limit: 1 %}
                 {% assign collection = collections[block.settings.collection] %}
@@ -43,7 +43,7 @@
 
                 <!-- Collection -->
                 <li 
-                    class="collection-list-item pb-5 text-center">
+                    class="col-12 collection-list-item pb-5 text-center">
                     <a 
                         class="d-block text-decoration-none" 
                         href="{{ collection.url }}">
@@ -80,7 +80,7 @@
       </ul>
       
         <!-- Collection list -->
-        <ul class="collection-list-grid list-unstyled col-12 col-md-6 row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+        <ul class="collection-list-grid list-unstyled col-12 col-md-6 row">
 
             {% for block in section.blocks offset: 1 %}
                 {% assign collection = collections[block.settings.collection] %}
@@ -88,7 +88,7 @@
 
                 <!-- Collection -->
                 <li 
-                    class="collection-list-item pb-5 text-center">
+                    class="col-12 col-md-6 collection-list-item pb-5 text-center">
                     <a 
                         class="d-block text-decoration-none" 
                         href="{{ collection.url }}">
