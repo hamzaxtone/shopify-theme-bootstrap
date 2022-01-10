@@ -43,6 +43,22 @@
             <ul
                 id="navbar-icons-nav" 
                 class="navbar-nav align-items-center">
+              <li
+                        id="search-nav-item"
+                        class="nav-item dropdown">
+                        <a 
+                            id="wishlist-nav-link"
+                            class="nav-link d-flex" 
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            role="button">
+                            {% render 'icon-heart' size: 22 %}
+                            <span class="visually-hidden">
+                                {{ 'general.navbar.search' | t }}
+                            </span>
+                        </a>
+                    </li>
                 {% if section.settings.show_search %}
                     <li
                         id="search-nav-item"
