@@ -1613,7 +1613,7 @@
         "settings": {
           "heading": "",
           "subheading": "",
-          "container": true,
+          "container": false,
           "light_bg": false,
           "heading_size": "h2",
           "heading_alignment": "text-center",
