@@ -59,7 +59,23 @@
                             </span>
                         </a>
                     </li>
-                {% if section.settings.show_search %}
+                
+                {% if section.settings.show_account and shop.customer_accounts_enabled %}
+                    <li 
+                        id="account-nav-item"
+                        class="nav-item d-none d-{{ section.settings.breakpoint }}-block">
+                        <a 
+                            class="nav-link d-flex {% if template.name == 'account' or template.name == 'login' %}active{% endif %}" 
+                            href="{{ routes.account_url }}"
+                            {% if template.name == 'account' or template.name == 'login' %}aria-current="page"{% endif %}>
+                            {% render 'icon-account' size: 22 %}
+                            <span class="visually-hidden">
+                                {{ 'general.navbar.account' | t }}
+                            </span>
+                        </a>
+                    </li>
+                {% endif %}
+              {% if section.settings.show_search %}
                     <li
                         id="search-nav-item"
                         class="nav-item dropdown">
@@ -81,21 +97,6 @@
                             aria-labelledby="search-nav-link">
                             {% render 'mini-search' %}
                         </div>
-                    </li>
-                {% endif %}
-                {% if section.settings.show_account and shop.customer_accounts_enabled %}
-                    <li 
-                        id="account-nav-item"
-                        class="nav-item d-none d-{{ section.settings.breakpoint }}-block">
-                        <a 
-                            class="nav-link d-flex {% if template.name == 'account' or template.name == 'login' %}active{% endif %}" 
-                            href="{{ routes.account_url }}"
-                            {% if template.name == 'account' or template.name == 'login' %}aria-current="page"{% endif %}>
-                            {% render 'icon-account' size: 22 %}
-                            <span class="visually-hidden">
-                                {{ 'general.navbar.account' | t }}
-                            </span>
-                        </a>
                     </li>
                 {% endif %}
                 <li 
