@@ -11,6 +11,21 @@
 
 <ul class="carousel slide multi-item-carousel items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
 <div class="carousel-inner">
+  
+  
+   <!-- Indicators -->
+        {% if section.settings.indicators %}
+            <ol class="carousel-indicators mb-3">
+                {% for block in section.blocks %}
+                    <li
+                        data-bs-target="#{{ 'carousel-' | append: section.id }}"
+                        data-bs-slide-to="{{ forloop.index0 }}"
+                        class="{% if forloop.first == true %} active {% endif %}">
+                    </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+  
     {% for item in items limit: limit %}
         {% if item.object_type == 'product' %}
             {% assign product = item %}
