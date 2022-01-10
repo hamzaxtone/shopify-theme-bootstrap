@@ -9,14 +9,18 @@
 {% assign gutter_tablet  = section.settings.gutter_tablet | prepend: 'g-sm-' %}
 {% assign gutter_desktop = section.settings.gutter_desktop | prepend: 'g-xl-' %}
 
-<ul 
-    data-bs-ride="carousel"
+<div
+     data-bs-ride="carousel"
         data-bs-pause="hover"
         data-bs-interval="6000"
     id="{{ 'carousel-' | append: section.id }}"
-    class="-carousel -slide multi-item-carousel items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
-<div class="carousel-inner">
-  
+     class="carousel slide"
+     >
+
+
+<ul 
+    
+    class="carousel-inner multi-item-carousel items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">  
   
    <!-- Indicators -->
        
@@ -36,7 +40,7 @@
             {% assign product = item %}
 
             <li 
-                class="product-item col pb-5 text-center {% if forloop.first == true %}active{% endif %}">
+                class="carousel-item product-item col pb-5 text-center {% if forloop.first == true %}active{% endif %}">
                 
                 <!-- Product Image -->
                 <a 
@@ -173,5 +177,6 @@
         {% endfor %}
 
     {% endfor %}
-  </div>
+
 </ul>
+  </div>
