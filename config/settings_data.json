@@ -49,10 +49,20 @@
               "title_size": "h3",
               "description": "<p>Lorem Ipsum is simply dummy text<\/p>"
             }
+          },
+          "d849177d-1033-4719-8146-1d745abf5c04": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner.png",
+              "title": "HERITAGE WHEEL TIMELESS DESIGN 2",
+              "title_size": "h3",
+              "description": "<p>sa asdadasdas d<\/p>"
+            }
           }
         },
         "block_order": [
-          "16124340768622aa4c-0"
+          "16124340768622aa4c-0",
+          "d849177d-1033-4719-8146-1d745abf5c04"
         ],
         "settings": {
           "container": false,
@@ -98,7 +108,7 @@
           "row_md": 3,
           "row_lg": 3,
           "row_xl": 4,
-          "row_xxl": 4,
+          "row_xxl": 3,
           "gutter_mobile": 3,
           "gutter_tablet": 3,
           "gutter_desktop": 4,
