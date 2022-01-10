@@ -1568,11 +1568,83 @@
           "margin_bottom": 7,
           "classes": ""
         }
+      },
+      "16418457389039b385": {
+        "type": "collection-list",
+        "blocks": {
+          "ae644825-ef84-4fee-9600-1c3d47564bdc": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "28d9ec78-941d-477c-b28e-facb26b0df86": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "fb01979d-9cc9-4d21-8e84-8e5ef1c60994": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "14c54850-f669-48d6-9d9d-7a52a8e14a42": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "a1ecccc9-710a-4a53-bba9-750e13c60812": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "ae644825-ef84-4fee-9600-1c3d47564bdc",
+          "28d9ec78-941d-477c-b28e-facb26b0df86",
+          "fb01979d-9cc9-4d21-8e84-8e5ef1c60994",
+          "14c54850-f669-48d6-9d9d-7a52a8e14a42",
+          "a1ecccc9-710a-4a53-bba9-750e13c60812"
+        ],
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "container": true,
+          "light_bg": false,
+          "heading_size": "h2",
+          "heading_alignment": "text-center",
+          "subheading_size": "",
+          "show_view_all_btn": false,
+          "view_all_btn_color": "btn-secondary",
+          "view_all_btn_size": "",
+          "img_width": "480",
+          "img_height": "480",
+          "img_thumbnail": true,
+          "show_products_count": true,
+          "row_": 2,
+          "row_sm": 2,
+          "row_md": 2,
+          "row_lg": 4,
+          "row_xl": 4,
+          "row_xxl": 5,
+          "gutter_mobile": 3,
+          "gutter_tablet": 3,
+          "gutter_desktop": 4,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "margin_top": 0,
+          "margin_bottom": 5
+        }
       }
     },
     "content_for_index": [
       "16124340768622aa4c",
       "161313402064cf991c",
+      "16418457389039b385",
       "164166846465a1cf74",
       "161243980752a5ed7a",
       "164167052216794509",
