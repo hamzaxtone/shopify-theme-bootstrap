@@ -16,8 +16,8 @@
 
 <section 
     id="logo-list-{{ section.id }}" 
-    class="logo-list {% if section.settings.light_bg %}bg-light{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }}">
-    <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %}">
+    class="logo-list {% if section.settings.light_bg %}bg-light{% endif %} {{ pt }} {{ pb }} {{ mt }} {{ mb }} {% if section.settings.classes %}{{section.settings.classes}}{% endif %}">
+    <div class="{% if section.settings.container %}container{% else %}container-fluid{% endif %} ">
 
         {% if section.settings.heading != blank or section.settings.subheading != blank %}
             <div class="heading-wrapper mb-3 overflow-hidden">
