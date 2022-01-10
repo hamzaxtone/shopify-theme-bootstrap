@@ -44,7 +44,7 @@
                 id="navbar-icons-nav" 
                 class="navbar-nav align-items-center">
               <li
-                        id="search-nav-item"
+                        id="wishlist-nav-item"
                         class="nav-item dropdown">
                         <a 
                             id="wishlist-nav-link"
@@ -73,30 +73,6 @@
                                 {{ 'general.navbar.account' | t }}
                             </span>
                         </a>
-                    </li>
-                {% endif %}
-              {% if section.settings.show_search %}
-                    <li
-                        id="search-nav-item"
-                        class="nav-item dropdown">
-                        <a 
-                            id="search-nav-link"
-                            class="nav-link d-flex {% if template.name == 'search' %}active{% endif %}" 
-                            href="#"
-                            data-bs-toggle="dropdown"
-                            {% if template.name == 'search' %}aria-current="page"{% endif %}
-                            aria-expanded="false"
-                            role="button">
-                            {% render 'icon-search' size: 22 %}
-                            <span class="visually-hidden">
-                                {{ 'general.navbar.search' | t }}
-                            </span>
-                        </a>
-                        <div
-                            class="dropdown-menu dropdown-menu-end p-3 {{ dropdown_style }}"
-                            aria-labelledby="search-nav-link">
-                            {% render 'mini-search' %}
-                        </div>
                     </li>
                 {% endif %}
                 <li 
@@ -128,6 +104,30 @@
                         {% render 'mini-cart' %}
                     </div>
                 </li>
+              {% if section.settings.show_search %}
+                    <li
+                        id="search-nav-item"
+                        class="nav-item dropdown">
+                        <a 
+                            id="search-nav-link"
+                            class="nav-link d-flex {% if template.name == 'search' %}active{% endif %}" 
+                            href="#"
+                            data-bs-toggle="dropdown"
+                            {% if template.name == 'search' %}aria-current="page"{% endif %}
+                            aria-expanded="false"
+                            role="button">
+                            {% render 'icon-search' size: 22 %}
+                            <span class="visually-hidden">
+                                {{ 'general.navbar.search' | t }}
+                            </span>
+                        </a>
+                        <div
+                            class="dropdown-menu dropdown-menu-end p-3 {{ dropdown_style }}"
+                            aria-labelledby="search-nav-link">
+                            {% render 'mini-search' %}
+                        </div>
+                    </li>
+                {% endif %}
             </ul>
         </div>
 
