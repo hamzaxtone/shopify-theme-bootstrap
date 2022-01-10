@@ -33,6 +33,52 @@
 
         </div>
 
+      
+      <!-- Collection list -->
+        <ul class="collection-list-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+
+            {% for block in section.blocks limit: 1 %}
+                {% assign collection = collections[block.settings.collection] %}
+                {% assign image = collection.image | default: collection.products.first.featured_image %}
+
+                <!-- Collection -->
+                <li 
+                    class="collection-list-item pb-5 text-center">
+                    <a 
+                        class="d-block text-decoration-none" 
+                        href="{{ collection.url }}">
+                            
+                        <!-- Collection Image -->
+                        {% assign img_size = section.settings.img_width | append: 'x' | append: section.settings.img_height %}
+                        <img 
+                            class="collection-list-item-img img-fluid mb-3 {% if section.settings.img_thumbnail %}img-thumbnail{% else %}rounded{% endif %}"
+                            src="{{ image | img_url: img_size, crop: 'center' }}"
+                            alt="{{ image.alt | escape }}" 
+                            width="{{ section.settings.img_width }}"
+                            height="{{ section.settings.img_height }}" 
+                            loading="lazy">
+                        
+                        <!-- Collection title -->
+                        <h3 class="collection-list-item-title h6 mb-1">
+                            <span>{{ collection.title }}</span>
+                            
+                            <!-- Product count -->
+                            {% if section.settings.show_products_count %}
+                                <small>
+                                    {% if  collection.products.size >= 50 %}
+                                        (50+)
+                                    {% else %}
+                                        ({{ collection.products.size }})
+                                    {% endif %}
+                                </small>
+                            {% endif %}
+                        </h3>
+                    </a>
+                </li>
+           
+          {% endfor %}
+      </ul>
+      
         <!-- Collection list -->
         <ul class="collection-list-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
 
