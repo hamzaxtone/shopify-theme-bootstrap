@@ -16,13 +16,7 @@
     id="{{ 'carousel-' | append: section.id }}"
      class="carousel slide"
      >
-
-
-<ul 
-    
-    class="carousel-inner multi-item-carousel items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">  
-  
-   <!-- Indicators -->
+<!-- Indicators -->
        
             <ol class="carousel-indicators mb-3">
                 {% for item in items limit: limit %}
@@ -33,6 +27,12 @@
                     </li>
                 {% endfor %}
             </ol>
+
+<ul 
+    
+    class="carousel-inner multi-item-carousel items-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">  
+  
+   
         
   
     {% for item in items limit: limit %}
