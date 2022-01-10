@@ -1587,19 +1587,19 @@
           "fb01979d-9cc9-4d21-8e84-8e5ef1c60994": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "lorem-lipsum3"
             }
           },
           "14c54850-f669-48d6-9d9d-7a52a8e14a42": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "lorem-lipsum4"
             }
           },
           "a1ecccc9-710a-4a53-bba9-750e13c60812": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "lorem-lipsum5"
             }
           }
         },
