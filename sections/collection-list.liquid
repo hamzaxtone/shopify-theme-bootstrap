@@ -33,9 +33,9 @@
 
         </div>
 
-      
+      <div class="row">
       <!-- Collection list -->
-        <ul class="collection-list-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+        <ul class="collection-list-grid list-unstyled col-12 col-md-6 row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
 
             {% for block in section.blocks limit: 1 %}
                 {% assign collection = collections[block.settings.collection] %}
@@ -80,7 +80,7 @@
       </ul>
       
         <!-- Collection list -->
-        <ul class="collection-list-grid list-unstyled row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
+        <ul class="collection-list-grid list-unstyled col-12 col-md-6 row {{ row_ }} {{ row_sm }} {{ row_md }} {{ row_lg }} {{ row_xl }} {{ row_xxl }} {{ gutter_mobile }} {{ gutter_tablet }} {{ gutter_desktop }}">
 
             {% for block in section.blocks offset: 1 %}
                 {% assign collection = collections[block.settings.collection] %}
@@ -140,7 +140,8 @@
 
             {% endfor %}
         </ul>
-
+</div>
+        
         <!-- 'View all' button -->
         {% if section.settings.show_view_all_btn %}
             <div class="collection-list-view-all text-center pt-0 pb-4">
