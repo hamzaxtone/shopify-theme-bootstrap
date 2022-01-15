@@ -18,6 +18,52 @@
             </h3>
           <img class="my-5" src="https://cdn.shopify.com/s/files/1/0586/8470/2877/files/wheel-tool.png" alt="wheel-tool" style="pointer-events:none;" />
         </div>
+      <div id="wheel_tool"></div>
+      <div class="leftTool col-md-6">
+        <ul id="list">
+          <!--Generated list items will go here-->
+        </ul>
+
+        <script id="template-list-item" type="text/template">
+          <li>
+            <a href="{{url}}">{{name}}</a>, {{city}}, {{state}}
+          </li>
+        </script>
+      </div>
+      <script>
+      var dataObject = {
+  0: {"id":5,"name":"Basecamp","city":"Chicago","state":"IL","url":"https://basecamp.com/"},
+  1: {"id":17,"name":"Google","city":"Mountain View","state":"CA","url":"http://google.com/"}
+};
+
+// Cache of the template
+var template = document.getElementById("template-list-item");
+// Get the contents of the template
+var templateHtml = template.innerHTML;
+// Final HTML variable as empty string
+var listHtml = "";
+
+// Loop through dataObject, replace placeholder tags
+// with actual data, and generate final HTML
+for (var key in dataObject) {
+  listHtml += templateHtml.replace(/{{id}}/g, dataObject[key]["id"])
+                          .replace(/{{name}}/g, dataObject[key]["name"])
+                          .replace(/{{city}}/g, dataObject[key]["city"])
+                          .replace(/{{state}}/g, dataObject[key]["state"])
+                          .replace(/{{url}}/g, dataObject[key]["url"]);
+}
+
+// Replace the HTML of #list with final HTML
+document.getElementById("list").innerHTML = listHtml;
+      
+      </script>
+      
+      
+      <div class="rightTool col-md-6">
+      
+      </div>
+      
+      
 
         <div 
         class="container mx-auto"
