@@ -1,0 +1,387 @@
+<style>
+		img.color-img {
+			position: absolute;
+		}
+		
+		.dskd .dashboard {
+	width: 40rem;
+	min-width: 40rem;
+}
+
+.dskd .dashboard .workspace {
+	background-color: white;
+}
+
+.dskd .dashboard .title .plate {
+	width: 100%;
+	text-transform: uppercase;
+	background-color: #5b7189;
+	color: white;
+	font-family: "inherit";
+	margin-top: -2rem;
+	height: 4rem;
+	line-height: 4rem;
+	overflow: hidden;
+}
+
+.dskd .dashboard .title .plate .title-link {
+	font-size: 1rem;
+	margin-right: 1.5rem;
+	padding: 0rem 1rem;
+	background-color: #37485a;
+	color:#fff;
+}
+
+.dskd .dashboard .title .plate .wheel-name {
+	font-size: 1.6rem;
+}
+
+.dskd .dashboard .title .plate .wheel-series {
+	padding-left: 0.5rem;
+	font-size: 1.4rem;
+}
+
+.dskd .dashboard .windows-frame {
+	position: relative;
+	min-height: 59rem;
+}
+
+.dskd .dashboard .home-window {
+	position: relative;
+}
+
+.dskd .dashboard .palette-window {
+	top: 0rem;
+	left: 40rem;
+	width: 100%;
+	z-index: 10;
+	position: absolute;
+	background-color: white;
+	min-height: 100%;
+	transition: 250ms;
+	transition-delay: 0ms;
+}
+
+.dskd .dashboard .palette-window.visible {
+	left: 0rem;
+	transition-delay: 250ms;
+}
+
+.dskd {
+   width:100vw;
+   max-width: 120rem;
+   margin: 0rem auto;
+}
+
+.dskd .frame{
+    padding: 4.0rem 1.0rem
+}
+
+
+.dskd .viewport{
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:visible;
+}
+.dskd .dashboard .home .designer {
+	padding: 1.0rem;
+}
+
+.dskd .dashboard .home .designer .actions .action-box {
+	min-height: 3.5rem;
+	padding: 0rem 0.5rem;
+	font-size: 1.2rem;
+}
+
+.dskd .dashboard .home .designer .actions .action-box:first-child {
+	flex-grow: 1;
+	padding-left: 11rem;
+}
+
+.dskd .dashboard .home .designer .actions .modify {
+	display: none;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.dskd .dashboard .home .designer .actions .all-wheels-icon {
+	fill: white;
+	margin-right: 0.5rem;
+}
+
+.dskd .dashboard .home .designer .actions .modify .edit-icon {
+	fill: white;
+	margin-left: 0.5rem;
+}
+
+.dskd .dashboard .home .designer .actions .modify.disabled .edit-icon {
+	fill: #adadad;
+}
+
+.dskd .dashboard .home .designer .options {
+	padding-top: 1rem;
+}
+.fui.flexbox{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;    
+    flex-wrap: wrap;
+}
+ .dskd .dashboard .home .designer .option {
+	width: 11rem;
+	height: 11rem;
+	padding: 0.2rem;
+}
+
+.dskd .dashboard .home .designer .option .wrapper:hover {
+	border: 2px solid #c4c4c4;
+}
+
+.dskd .dashboard .home .designer .option .wrapper {
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
+	padding-top: 0.4rem;
+	border: 2px solid transparent;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	width: 10.6rem;
+	height: 10.6rem;
+}
+
+.dskd .dashboard .home .designer .option .wrapper.selected:hover,
+.dskd .dashboard .home .designer .option .wrapper.selected {
+	border: 0.2rem solid #ff6c00;
+}
+
+.dskd .dashboard .home .designer .option .image-box {
+	width: 7.6rem;
+	height: 7.6rem;
+	position: relative;
+}
+
+.dskd .dashboard .home .designer .option .image-box .loader {
+	position: absolute;
+	width: 100%;
+	top: 0rem;
+	bottom: 0rem;
+	margin: auto;
+	z-index: 5;
+}
+
+.dskd .dashboard .home .designer .option .image-box.loaded .loader {
+	opacity: 0;
+	display: none;
+}
+
+.dskd .dashboard .home .designer .option .image-box.loaded img {
+	opacity: 1;
+}
+
+.dskd .dashboard .home .designer .option .image-box img {
+	width: 7.6rem;
+	height: 7.6rem;
+	opacity: 0;
+	transition: 500ms;
+}
+
+.dskd .dashboard .home .designer .option .label {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	padding-top: 0.2rem;
+	font-weight: bold;
+}
+
+.dskd .dashboard .palette {
+	padding: 1.0rem;
+}
+
+.dskd .dashboard .palette .hline {
+	padding: 0.5rem;
+}
+
+.dskd .dashboard .palette .color.white {
+	border: solid 0.1rem #c4c4c4;
+}
+
+.dskd .dashboard .palette .color.clear .clear-icon {
+	justify-content: center;
+	height: 100%;
+	align-content: center;
+}
+
+.dskd .dashboard .palette .color.clear .clear-icon svg {
+	fill: #a50000;
+}
+
+.dskd .dashboard .palette .color.clear .clear-icon.disabled svg {
+	fill: #adadad;
+}
+
+.dskd .dashboard .palette .finish {
+	border-radius: 0.4rem;
+	cursor: pointer;
+	margin: 0.1rem;
+	-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
+	position: relative;
+}
+
+.dskd .dashboard .palette .finish:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.dskd .dashboard .palette .color {
+	width: 5.5rem;
+	height: 3.8rem;
+}
+
+.dskd .dashboard .palette .special-finish-box {
+	padding-bottom: 0.5rem;
+}
+
+.dskd .dashboard .palette .special-finish {
+	width: 12.5rem;
+	position: relative;
+}
+
+.dskd .dashboard .palette .special-finish .icon {
+	width: 100%;
+}
+
+.dskd .dashboard .palette .special-finish img {
+	border-radius: 0.4rem;
+}
+
+.dskd .dashboard .palette .special-finish .label {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #545454;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
+}
+
+.dskd .dashboard .palette .special-finish:hover .label {
+	color: #1d1d1d;
+}
+
+.dskd .dashboard .palette .back-button-wrapper {
+	padding: 1.2rem;
+}
+
+.dskd .dashboard .palette .back-button {
+	padding: 1.0rem 1.5rem;
+	width: 100%;
+}
+
+.dskd .dashboard .palette .back-icon {
+	margin-right: 0.5rem;
+}
+
+.dskd .dashboard .palette .selected-parts {
+	max-width: 35rem;
+	min-height: 8rem;
+	flex-grow: 1;
+}
+
+.dskd .dashboard .palette .selected-parts .title {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #545454;
+	padding: 0.5rem 0rem 0.2rem 0rem;
+}
+
+.dskd .dashboard .palette .selected-parts .part {
+	width: 5.5rem;
+}
+
+.dskd .dashboard .palette .selected-parts .part .image-box {
+	text-align: center;
+}
+
+.dskd .dashboard .palette .selected-parts .part .image-box img {
+	width: 90%;
+}
+
+.dskd .dashboard .palette .selected-parts .part .label {
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #545454;
+}
+
+.dskd .dashboard .palette .selected-parts .more-parts {
+	width: 7rem;
+	height: 5.5rem;
+	line-height: 5.5rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #888;
+}
+
+.dskd .dashboard .palette .special-finish .selected-check svg,
+.dskd .dashboard .palette .finish .selected-check svg {
+	fill: #545454;
+}
+
+.dskd .dashboard .palette .finish .selected-check {
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+	border: 1px solid #545454;
+	padding: 0.2rem;
+	padding-top: 0.4rem;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-ms-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+	right: -0.2rem;
+	bottom: -0.2rem;
+}
+
+.dskd .dashboard .palette .special-finish.selected .selected-check,
+.dskd .dashboard .palette .finish.selected .selected-check {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.arrow-color{
+position: absolute;
+    z-index: 3;
+	    width: 75%;
+    height: 70%;
+}
+	</style>
