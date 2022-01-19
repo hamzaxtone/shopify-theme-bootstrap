@@ -73,7 +73,7 @@ $('.colorsWheel .color').on("click", function() {
 	var wheelID = $('.selected-parts').attr('data-id');
 	var colorHex = $(this).data('color');
 	//console.log(wheelID+" "+colorHex);
-	$('.arrow-color polygon').css('fill',colorHex);
+	$('.type-options .option[data-id="'+wheelID+'"] .arrow-color polygon').css('fill',colorHex);
 	colorImage(wheelID,colorHex);
 	
 });
