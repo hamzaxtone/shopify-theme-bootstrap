@@ -22,6 +22,8 @@
   
   {% assign getFile = line.product.metafields.my_fields.barrel_inside %}
 {{  getFile | file_url | remove: getFile }}
+  
+  {{ 'logo.png' | asset_url | img_tag: 'The Soap Store' }}
 
     <div class="product-container container">
         <div class="row">
