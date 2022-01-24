@@ -13,6 +13,9 @@
     data-product-title="{{ product.title }}"
     data-featured-image-src="{{ product.featured_image | img_url: 'master' }}"
     data-variants-json="{{ product.variants | json | escape  }}">
+  
+  
+  {{ product.metafields.my_fields.barrel_inside }}
 
     <div class="product-container container">
         <div class="row">
