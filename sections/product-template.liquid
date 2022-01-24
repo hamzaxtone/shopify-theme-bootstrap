@@ -26,9 +26,9 @@
   
   
   
-  {% assign barrel_inside = page.metafields.my_fields.barrel_inside %}
+  {% assign barrel_insideURL = page.metafields.my_fields.barrel_inside %}
 
-{% assign image = images[barrel_inside] %}
+{% assign image = images[barrel_insideURL] %}
 <img src="{{ image | img_url: '1024x' }}" alt="{{ image.alt }}">
   
   
