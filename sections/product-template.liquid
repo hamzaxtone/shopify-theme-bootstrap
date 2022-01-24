@@ -16,6 +16,8 @@
   
   
   
+  {{ line.product.metafields.my_fields.barrel_inside.src | file_url }}
+  <br>
   
   {{ line.product.metafields.my_fields.barrel_inside | file_url }}
   <br>
@@ -29,7 +31,7 @@
   {% assign barrel_insideURL = page.metafields.my_fields.barrel_inside %}
 
 {% assign image = images[barrel_insideURL] %}
-<img src="{{ image | img_url: '800x' }}" alt="{{ image.alt }}">
+<!-- <img src="{{ image | img_url: '800x' }}" alt="{{ image.alt }}"> -->
   
   
   
