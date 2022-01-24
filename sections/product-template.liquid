@@ -18,6 +18,10 @@
   
   
   {{ line.product.metafields.my_fields.barrel_inside | file_url }}
+  <br>
+  
+  {% assign getFile = line.product.metafields.my_fields.barrel_inside %}
+{{  getFile | file_url | remove: getFile }}
 
     <div class="product-container container">
         <div class="row">
