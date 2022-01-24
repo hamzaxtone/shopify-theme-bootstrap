@@ -15,9 +15,9 @@
     data-variants-json="{{ product.variants | json | escape  }}">
   
   
-  {{ product.metafields.my_fields.barrel_inside }}
   
-  {{ line.product.metafields.my_fields.barrel_inside.url | file_url }}
+  
+  {{ line.product.metafields.my_fields.barrel_inside | file_url }}
 
     <div class="product-container container">
         <div class="row">
