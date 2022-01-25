@@ -5,10 +5,10 @@
    replace:'\u0026','&'
 -%}
 
-{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
-{%- assign parts = pageQuerystring -%}
+{%- assign pageQuerystring = pageUrl | split:'=' | last -%}
+{%- assign parts = pageQuerystring | split:'&' -%}
 
-{{ pageQuerystring[1] }}
+{{ pageQuerystring }}
 
 {%- for part in parts -%}
 
