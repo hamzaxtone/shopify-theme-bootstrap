@@ -8,12 +8,17 @@
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
 
-{{ pageQuerystring }}
+
 
 {%- if parr contains "id" %}
 	 
 
-
+{% assign product = all_products[pageQuerystring] %}
+{% if product == blank %}
+    <h1>No product found</h1>
+{% else %}
+    <h1>{{ product.title }}</h1>
+{% endif %}
 
 
 <div class="tool-img">	
