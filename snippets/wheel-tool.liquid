@@ -14,12 +14,12 @@
   	position:relative
   }
   .buttons{
-    position: absolute;
+/*     position: absolute;
     left: 0;
     width: 100%;
     bottom: 450px;
     display: flex;
-    flex-flow: row;
+    flex-flow: row; */
   }
   
   .buttons button {
@@ -51,13 +51,14 @@
 
 <div class="fui flexbox dskd">
 	<div class="frame dashboard">
-	<div class="workspace">
       <div class="buttons">
     <button id="reset">Reset</button>
     <button id="addToDesign">Add to My Design</button>
     <a id="download">Download</a>
     <button id="reset">Reset</button>  
 </div>
+	<div class="workspace">
+      
 		
       {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
