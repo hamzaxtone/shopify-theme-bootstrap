@@ -1,4 +1,25 @@
 <script>
+
+  function getBase64Image(img) {
+  var canvas = document.createElement("canvas");
+  canvas.width = img.width;
+  canvas.height = img.height;
+  var ctx = canvas.getContext("2d");
+  ctx.drawImage(img, 0, 0);
+  var dataURL = canvas.toDataURL("image/png");
+  return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}
+
+  $('.tool-img.real img').each(function(){
+    var src = $(this).attr('src');
+    var imgg = $(this);
+    getBase64Image(imgg);
+    $('canvas').remove();
+  	
+  });
+var base64 = getBase64Image(document.getElementById("imageid"));
+  
+  
 function hexToRgb(color) {
     var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
     color = color.replace(shorthandRegex, function(m, r, g, b) {
