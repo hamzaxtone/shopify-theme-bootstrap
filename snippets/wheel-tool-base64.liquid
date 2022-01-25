@@ -17,13 +17,36 @@
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
-    <h1>{{ product.title }}</h1>
+
+
+{% assign barrel_insideURL = product.metafields.my_fields.barrel_inside | img_url:"master" %}
+{% assign boltsURL = product.metafields.my_fields.bolts | img_url:"master" %}
+{% assign cap_f_backgroundURL = product.metafields.my_fields.cap_f_background | img_url:"master" %}
+{% assign cap_f_logoURL = product.metafields.my_fields.cap_f_logo | img_url:"master" %}
+{% assign cap_frameURL = product.metafields.my_fields.cap_frame | img_url:"master" %}
+{% assign cap_textURL = product.metafields.my_fields.cap_text | img_url:"master" %}
+{% assign flangeURL = product.metafields.my_fields.flange | img_url:"master" %}
+{% assign flange_textURL = product.metafields.my_fields.flange_text | img_url:"master" %}
+{% assign lip_outerURL = product.metafields.my_fields.lip_outer | img_url:"master" %}
+{% assign lug_holesURL = product.metafields.my_fields.lug_holes | img_url:"master" %}
+{% assign pinstripeURL = product.metafields.my_fields.pinstripe | img_url:"master" %}
+{% assign spoke_faceURL = product.metafields.my_fields.spoke_face | img_url:"master" %}
+{% assign spoke_insertURL = product.metafields.my_fields.spoke_insert | img_url:"master" %}
+{% assign windowURL = product.metafields.my_fields.window | img_url:"master" %}
+{% assign mainURL = product.metafields.my_fields.main_image | img_url:"master" %}
+
+
+
+ 
+
+<div class="tool-img">	
+ <img src="{{ mainURL }}" alt="{{ mainURL.alt }}" class="color-img main-img" />  
+</div>
+    
 {% endif %}
 
 
-<div class="tool-img">	
-  <img src="{{ 'grey.png' | asset_url }}" class="color-img main-img" />
-</div>
+
 
 
 
