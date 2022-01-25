@@ -16,8 +16,9 @@
 {%- endif -%}
 
 
-
-{% assign product_single = get_product_by_id('7234819686557'); %}
+{% comment %}
+{% assign product_single = get_product_by_id(7234819686557) %}
+{% endcomment %}
 
 Titile : {{ product_single.title }}
 
