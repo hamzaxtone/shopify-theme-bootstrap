@@ -6,11 +6,11 @@
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
-{%- assign parr = pageUrl | split:'?' | first -%}
+{%- assign parr = pageUrl | split:'?' | last -%}
 
-{{ parr }}
+{{ pageQuerystring }}
 
-{%- if parr == "id" %}
+{%- if parr %}
 	 
 
 {% else %}
