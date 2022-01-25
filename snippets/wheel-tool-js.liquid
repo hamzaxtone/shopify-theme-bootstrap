@@ -22,7 +22,8 @@ $(document).ready(function () {
       
       
 var urll = [dataURL];
-localStorage.setItem("", JSON.stringify(urll));
+      var keke = $('.key').val();
+localStorage.setItem(keke, JSON.stringify(urll));
       
       
     }
@@ -30,22 +31,21 @@ localStorage.setItem("", JSON.stringify(urll));
   
  }); 
   
-            $("#downloadsassa").on('click', function () {
-              
-              var element = $("#tool-imgg"); // global variable
-            var getCanvas; //global variable
+$("#downloadsassa").on('click', function () {              
+            var element = $("#tool-imgg"); // global variable
+            var getCanvas;
             html2canvas(element, {
                 onrendered: function (canvas) {
                     getCanvas = canvas;
                 }
             });
               
-                var imgageData = getCanvas.toDataURL("image/png");
-                //Now browser starts downloading it instead of just showing it
-                var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+              var imgageData = getCanvas.toDataURL("image/png");  
+              var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
               $('#preview').attr('src',imgageData);
-                $("#download").attr("download", "your_image.png").attr("href", newData);
-            });
+              $("#download").attr("download", "your_image.png").attr("href", newData);
+            
+});
         });
 
 </script>
