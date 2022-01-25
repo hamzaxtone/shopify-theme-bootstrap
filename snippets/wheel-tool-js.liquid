@@ -192,8 +192,10 @@ html2canvas(document.querySelector('#tool-imgg'), {
       
       $("#addToDesign").on('click', function (e) {
   		urll = [dataURL];
+        var assa = dataURL;
       	var keke = $('.key').val();
-		localStorage.setItem(keke, JSON.stringify(urll));
+		//localStorage.setItem(keke, JSON.stringify(urll));
+        localStorage.setItem(keke, assa);
   });
     }
 });
