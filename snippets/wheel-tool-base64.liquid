@@ -6,9 +6,9 @@
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
-{%- assign parts = pageQuerystring | split:'&' -%}
+{%- assign parr = pageQuerystring | split:'?' | last -%}
 
-{{ pageQuerystring }}
+{{ parr }}
 
 {%- if pageQuerystring != "" %}
 	 
