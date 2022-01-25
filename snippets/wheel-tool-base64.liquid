@@ -6,7 +6,7 @@
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
-{%- assign parts = pageQuerystring | split:'&' -%}
+{%- assign parts = pageQuerystring -%}
 
 {{ pageQuerystring[1] }}
 
