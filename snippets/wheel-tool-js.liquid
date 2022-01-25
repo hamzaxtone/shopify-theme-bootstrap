@@ -20,6 +20,11 @@ $(document).ready(function () {
       $("#download").attr("download", "your_image.png").attr("href", dataURL);
       $('.canvass canvas').remove();
       
+      
+var urll = [dataURL];
+localStorage.setItem("", JSON.stringify(urll));
+      
+      
     }
 }); 
   
