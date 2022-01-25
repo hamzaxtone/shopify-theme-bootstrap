@@ -13,7 +13,7 @@ $(document).ready(function () {
                 var imgageData = getCanvas.toDataURL("image/png");
                 //Now browser starts downloading it instead of just showing it
                 var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-              $('#preview').attr('src',newData);
+              $('#preview').attr('src',imgageData);
                 $("#download").attr("download", "your_image.png").attr("href", newData);
             });
         });
