@@ -36,6 +36,12 @@ $('.tool-img.real img').each(function(){
    });
   	
   });
+  
+  $('.frame.dashboard').fadeOut();
+  
+  setTimeout(function() { 
+  	$('.frame.dashboard').fadeIn('slow');
+  }, 5000);
 
   
 function hexToRgb(color) {
