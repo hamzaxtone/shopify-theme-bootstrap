@@ -81,8 +81,9 @@
 {% assign product = all_products[pageQuerystring] %}
 {% if product == blank %}
     <h1>No product found</h1>
+      <input type="hidden" class="key" value="key-test" />
 {% else %}
-      
+      <input type="hidden" class="key" value="key-{{product.id}}" />
 
       
       <div class="fui flexbox title">
