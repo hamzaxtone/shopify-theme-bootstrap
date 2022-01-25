@@ -30,7 +30,10 @@ $('.tool-img.real img').each(function(){
     var imgg = $(this);
     //getBase64Image(imgg);
     
-    getBase64FromUrl(imgSRC).then(console.log)
+  getBase64FromUrl(imgSRC).then(function(res){
+    $('#'+imgID).attr('src',res);
+    
+   });
     
     //var base64 = getBase64Image(document.getElementById(imgID));
     
