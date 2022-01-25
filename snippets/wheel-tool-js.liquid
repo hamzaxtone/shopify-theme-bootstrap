@@ -1,7 +1,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script>
+  
+  var urll = [];
 $(document).ready(function () {
-    
+  
+  
+  
   $("#download").click( function (e) {
     
  html2canvas(document.querySelector('#tool-imgg'), {
@@ -21,14 +25,19 @@ $(document).ready(function () {
       $('.canvass canvas').remove();
       
       
-var urll = [dataURL];
-      var keke = $('.key').val();
-localStorage.setItem(keke, JSON.stringify(urll));
+
       
       
     }
 }); 
   
+    $("#addToDesign").click( function (e) {
+  		urll = [dataURL];
+      	var keke = $('.key').val();
+		localStorage.setItem(keke, JSON.stringify(urll));
+  });
+    
+    
  }); 
   
 $("#downloadsassa").on('click', function () {              
