@@ -1,11 +1,10 @@
 
-{% capture view %}{%- render 'querystring', param: "id" -%}
-aaaa
-
+{% capture pID %}{%- render 'querystring', param: "id" -%}
 {% endcapture %}
 
-
-
+ {% if pID %}
+assaassa
+{% endif %}
 
 <div class="tool-img">	
 		<img src="{{ 'grey.png' | asset_url }}" class="color-img main-img" />
