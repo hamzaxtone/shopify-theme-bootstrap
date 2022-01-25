@@ -5,25 +5,30 @@
    replace:'\u0026','&'
 -%}
 
-{%- assign pageQuerystring = pageUrl | split:'=' | first -%}
+{%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parts = pageQuerystring | split:'&' -%}
 
 {{ pageQuerystring }}
 
+{%- if pageQuerystring != null %}
+	asdas
+{%- endif %}
+
+
+{%- comment -%}
 {%- for part in parts -%}
+  {%- assign keyAndValue = part | split:'=' -%}
+  {%- if keyAndValue.size > 1 -%}
+    {%- if debug -%}
 
- {%- assign keyAndValue = part | split:'=' -%}
+    key: {{ keyAndValue[0] }}<br>
+    value: {{ keyAndValue[1] }}
 
-{%- if keyAndValue.size > 1 -%}
-      {%- if debug -%}
-      
-        key: {{ keyAndValue[0] }}<br>
-        value: {{ keyAndValue[1] }}
-      
-      {% endif %}
-{% endif %}
+    {% endif %}
+  {% endif %}
+{%- endfor -%}
+{%- endcomment -%}
 
- {%- endfor -%}
 
 
 
