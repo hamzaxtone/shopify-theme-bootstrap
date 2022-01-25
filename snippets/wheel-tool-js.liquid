@@ -8,6 +8,9 @@ $(document).ready(function () {
   var dataImage = localStorage.getItem(keke);
 console.log(dataImage);
 
+  if(dataImage){
+  	$('.designs').append('<li><img src="'+dataImage+'" /></li>');
+  }
   
   
   $("#download").click( function (e) {
