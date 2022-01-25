@@ -178,7 +178,7 @@ html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
-      	$("#download").attr("download", "your_image.png").attr("href", dataURL);
+      	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
       	setTimeout(function() { 
   	$('.canvass canvas').remove();
   }, 1000);
