@@ -12,8 +12,12 @@
 
   $('.tool-img.real img').each(function(){
     var src = $(this).attr('src');
+    var imgID = $(this).attr('id');
     var imgg = $(this);
-    getBase64Image(imgg);
+    //getBase64Image(imgg);
+    
+    var base64 = getBase64Image(document.getElementById(imgID));
+    
     $('canvas').remove();
   	
   });
