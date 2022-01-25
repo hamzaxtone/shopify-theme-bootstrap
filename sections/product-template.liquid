@@ -31,10 +31,10 @@
   
   
   
-  {% assign barrel_insideURL = page.metafields.my_fields.barrel_inside %}
+  {% assign barrel_insideURL = product.metafields.my_fields.barrel_inside | img_url:"master" %}
 
 {% assign image = images[barrel_insideURL] %}
-<!-- <img src="{{ image | img_url: '800x' }}" alt="{{ image.alt }}"> -->
+<!-- <img src="{{ barrel_insideURL | img_url: '800x' }}" alt="{{ image.alt }}"> -->
   
   
   
