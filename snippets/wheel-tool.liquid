@@ -35,7 +35,39 @@
 <div class="fui flexbox dskd">
 	<div class="frame dashboard">
 	<div class="workspace">
-		<div class="fui flexbox title">
+		
+      {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+
+{%- assign pageQuerystring = pageUrl | split:'=' | last -%}
+{%- assign parr = pageUrl | split:'?' | last -%}
+
+
+
+{%- if parr contains "slug" %}
+	 
+
+{% assign product = all_products[pageQuerystring] %}
+{% if product == blank %}
+    <h1>No product found</h1>
+{% else %}
+      
+      
+{% endif %}
+      
+      
+      
+{% endif %}
+      
+      
+      
+      
+      
+      <div class="fui flexbox title">
 			<div class="fui flexbox plate">
 				<a class="title-link" href="/">
 					<div class="fui flexbox " style="place-content: center; align-items: center;">
@@ -53,6 +85,9 @@
 				<div class="fui flexbox " style="align-items: center;"><span class="wheel-name">affilato-ecl</span><span class="wheel-series">(forgiato)</span></div>
 			</div>
 		</div>
+      
+      
+      
 		<div class="viewport">
 			<div class="windows-frame">
 				<div class="home-window" style="transform: scale(1); opacity: 1;">
