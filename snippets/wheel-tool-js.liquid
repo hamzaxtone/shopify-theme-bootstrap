@@ -13,6 +13,7 @@
   
 $('.tool-img.real img').each(function(){
     var imgSRC = $(this).attr('src');
+  console.log(imgSRC);
     var imgID = $(this).attr('id');
     var imgg = $(this);
     //getBase64Image(imgg);
@@ -26,7 +27,12 @@ $('.tool-img.real img').each(function(){
   });
 
   
-  
+//   getBase64FromUrl("//cdn.shopify.com/s/files/1/0586/8470/2877/files/bolts.png?v=1643112954").then(function(res){
+//    console.log(res);
+//     $('h6').text(res);
+//     $('img').attr('src',res);
+    
+//   })
   
   const getBase64FromUrl = async (url) => {
   const data = await fetch(url);
