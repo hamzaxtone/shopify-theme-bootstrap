@@ -5,7 +5,7 @@
    replace:'\u0026','&'
 -%}
 
-{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+{%- assign pageQuerystring = pageUrl | split:'?' | first -%}
 {%- assign parts = pageQuerystring | split:'&' -%}
 
 {{ pageQuerystring }}
