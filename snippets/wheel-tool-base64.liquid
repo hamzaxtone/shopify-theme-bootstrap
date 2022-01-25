@@ -6,7 +6,7 @@
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
-{%- assign parr = pageQuerystring | split:'?' | last -%}
+{%- assign parr = pageUrl | split:'?' | last -%}
 
 {{ parr }}
 
