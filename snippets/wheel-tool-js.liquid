@@ -15,8 +15,9 @@ $(document).ready(function () {
         //$('body').prepend('<h1>We have an image here:</h1><img src="' + dataURL + '" />');
         //var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
           
-      $('#preview').attr('src',dataURL);
+      //$('#preview').attr('src',dataURL);
       $("#download").attr("download", "your_image.png").attr("href", dataURL);
+      $('.canvass canvas').remove();
       
     }
 }); 
