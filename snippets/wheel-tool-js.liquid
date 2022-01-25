@@ -3,7 +3,7 @@
 $(document).ready(function () {
     
   $("#download").click( function () {
- html2canvas(document.querySelector('#imagesss'), {
+ html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
         /* canvas is the actual canvas element,
            to append it to the page call for example
@@ -20,7 +20,7 @@ $(document).ready(function () {
   
             $("#downloadsassa").on('click', function () {
               
-              var element = $("#imagesss"); // global variable
+              var element = $("#tool-imgg"); // global variable
             var getCanvas; //global variable
             html2canvas(element, {
                 onrendered: function (canvas) {
