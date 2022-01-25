@@ -10,10 +10,10 @@
 
 
 
-{%- if parr contains "id" %}
+{%- if parr contains "slug" %}
 	 
 
-{% assign product = all_products['kokoru-monoc-3'] %}
+{% assign product = all_products[pageQuerystring] %}
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
