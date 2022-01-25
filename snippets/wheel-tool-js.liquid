@@ -183,7 +183,7 @@ html2canvas(document.querySelector('#tool-imgg'), {
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
       	$("#download").attr("download", "your_image.png").attr("href", dataURL);
-      	$('.canvass canvas').remove();
+      	//$('.canvass canvas').remove();
     }
 });
   
