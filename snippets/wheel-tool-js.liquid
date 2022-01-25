@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('body').append( canvas );
         var dataURL = canvas.toDataURL();
         //alert(dataURL);
-        $('body').append('<h1>We have an image here:</h1><img src="' + dataURL + '" />');
+        $('body').prepend('<h1>We have an image here:</h1><img src="' + dataURL + '" />');
     }
 }); 
   
