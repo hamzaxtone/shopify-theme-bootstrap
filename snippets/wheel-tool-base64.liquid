@@ -8,10 +8,13 @@
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
 
-
+{{ pageQuerystring }}
 
 {%- if parr contains "id" %}
 	 
+
+
+
 
 <div class="tool-img">	
   <img src="{{ 'grey.png' | asset_url }}" class="color-img main-img" />
