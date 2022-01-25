@@ -8,20 +8,16 @@ $(document).ready(function () {
   
   $("#download").click( function (e) {
     
-html2canvas(document.querySelector('#tool-imgg'), {
+/** html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
       	$("#download").attr("download", "your_image.png").attr("href", dataURL);
       	$('.canvass canvas').remove();
     }
-}); 
+}); **/
   
-    $("#addToDesign").on('click', function (e) {
-  		urll = [dataURL];
-      	var keke = $('.key').val();
-		localStorage.setItem(keke, JSON.stringify(urll));
-  });
+
     
     
  }); 
@@ -183,7 +179,15 @@ html2canvas(document.querySelector('#tool-imgg'), {
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
       	$("#download").attr("download", "your_image.png").attr("href", dataURL);
-      	//$('.canvass canvas').remove();
+      	setTimeout(function() { 
+  	$('.canvass canvas').remove();
+  }, 1000);
+      
+      $("#addToDesign").on('click', function (e) {
+  		urll = [dataURL];
+      	var keke = $('.key').val();
+		localStorage.setItem(keke, JSON.stringify(urll));
+  });
     }
 });
   
