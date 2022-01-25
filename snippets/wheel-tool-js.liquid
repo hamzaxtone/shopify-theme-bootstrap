@@ -153,6 +153,7 @@ function colorImage(imgId,hexaColor) {
 
 $('.type-options .option').on("click", function(color) {
       //console.log(this.value);
+  	$('.home-window').hide();
 	  $('.palette-window').addClass('visible');
 	  var typeID = $(this).data('id');
 	  var typeTitle = $(this).find('.label').text();
@@ -166,6 +167,7 @@ $('.type-options .option').on("click", function(color) {
  });
  $('#back-to-type').on("click", function() {
 	$('.palette-window').removeClass('visible');
+   $('.home-window').show();
  });
 $('.colorsWheel .color').on("click", function() {
 	var wheelID = $('.selected-parts').attr('data-id');
