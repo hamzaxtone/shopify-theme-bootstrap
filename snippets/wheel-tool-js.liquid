@@ -1,5 +1,5 @@
 <script>
-
+/**
   function getBase64Image(img) {
   var canvas = document.createElement("canvas");
   canvas.width = img.width;
@@ -9,19 +9,39 @@
   var dataURL = canvas.toDataURL("image/png");
   return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
-
-  $('.tool-img.real img').each(function(){
-    var src = $(this).attr('src');
+**/
+  
+$('.tool-img.real img').each(function(){
+    var imgSRC = $(this).attr('src');
     var imgID = $(this).attr('id');
     var imgg = $(this);
     //getBase64Image(imgg);
     
-    var base64 = getBase64Image(document.getElementById(imgID));
+    getBase64FromUrl(imgSRC).then(console.log)
+    
+    //var base64 = getBase64Image(document.getElementById(imgID));
     
     //$('canvas').remove();
   	
   });
-//var base64 = getBase64Image(document.getElementById("imageid"));
+
+  
+  
+  
+  const getBase64FromUrl = async (url) => {
+  const data = await fetch(url);
+  const blob = await data.blob();
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(blob); 
+    reader.onloadend = () => {
+      const base64data = reader.result;   
+      resolve(base64data);
+    }
+  });
+}
+
+
   
   
 function hexToRgb(color) {
