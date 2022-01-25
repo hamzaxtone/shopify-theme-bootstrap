@@ -15,7 +15,10 @@
     data-variants-json="{{ product.variants | json | escape  }}">
   
   
+  {{ product.metafields.my_fields.barrel_inside | img_url:"master" }}
+
   
+  <br>
   {{ product.metafields["my_fields"]["barrel_inside"]["image_url"] }}
   sa
 
