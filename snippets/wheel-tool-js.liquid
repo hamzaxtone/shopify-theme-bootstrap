@@ -8,30 +8,16 @@ $(document).ready(function () {
   
   $("#download").click( function (e) {
     
- html2canvas(document.querySelector('#tool-imgg'), {
+html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
-        /* canvas is the actual canvas element,
-           to append it to the page call for example
-           document.body.appendChild( canvas );
-        */
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
-        //alert(dataURL);
-        //$('body').prepend('<h1>We have an image here:</h1><img src="' + dataURL + '" />');
-        //var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-          
-      //$('#preview').attr('src',dataURL);
-      $("#download").attr("download", "your_image.png").attr("href", dataURL);
-      $('.canvass canvas').remove();
-      
-      
-
-      
-      
+      	$("#download").attr("download", "your_image.png").attr("href", dataURL);
+      	$('.canvass canvas').remove();
     }
 }); 
   
-    $("#addToDesign").click( function (e) {
+    $("#addToDesign").on('click', function (e) {
   		urll = [dataURL];
       	var keke = $('.key').val();
 		localStorage.setItem(keke, JSON.stringify(urll));
@@ -190,6 +176,17 @@ $('.colorsWheel .color').on("click", function() {
 	//console.log(wheelID+" "+colorHex);
 	$('.type-options .option[data-id="'+wheelID+'"] .arrow-color polygon').css('fill',colorHex);
 	colorImage(wheelID,colorHex);
+  
+  
+html2canvas(document.querySelector('#tool-imgg'), {
+    onrendered: function(canvas) {
+        $('.canvass').append( canvas );
+        var dataURL = canvas.toDataURL();
+      	$("#download").attr("download", "your_image.png").attr("href", dataURL);
+      	$('.canvass canvas').remove();
+    }
+});
+  
 	
 });
 $('input[type="color"]').on("change", function(color) {
