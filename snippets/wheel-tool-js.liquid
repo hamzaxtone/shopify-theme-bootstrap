@@ -1,9 +1,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script>
 $(document).ready(function () {
-            
- 
-            $("#download").on('click', function () {
+    
+  $("#download").on('click', function () {
+ html2canvas(document.querySelector('.imagesss'), {
+    onrendered: function(canvas) {
+        /* canvas is the actual canvas element,
+           to append it to the page call for example
+           document.body.appendChild( canvas );
+        */
+        //$('body').append( canvas );
+        var dataURL = canvas.toDataURL();
+        //alert(dataURL);
+        $('body').append('<h1>We have an image here:</h1><img src="' + dataURL + '" />');
+    }
+}); 
+  
+ }); 
+  
+            $("#downloadsassa").on('click', function () {
               
               var element = $("#imagesss"); // global variable
             var getCanvas; //global variable
