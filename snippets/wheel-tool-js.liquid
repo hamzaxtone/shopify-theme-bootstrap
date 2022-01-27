@@ -49,7 +49,7 @@ $("#downloadsassa").on('click', function () {
 </script>
 <script>
   
-  
+  var keyCount = $('.keyCount').val();
   
   $('#reset').click(function(){
   	//$("#tool-imgg").load(location.href + " #tool-imgg");\
@@ -218,7 +218,7 @@ html2canvas(document.querySelector('#tool-imgg'), {
 		//localStorage.setItem(keke, JSON.stringify(urll));
         localStorage.setItem(keke, assa);
         
-        var keyCount = $('.keyCount').val();
+        
         localStorage.setItem('keyCount', keyCount++);
         
 //         $('.designs').empty();
