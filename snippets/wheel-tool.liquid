@@ -54,9 +54,34 @@
     display: flex;
     list-style: none;
     flex-flow:wrap;
-    
+    padding:0;
 }
 
+  .actions ul.designs li{
+  	position:relative;
+    margin-left:5px;
+    margin-right:5px;
+  }
+  .actions ul.designs li i {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #000;
+}
+
+.actions ul.designs li i:hover {
+    background-color: #000;
+    color: #fff;
+}
+  
 .actions ul.designs li img {
     width: 70px;
   margin-top:10px;
