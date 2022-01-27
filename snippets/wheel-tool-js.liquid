@@ -3,7 +3,6 @@
   
   
   // Shortcut to document.querySelector (not jquery)
-function $() { return document.querySelector.apply(document, arguments); }
 
 // If formValues doesn't exist, add it
 if (!localStorage.formValues) localStorage.formValues = "[]";
@@ -27,24 +26,10 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
   }
   
   
-  var keyCount = $('.keyCount').val();
-  var keke = $('.key').val();
-  
-  var getkeyCount = localStorage.getItem('keyCount');
-  if( getkeyCount && getkeyCount >= 1  ){
-  	$('.keyCount').val(parseInt(getkeyCount)+1);
-    keyCount = $('.keyCount').val();
-  }
   
   
-  function getDesign(keke,keyCount){
-    var dataImage = localStorage.getItem(keke);
-	//console.log(dataImage);
-    if(dataImage){
-      $('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
-    }
-  	
-  }
+  
+  
   
   var urll = [];
 $(document).ready(function () {
