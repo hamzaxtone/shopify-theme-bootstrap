@@ -18,13 +18,27 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
   }
   
   
+  function removeDesign(val,index){
+    var obj = JSON.parse(val);
+    
+  	obj.splice( index );
+    
+    localStorage.formValues = JSON.stringify(obj);
+    
+  }
+  
+  $('.designs li i').on('click',function(){
+  	var iii = $(this).attr('data-index');
+    removeDesign(localStorage.formValues,iii);
+  })
+  
   function getDesigns(val){
     	$('.designs').empty();
     var obj = JSON.parse(val);
     console.log(obj);
     var i = 0;
     obj.forEach(function(object) {
-  		$('.designs').append('<li data-index="'+i+'"><a href="'+object.src+'" download="my-wheel-design" target="_blank"><img src="'+object.src+'" /></a></li>');
+  		$('.designs').append('<li data-index="'+i+'"><i class="fa fa-remove" data-index="'+i+'"></i><a href="'+object.src+'" download="my-wheel-design" target="_blank"><img src="'+object.src+'" /></a></li>');
 		i++;
     });
     
