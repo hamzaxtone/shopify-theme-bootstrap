@@ -1,5 +1,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script>
+  
+  
+  // Shortcut to document.querySelector (not jquery)
+function $() { return document.querySelector.apply(document, arguments); }
+
+// If formValues doesn't exist, add it
+if (!localStorage.formValues) localStorage.formValues = "[]";
+
+// Get formValues
+var formValues = JSON.parse(localStorage.formValues);
+
+
+$("#localstorageDIV").innerHTML = localStorage.formValues;
+  
+  if( localStorage.formValues ){
+  	getDesigns(localStorage.formValues);
+  }
+  
+  
+  function getDesigns(val){
+    
+      //$('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
+    
+  	
+  }
+  
+  
   var keyCount = $('.keyCount').val();
   var keke = $('.key').val();
   
