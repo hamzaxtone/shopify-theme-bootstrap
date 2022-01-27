@@ -1,11 +1,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script>
+  var keyCount = $('.keyCount').val();
+  
+  var getkeyCount = localStorage.getItem('keyCount');
+  if( getkeyCount && getkeyCount >= 1  ){
+  	keyCount = keyCount++;
+  }
   
   var urll = [];
 $(document).ready(function () {
   
   	var keke = $('.key').val();
   	var dataImage = localStorage.getItem(keke);
+  
+  
+  
 	//console.log(dataImage);
     if(dataImage){
       $('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
@@ -49,7 +58,7 @@ $("#downloadsassa").on('click', function () {
 </script>
 <script>
   
-  var keyCount = $('.keyCount').val();
+  
   
   $('#reset').click(function(){
   	//$("#tool-imgg").load(location.href + " #tool-imgg");\
