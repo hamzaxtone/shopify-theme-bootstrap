@@ -36,7 +36,7 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
     
   }
   
-  $('.designs li i').on('click',function(){
+  $(document).on('click','.designs li i',function(){
   	var iii = $(this).attr('data-index');
     removeDesign(localStorage.formValues,iii);
   })
