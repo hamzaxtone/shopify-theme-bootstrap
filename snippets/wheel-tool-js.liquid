@@ -32,6 +32,7 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
     
     localStorage.formValues = JSON.stringify(obj);
     
+    getDesigns(obj);
   }
   
   $('.designs li i').on('click',function(){
