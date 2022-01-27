@@ -23,9 +23,18 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
     
     console.log(obj);
     
-  	obj.splice( obj,index );
+  	//obj.splice( obj,index );
     
-    console.log(obj);
+    const removeByIndex = (list, index) =>
+      [
+        ...list.slice(0, index),
+        ...list.slice(index + 1)
+      ];
+         
+output = removeByIndex(obj,index) 
+
+    
+    console.log(output);
     
     //localStorage.formValues = JSON.stringify(obj);
     
