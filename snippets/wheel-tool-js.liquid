@@ -21,9 +21,11 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
   function removeDesign(val,index){
     var obj = JSON.parse(val);
     
-  	obj.splice( index );
+    console.log(obj):
     
-    localStorage.formValues = JSON.stringify(obj);
+  	//obj.splice( index );
+    
+    //localStorage.formValues = JSON.stringify(obj);
     
   }
   
