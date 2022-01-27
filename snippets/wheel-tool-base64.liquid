@@ -8,10 +8,9 @@
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
 
-{{ pageQuerystring }} <br>
-{{ parr }}
 
-{%- if parr contains "slug" %}
+
+{% if parr contains "slug" %}
 	 
 
 {% assign product = all_products[pageQuerystring] %}
