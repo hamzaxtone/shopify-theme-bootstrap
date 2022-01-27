@@ -22,7 +22,11 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
     	
     var obj = JSON.parse(val);
     console.log(obj);
-      //$('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
+    obj.forEach(function(object) {
+  		$('.designs').append('<li><a href="'+object.src+'" download="my-wheel-design" target="_blank"><img src="'+object.src+'" /></a></li>');
+	});
+    
+      //
     
   	
   }
