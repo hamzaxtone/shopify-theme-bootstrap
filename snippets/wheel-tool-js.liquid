@@ -4,7 +4,7 @@
   
   var getkeyCount = localStorage.getItem('keyCount');
   if( getkeyCount && getkeyCount >= 1  ){
-  	$('.keyCount').val(getkeyCount+1);
+  	$('.keyCount').val(parseInt(getkeyCount)+1);
     keyCount = $('.keyCount').val();
   }
   
