@@ -50,7 +50,7 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
 $(document).ready(function () {
   
   	
-  	getDesign(keke+'-'+(keyCount++),keyCount++);
+  	//getDesign(keke+'-'+(keyCount++),keyCount++);
   
   
   $("#download").click( function (e) {
@@ -258,10 +258,21 @@ html2canvas(document.querySelector('#tool-imgg'), {
       	var keke = $('.key').val();
 		//localStorage.setItem(keke, JSON.stringify(urll));
         
-        localStorage.setItem(keke+'-'+(keyCount++), assa);
-       	localStorage.setItem('keyCount', keyCount);
+        //localStorage.setItem(keke+'-'+(keyCount++), assa);
+       	//localStorage.setItem('keyCount', keyCount);
         
-        getDesign(keke+'-'+(keyCount++),keyCount);
+        //getDesign(keke+'-'+(keyCount++),keyCount);
+        
+        
+        formValues.push({
+        src: assa,
+        id: keke
+    });
+    
+    // Write to localStorage
+    localStorage.formValues = JSON.stringify(formValues);
+        
+        getDesigns(localStorage.formValues);
         
         
         
