@@ -4,7 +4,8 @@
   
   var getkeyCount = localStorage.getItem('keyCount');
   if( getkeyCount && getkeyCount >= 1  ){
-  	keyCount = getkeyCount++;
+  	keyCount.val(getkeyCount++);
+    keyCount = $('.keyCount').val();
   }
   
   var urll = [];
