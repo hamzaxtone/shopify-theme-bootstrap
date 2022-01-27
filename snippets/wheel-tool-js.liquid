@@ -83,6 +83,7 @@ $("#downloadsassa").on('click', function () {
 }
   
 $('.tool-img.real img').each(function(){
+  	$('.dskd').addClass('loading');
     var imgSRC = $(this).attr('src');
   	//console.log(imgSRC);
     var imgID = $(this).attr('id');
@@ -91,6 +92,7 @@ $('.tool-img.real img').each(function(){
     
   getBase64FromUrl(imgSRC).then(function(res){
     $('#'+imgID).attr('src',res);
+    $('.dskd').removeClass('loading');
     
    });
   	
