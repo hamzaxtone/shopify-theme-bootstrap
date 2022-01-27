@@ -190,15 +190,17 @@ $('.colorsWheel .color').on("click", function() {
 	colorImage(wheelID,colorHex);
   
   
- setTimeout(function() {  
+ 
 html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
+      setTimeout(function() {  
         $('.canvass').append( canvas );
         var dataURL = canvas.toDataURL();
       	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
       	setTimeout(function() { 
-  	$('.canvass canvas').remove();
-  }, 1000);
+  			$('.canvass canvas').remove();
+  		}, 1000);
+      }, 5000);
       
       $("#addToDesign").on('click', function (e) {
   		urll = [dataURL];
@@ -219,7 +221,7 @@ html2canvas(document.querySelector('#tool-imgg'), {
   });
     }
 });
-  }, 5000);
+  
   
   
 	
