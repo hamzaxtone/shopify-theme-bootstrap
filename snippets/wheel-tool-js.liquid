@@ -188,7 +188,8 @@ $('.type-options .option').on("click", function(color) {
   
   
   
-$('.colorsWheel .color').on("click", function() {
+$('.colorsWheel .color').on("click", function(e) {
+  e.preventDefault();
 	var wheelID = $('.selected-parts').attr('data-id');
 	var colorHex = $(this).data('color');
 	//console.log(wheelID+" "+colorHex);
