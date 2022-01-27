@@ -19,7 +19,7 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
   
   
   function getDesigns(val){
-    	
+    	$('.designs').empty();
     var obj = JSON.parse(val);
     console.log(obj);
     obj.forEach(function(object) {
