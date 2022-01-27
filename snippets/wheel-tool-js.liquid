@@ -122,6 +122,8 @@ function hexToRgb(color) {
 }
 
 function colorImage(imgId,hexaColor) {
+  
+  setTimeout(function() {
     // create hidden canvas (using image dimensions)
     var imgElement = document.getElementById(imgId);
   
@@ -134,7 +136,7 @@ function colorImage(imgId,hexaColor) {
     
     var imageData = ctx.getImageData(0,0,canvas.width,canvas.height);
     
-  console.log(canvas.width);
+  //console.log(canvas.width);
   
   
     var data = imageData.data;
@@ -155,6 +157,8 @@ function colorImage(imgId,hexaColor) {
 
     // replace image source with canvas data
     imgElement.src = canvas.toDataURL();
+    
+    }, 2000);
 }
 
 // changing color of capsule on select event
