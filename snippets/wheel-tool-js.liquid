@@ -19,7 +19,9 @@ $("#localstorageDIV").innerHTML = localStorage.formValues;
   
   
   function getDesigns(val){
-    	console.log(val);
+    	
+    var obj = JSON.parse(val);
+    console.log(obj);
       //$('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
     
   	
