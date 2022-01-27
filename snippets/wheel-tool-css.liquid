@@ -15,6 +15,11 @@
     /* 	width: 0%;
 	min-width: 40rem; */
 }
+  .loading .img_loading {
+  	opacity:0;
+    z-index:-1;
+  }
+  
   .img_loading {
     position: absolute;
     left: 0;
@@ -32,6 +37,7 @@
     font-weight: bold;
     text-transform: uppercase;
     pointer-events:none;
+    transition:all 0.5s ease;
 }
   .img_loading spane{
   	background:#fff;
