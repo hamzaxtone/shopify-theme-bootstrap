@@ -1,6 +1,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script>
   var keyCount = $('.keyCount').val();
+  var keke = $('.key').val();
   
   var getkeyCount = localStorage.getItem('keyCount');
   if( getkeyCount && getkeyCount >= 1  ){
@@ -8,18 +9,21 @@
     keyCount = $('.keyCount').val();
   }
   
-  var urll = [];
-$(document).ready(function () {
   
-  	var keke = $('.key').val();
-  	var dataImage = localStorage.getItem(keke);
-  
-  
-  
+  function getDesign(keke,keyCount){
+    var dataImage = localStorage.getItem(keke);
 	//console.log(dataImage);
     if(dataImage){
       $('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
     }
+  	
+  }
+  
+  var urll = [];
+$(document).ready(function () {
+  
+  	
+  	getDesign(keke,keyCount);
   
   
   $("#download").click( function (e) {
@@ -227,9 +231,10 @@ html2canvas(document.querySelector('#tool-imgg'), {
       	var keke = $('.key').val();
 		//localStorage.setItem(keke, JSON.stringify(urll));
         localStorage.setItem(keke, assa);
+       	localStorage.setItem('keyCount', keyCount++);
         
         
-        localStorage.setItem('keyCount', keyCount++);
+        
         
 //         $('.designs').empty();
         
