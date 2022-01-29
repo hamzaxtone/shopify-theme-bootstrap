@@ -56,34 +56,37 @@
 
   <img src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
   
-  <img src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
+  <img data-src="{{ boltsURL }}" src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
   
-  <img class="color-img barrel-inside" id="barrel-inside" src="{{barrel_insideURL}}" alt="{{ barrel_insideURL.alt }}" />
+  <img class="color-img barrel-inside" id="barrel-inside" data-src="{{barrel_insideURL}}" src="{{barrel_insideURL}}" alt="{{ barrel_insideURL.alt }}" />
   
-  <img class="color-img window" id="window" src="{{windowURL}}" alt="{{ windowURL.alt }}" />
+  <img class="color-img window" id="window" data-src="{{windowURL}}" src="{{windowURL}}" alt="{{ windowURL.alt }}" />
   
-  <img class="color-img spoke-insert" id="spoke-insert" src="{{spoke_insertURL}}" alt="{{ spoke_insertURL.alt }}" />
+  <img class="color-img spoke-insert" id="spoke-insert" data-src="{{spoke_insertURL}}" src="{{spoke_insertURL}}" alt="{{ spoke_insertURL.alt }}" />
   
-  <img class="color-img spoke-face" id="spoke-face" src="{{spoke_faceURL}}" alt="{{ spoke_faceURL.alt }}" />
+  <img class="color-img spoke-face" id="spoke-face" data-src="{{spoke_faceURL}}" src="{{spoke_faceURL}}" alt="{{ spoke_faceURL.alt }}" />
   
-  <img class="color-img pinstripe" id="pinstripe" src="{{pinstripeURL}}" alt="{{ pinstripeURL.alt }}" />
+  <img class="color-img pinstripe" id="pinstripe" data-src="{{pinstripeURL}}" src="{{pinstripeURL}}" alt="{{ pinstripeURL.alt }}" />
   
-  <img class="color-img lip-outer" id="lip-outer" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
+  <img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
+  
+  
+  {% if lug_holesURL %}
+    <img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
+{% endif %}
   
   {% comment %}
-  <img class="color-img lug_holes" id="lug_holes" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
+  <img class="color-img flange_text" id="flange_text" data-src="{{flange_textURL}}" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
   
-  <img class="color-img flange_text" id="flange_text" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
+  <img class="color-img flange" id="flange" data-src="{{flangeURL}}" src="{{flangeURL}}" alt="{{ flangeURL.alt }}" />
   
-  <img class="color-img flange" id="flange" src="{{flangeURL}}" alt="{{ flangeURL.alt }}" />
+  <img class="color-img cap_text" id="cap_text" data-src="{{cap_textURL}}" src="{{cap_textURL}}" alt="{{ cap_textURL.alt }}" />
   
-  <img class="color-img cap_text" id="cap_text" src="{{cap_textURL}}" alt="{{ cap_textURL.alt }}" />
+  <img class="color-img cap_frame" id="cap_frameURL" data-src="{{cap_frameURL}}" src="{{cap_frameURL}}" alt="{{ cap_frameURL.alt }}" />
   
-  <img class="color-img cap_frame" id="cap_frameURL" src="{{cap_frameURL}}" alt="{{ cap_frameURL.alt }}" />
+  <img class="color-img cap_f_logo" id="cap_f_logo" data-src="{{cap_f_logoURL}}" src="{{cap_f_logoURL}}" alt="{{ cap_f_logoURL.alt }}" />
   
-  <img class="color-img cap_f_logo" id="cap_f_logo" src="{{cap_f_logoURL}}" alt="{{ cap_f_logoURL.alt }}" />
-  
-  <img class="color-img cap_f_background" id="cap_f_background" src="{{cap_f_backgroundURL}}" alt="{{ cap_f_backgroundURL.alt }}" />
+  <img class="color-img cap_f_background" id="cap_f_background" data-src="{{cap_f_backgroundURL}}" src="{{cap_f_backgroundURL}}" alt="{{ cap_f_backgroundURL.alt }}" />
   {% endcomment %}
   
   
