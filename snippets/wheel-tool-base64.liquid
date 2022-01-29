@@ -52,9 +52,14 @@
 
 
 
-<div class="tool-img real" id="tool-imgg"> 	
+<div class="tool-img real" id="tool-imgg">
+  
+  {% if mainURL == blank %}
+    	<img src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
+	{% else %}
 
   <img src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
+  {% endif %}
   
   <img data-src="{{ boltsURL }}" src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
   
@@ -71,10 +76,10 @@
   <img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
   
   
-  	{% if lug_holesURL == blank %}
+  	{% if lug_holesURL != blank %}
     	<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
 	{% endif %}
-  {% if flange_textURL == blank %}
+  {% if flange_textURL != blank %}
     	<img class="color-img flange_text" id="flange_text" data-src="{{flange_textURL}}" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
 	{% endif %}
   {% if flangeURL == blank %}
