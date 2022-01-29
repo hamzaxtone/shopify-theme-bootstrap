@@ -74,12 +74,14 @@
   <img class="color-img pinstripe" id="pinstripe" data-src="{{pinstripeURL}}" src="{{pinstripeURL}}" alt="{{ pinstripeURL.alt }}" />
   
   <img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
+ 
   
+  {% comment %}
   <!--
-  	{% if lug_holesURL != blank %}
-<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
+  	{% if lug_holesURL == blank %}
+
   	{% else %}
-    	
+    	<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
 	{% endif %}
   {% if flange_textURL == blank %}
   {% else %}
@@ -106,7 +108,7 @@
     	<img class="color-img cap_f_background" id="cap_f_background" data-src="{{cap_f_backgroundURL}}" src="{{cap_f_backgroundURL}}" alt="{{ cap_f_backgroundURL.alt }}" />
 	{% endif %} -->
   
-  {% comment %}
+  
   
   {% endcomment %}
   
