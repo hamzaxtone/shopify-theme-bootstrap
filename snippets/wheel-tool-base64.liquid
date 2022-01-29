@@ -54,12 +54,11 @@
 
 <div class="tool-img real" id="tool-imgg">
   
-  {% if mainURL == blank %}
-    	<img src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
-	{% else %}
+ 
+   
 
-  <img src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
-  {% endif %}
+  <img data-src="{{ mainURL }}" src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
+  
   
   <img data-src="{{ boltsURL }}" src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
   
