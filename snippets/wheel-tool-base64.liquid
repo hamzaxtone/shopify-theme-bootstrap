@@ -77,24 +77,31 @@
   
   
   	{% if lug_holesURL == blank %}
+  	{% else %}
     	<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
 	{% endif %}
-  {% if flange_textURL != blank %}
+  {% if flange_textURL == blank %}
+  {% else %}
     	<img class="color-img flange_text" id="flange_text" data-src="{{flange_textURL}}" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
 	{% endif %}
   {% if flangeURL == blank %}
+  {% else %}
     	<img class="color-img flange" id="flange" data-src="{{flangeURL}}" src="{{flangeURL}}" alt="{{ flangeURL.alt }}" />
 	{% endif %}
   {% if cap_textURL == blank %}
+  {% else %}
     	<img class="color-img cap_text" id="cap_text" data-src="{{cap_textURL}}" src="{{cap_textURL}}" alt="{{ cap_textURL.alt }}" />
 	{% endif %}
   {% if cap_frameURL == blank %}
+  {% else %}
     	<img class="color-img cap_frame" id="cap_frameURL" data-src="{{cap_frameURL}}" src="{{cap_frameURL}}" alt="{{ cap_frameURL.alt }}" />
 	{% endif %}
   {% if cap_f_logoURL == blank %}
+  {% else %}
     	<img class="color-img cap_f_logo" id="cap_f_logo" data-src="{{cap_f_logoURL}}" src="{{cap_f_logoURL}}" alt="{{ cap_f_logoURL.alt }}" />
 	{% endif %}
   {% if cap_f_backgroundURL == blank %}
+  {% else %}
     	<img class="color-img cap_f_background" id="cap_f_background" data-src="{{cap_f_backgroundURL}}" src="{{cap_f_backgroundURL}}" alt="{{ cap_f_backgroundURL.alt }}" />
 	{% endif %}
   
