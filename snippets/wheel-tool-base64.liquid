@@ -50,7 +50,13 @@
 {% assign mainURL = product.metafields.my_fields.main_image | img_url:"master" %}
 
 
-{{ flangeURL }}
+{% if flangeURL contains "no-image" %}
+no-image
+  	{% else %}
+it has image
+{% endif %}
+
+
 
 <div class="tool-img real" id="tool-imgg">
   
