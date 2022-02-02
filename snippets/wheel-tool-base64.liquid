@@ -50,11 +50,7 @@
 {% assign mainURL = product.metafields.my_fields.main_image | img_url:"master" %}
 
 
-{% if barrel_insideURL contains "no-image" %}
-no-image
-  	{% else %}
-it has image
-{% endif %}
+
 
 
 
@@ -62,60 +58,89 @@ it has image
   
  
    
-
-  <img data-src="{{ mainURL }}" src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
+{% if mainURL contains "no-image" %}{% else %}
+<img data-src="{{ mainURL }}" src="{{ mainURL }}" id="main-img" alt="{{ mainURL.alt }}" class="color-img main-img" >
+{% endif %}
   
   
-  <img data-src="{{ boltsURL }}" src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
   
-  <img class="color-img barrel-inside" id="barrel-inside" data-src="{{barrel_insideURL}}" src="{{barrel_insideURL}}" alt="{{ barrel_insideURL.alt }}" />
+  {% if boltsURL contains "no-image" %}{% else %}
+<img data-src="{{ boltsURL }}" src="{{ boltsURL }}" class="color-img bolts" id="bolts" >
+{% endif %}
   
-  <img class="color-img window" id="window" data-src="{{windowURL}}" src="{{windowURL}}" alt="{{ windowURL.alt }}" />
   
-  <img class="color-img spoke-insert" id="spoke-insert" data-src="{{spoke_insertURL}}" src="{{spoke_insertURL}}" alt="{{ spoke_insertURL.alt }}" />
   
-  <img class="color-img spoke-face" id="spoke-face" data-src="{{spoke_faceURL}}" src="{{spoke_faceURL}}" alt="{{ spoke_faceURL.alt }}" />
+  {% if barrel_insideURL contains "no-image" %}{% else %}
+<img class="color-img barrel-inside" id="barrel-inside" data-src="{{barrel_insideURL}}" src="{{barrel_insideURL}}" alt="{{ barrel_insideURL.alt }}" />
+{% endif %}
   
-  <img class="color-img pinstripe" id="pinstripe" data-src="{{pinstripeURL}}" src="{{pinstripeURL}}" alt="{{ pinstripeURL.alt }}" />
   
-  <img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
+  
+  {% if windowURL contains "no-image" %}{% else %}
+<img class="color-img window" id="window" data-src="{{windowURL}}" src="{{windowURL}}" alt="{{ windowURL.alt }}" />
+{% endif %}
+  
+  
+  
+  {% if spoke_insertURL contains "no-image" %}{% else %}
+<img class="color-img spoke-insert" id="spoke-insert" data-src="{{spoke_insertURL}}" src="{{spoke_insertURL}}" alt="{{ spoke_insertURL.alt }}" />
+{% endif %}
+  
+  
+  
+  {% if spoke_faceURL contains "no-image" %}{% else %}
+<img class="color-img spoke-face" id="spoke-face" data-src="{{spoke_faceURL}}" src="{{spoke_faceURL}}" alt="{{ spoke_faceURL.alt }}" />
+{% endif %}
+  
+  
+  
+  {% if pinstripeURL contains "no-image" %}{% else %}
+<img class="color-img pinstripe" id="pinstripe" data-src="{{pinstripeURL}}" src="{{pinstripeURL}}" alt="{{ pinstripeURL.alt }}" />
+{% endif %}
+  
+  
+  
+  {% if lip_outerURL contains "no-image" %}{% else %}
+<img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
+{% endif %}
+  
  
   
-  {% comment %}
-  <!--
-  	{% if lug_holesURL == blank %}
+  {% comment %} {% endcomment %}
+  
+  	{% if lug_holesURL contains "no-image" %}
 
   	{% else %}
     	<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
 	{% endif %}
-  {% if flange_textURL == blank %}
+  {% if flange_textURL contains "no-image" %}
   {% else %}
     	<img class="color-img flange_text" id="flange_text" data-src="{{flange_textURL}}" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
 	{% endif %}
-  {% if flangeURL == blank %}
+  {% if flangeURL contains "no-image" %}
   {% else %}
     	<img class="color-img flange" id="flange" data-src="{{flangeURL}}" src="{{flangeURL}}" alt="{{ flangeURL.alt }}" />
 	{% endif %}
-  {% if cap_textURL == blank %}
+  {% if cap_textURL contains "no-image" %}
   {% else %}
     	<img class="color-img cap_text" id="cap_text" data-src="{{cap_textURL}}" src="{{cap_textURL}}" alt="{{ cap_textURL.alt }}" />
 	{% endif %}
-  {% if cap_frameURL == blank %}
+  {% if cap_frameURL contains "no-image" %}
   {% else %}
     	<img class="color-img cap_frame" id="cap_frameURL" data-src="{{cap_frameURL}}" src="{{cap_frameURL}}" alt="{{ cap_frameURL.alt }}" />
 	{% endif %}
-  {% if cap_f_logoURL == blank %}
+  {% if cap_f_logoURL contains "no-image" %}
   {% else %}
     	<img class="color-img cap_f_logo" id="cap_f_logo" data-src="{{cap_f_logoURL}}" src="{{cap_f_logoURL}}" alt="{{ cap_f_logoURL.alt }}" />
 	{% endif %}
-  {% if cap_f_backgroundURL == blank %}
+  {% if cap_f_backgroundURL contains "no-image" %}
   {% else %}
     	<img class="color-img cap_f_background" id="cap_f_background" data-src="{{cap_f_backgroundURL}}" src="{{cap_f_backgroundURL}}" alt="{{ cap_f_backgroundURL.alt }}" />
-	{% endif %} -->
+	{% endif %} 
   
   
   
-  {% endcomment %}
+ 
   
   
 </div>
