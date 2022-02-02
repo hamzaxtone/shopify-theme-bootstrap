@@ -75,6 +75,8 @@
   <img class="color-img lip-outer" id="lip-outer" data-src="{{lip_outerURL}}" src="{{lip_outerURL}}" alt="{{ lip_outerURL.alt }}" />
  
   
+  {{ flange_textURL }}
+  
   {% comment %}
   <!--
   	{% if lug_holesURL == blank %}
@@ -82,7 +84,9 @@
   	{% else %}
     	<img class="color-img lug_holes" id="lug_holes" data-src="{{lug_holesURL}}" src="{{lug_holesURL}}" alt="{{ lug_holesURL.alt }}" />
 	{% endif %}
-  {% if flange_textURL == blank %}
+  {% if 
+{{ flange_textURL }}  
+== blank %}
   {% else %}
     	<img class="color-img flange_text" id="flange_text" data-src="{{flange_textURL}}" src="{{flange_textURL}}" alt="{{ flange_textURL.alt }}" />
 	{% endif %}
