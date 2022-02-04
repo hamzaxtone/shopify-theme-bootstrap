@@ -8,13 +8,14 @@
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
+{%- assign parr = '' -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
 
 
 
 
 
-as
+
 
 {% if parr contains "slug" %}
 	 
