@@ -120,41 +120,46 @@
 
 {%- if parr contains "slug" %}
 
-      {%- assign para = parr | split:'&' | first -%}
-{%- assign proSLug = para | split:'=' | last -%}
+    {%- assign para = parr | split:'&' | first -%}
+    {%- assign proSLug = para | split:'=' | last -%}
 
-{% assign product = all_products[proSLug] %}
-      <input type="hidden" class="keyCount" value="1" />
-{% if product == blank %}
-    <h1>No product found</h1>
-      <input type="hidden" class="key" value="key-test" />
-      
-{% else %}
-      <input type="hidden" class="key" value="key-{{product.id}}" />
-		
-      
+    {% assign product = all_products[proSLug] %}
+          <input type="hidden" class="keyCount" value="1" />
+    {% if product == blank %}
+        <h1>No product found</h1>
+          <input type="hidden" class="key" value="key-test" />
+
+    {% else %}
+          <input type="hidden" class="key" value="key-{{product.id}}" />
+
+
+          <div class="fui flexbox title">
+                <div class="fui flexbox plate">
+                    <a class="title-link" href="/products/{{ product.handle }}">
+                        <div class="fui flexbox " style="place-content: center; align-items: center;">
+                            <svg width="10" height="10" class="all-wheels-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 25.618 25.618" style="margin-right: 2px;">
+                                <g data-name="Layer 77" transform="translate(-8.191 -3.191)">
+                                    <g data-name="Group 35">
+                                        <rect data-name="Rectangle 38" width="18.141" height="3.947" rx="1.954" transform="translate(8.191 16.019) rotate(-45)" fill="#161615" style="fill: white;"></rect>
+                                    </g>
+                                    <g data-name="Group 36">
+                                        <rect data-name="Rectangle 39" width="3.947" height="18.141" rx="1.954" transform="translate(8.191 15.981) rotate(-45)" fill="#161615" style="fill: white;"></rect>
+                                    </g>
+                                </g>
+                            </svg>Back</div>
+                    </a>
+                    <div class="fui flexbox " style="align-items: center;"><span class="wheel-name">{{ product.title }}</span><span class="wheel-series"></span></div>
+                </div>
+            </div>
+
+    {% endif %}
+{% else %}      
       <div class="fui flexbox title">
-			<div class="fui flexbox plate">
-				<a class="title-link" href="/products/{{ product.handle }}">
-					<div class="fui flexbox " style="place-content: center; align-items: center;">
-						<svg width="10" height="10" class="all-wheels-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 25.618 25.618" style="margin-right: 2px;">
-							<g data-name="Layer 77" transform="translate(-8.191 -3.191)">
-								<g data-name="Group 35">
-									<rect data-name="Rectangle 38" width="18.141" height="3.947" rx="1.954" transform="translate(8.191 16.019) rotate(-45)" fill="#161615" style="fill: white;"></rect>
-								</g>
-								<g data-name="Group 36">
-									<rect data-name="Rectangle 39" width="3.947" height="18.141" rx="1.954" transform="translate(8.191 15.981) rotate(-45)" fill="#161615" style="fill: white;"></rect>
-								</g>
-							</g>
-						</svg>Back</div>
-				</a>
-				<div class="fui flexbox " style="align-items: center;"><span class="wheel-name">{{ product.title }}</span><span class="wheel-series"></span></div>
-			</div>
-		</div>
-      
-{% endif %}
-      
-      
+                <div class="fui flexbox plate">
+                    
+                    <div class="fui flexbox " style="align-items: center;"><span class="wheel-name">General Tool</span><span class="wheel-series"></span></div>
+                </div>
+            </div>
       
 {% endif %}
       
