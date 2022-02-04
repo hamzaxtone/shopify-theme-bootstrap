@@ -119,9 +119,11 @@
 
 
 {%- if parr contains "slug" %}
-	 
 
-{% assign product = all_products[pageQuerystring] %}
+      {%- assign para = parr | split:'&' | first -%}
+{%- assign proSLug = para | split:'=' | last -%}
+
+{% assign product = all_products[proSLug] %}
       <input type="hidden" class="keyCount" value="1" />
 {% if product == blank %}
     <h1>No product found</h1>
