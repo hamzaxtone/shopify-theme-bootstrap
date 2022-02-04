@@ -8,8 +8,13 @@
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
 
+{% if request.path contains '?slug=' %}
+ yes 
+{% else %}
+no
+{% endif %}
 
-{{page.title}}
+
 
 
 {% if parr contains "slug" %}
