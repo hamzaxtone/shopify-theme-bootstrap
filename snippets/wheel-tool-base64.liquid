@@ -35,7 +35,7 @@
 {{proSLug}}
 	 
 
-{% assign product = all_products[proSLug] %}
+{% assign product = all_products[pageQuerystring] %}
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
