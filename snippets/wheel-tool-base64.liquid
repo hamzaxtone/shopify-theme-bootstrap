@@ -32,12 +32,12 @@
 
 {%- assign para = parr | split:'&' | first -%}
 {%- assign proSLug = para | split:'=' | last -%}
-{{pageQuerystring}}
+{{proSLug}}
 
 
 	 
 
-{% assign product = all_products[pageQuerystring] %}
+{% assign product = all_products[proSLug] %}
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
