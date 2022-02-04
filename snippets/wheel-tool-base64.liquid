@@ -23,8 +23,10 @@
 {{parameter}}
 {% if parameter contains "slug" %}
 
-	 {%- assign productQuerystring = parr | split:'?' | last -%}
+	 {%- assign productQuerystring = parr | split:'&' | first -%}
 
+
+{{productQuerystring}}
 
 {% assign product = all_products[productQuerystring] %}
 {% if product == blank %}
