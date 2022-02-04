@@ -9,7 +9,7 @@
 {%- assign parr = pageUrl | split:'?' | last -%}
 
 
-{{parr}}
+{{contentForQuerystring}}
 
 
 {% if parr contains "slug" %}
