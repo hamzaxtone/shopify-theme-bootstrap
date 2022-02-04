@@ -276,7 +276,8 @@ html2canvas(document.querySelector('#tool-imgg'), {
         var dataURL = canvas.toDataURL();
       	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
       	setTimeout(function() { 
-  			//$('.canvass canvas').remove();
+  			$('.canvass canvas').remove();
+          window.scrollTo(0,scrollPos);
   		}, 1000);
       
       
@@ -284,13 +285,6 @@ html2canvas(document.querySelector('#tool-imgg'), {
   		urll = [dataURL];
         var assa = dataURL;
       	var keke = $('.key').val();
-		//localStorage.setItem(keke, JSON.stringify(urll));
-        
-        //localStorage.setItem(keke+'-'+(keyCount++), assa);
-       	//localStorage.setItem('keyCount', keyCount);
-        
-        //getDesign(keke+'-'+(keyCount++),keyCount);
-        
         
         formValues.push({
         src: assa,
@@ -303,15 +297,6 @@ html2canvas(document.querySelector('#tool-imgg'), {
         getDesigns(localStorage.formValues);
         
         
-        
-//         $('.designs').empty();
-        
-//         var keke = $('.key').val();
-//   		var dataImage = localStorage.getItem(keke);
-// 		//console.log(dataImage);
-//         if(dataImage){
-//           $('.designs').append('<li><a href="'+dataImage+'" download="my-wheel-design" target="_blank"><img src="'+dataImage+'" /></a></li>');
-//         }
         
         
   });
