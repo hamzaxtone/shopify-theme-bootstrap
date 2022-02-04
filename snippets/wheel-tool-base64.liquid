@@ -30,7 +30,7 @@
 {% if parr contains "slug" %}
 
 
-{%- assign para = parr | split:'&' | last -%}
+{%- assign para = parr | split:'&' | first -%}
 {{para}}
 	 
 
