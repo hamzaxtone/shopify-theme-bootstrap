@@ -17,18 +17,10 @@
 
 
 {{parr}}
+{% if parr contains "slug" %}
+	 
 
-{%- assign parameter = parr | split:'&' | first -%}
-
-{{parameter}}
-{% if parameter contains "slug" %}
-
-	 {%- assign productQuerystring = parr | split:'&' | first -%}
-
-
-{{productQuerystring}}
-
-{% assign product = all_products[productQuerystring] %}
+{% assign product = all_products[pageQuerystring] %}
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
