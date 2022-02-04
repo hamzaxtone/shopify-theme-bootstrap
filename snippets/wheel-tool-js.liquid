@@ -256,9 +256,9 @@ $('.colorsWheel .color').on("click", function(e) {
 	colorImage(wheelID,colorHex);
   
   
- 	var scrollPos;
+ 	var scrollPos = 500;
 	scrollPos = document.documentElement.scrollTop;
-  scrollPos = 500;
+  //scrollPos = 500;
   
   console.log(scrollPos);
   window.scrollTo(0,scrollPos);
