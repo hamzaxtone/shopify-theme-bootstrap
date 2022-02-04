@@ -267,7 +267,9 @@ html2canvas(document.querySelector('#tool-imgg'), {
   scrollY:scrollPos,
   scrollX: 0,
     onrendered: function(canvas) {
-        
+       
+      setTimeout(function() { window.scrollTo(0,scrollPos); }, 10);
+      
       window.scrollTo(0,scrollPos);
         
       
@@ -277,7 +279,7 @@ html2canvas(document.querySelector('#tool-imgg'), {
       	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
       	setTimeout(function() { 
   			$('.canvass canvas').remove();
-          window.scrollTo(0,scrollPos);
+          
   		}, 1000);
       
       
