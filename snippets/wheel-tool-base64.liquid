@@ -12,6 +12,11 @@
    replace:'\u0026','&'
 -%}
 
+
+
+{{pageUrl}}
+
+
 {%- assign pageQuerystring = pageUrl | split:'=' | last -%}
 {%- assign parr = '' -%}
 {%- assign parr = pageUrl | split:'?' | last -%}
