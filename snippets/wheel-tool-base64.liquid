@@ -1,6 +1,9 @@
 {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 
 
+
+
+
 {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
    replace:'\/','/' | 
    replace:'%20',' ' | 
@@ -14,7 +17,7 @@
 
 
 
-{{ content_for_header }}
+{{contentForQuerystring}}
 
 
 {% if parr contains "slug" %}
