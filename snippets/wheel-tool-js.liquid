@@ -257,9 +257,11 @@ $('.colorsWheel .color').on("click", function(e) {
   
   
  	var scrollPos;
-	scrollPos = document.body.scrollTop;
+	scrollPos = document.documentElement.scrollTop;
   
   console.log(scrollPos);
+  
+  
 html2canvas(document.querySelector('#tool-imgg'), {
     onrendered: function(canvas) {
         
