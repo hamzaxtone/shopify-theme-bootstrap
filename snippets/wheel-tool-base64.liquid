@@ -31,7 +31,8 @@
 
 
 {%- assign para = parr | split:'&' | first -%}
-{{para}}
+{%- assign proSLug = para | split:'=' | last -%}
+{{proSLug}}
 	 
 
 {% assign product = all_products[pageQuerystring] %}
