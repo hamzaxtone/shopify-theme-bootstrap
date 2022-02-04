@@ -22,10 +22,11 @@
 
 {{parameter}}
 {% if parameter contains "slug" %}
-	 
+
+	 {%- assign productQuerystring = parr | split:'?' | last -%}
 
 
-{% assign product = all_products[pageQuerystring] %}
+{% assign product = all_products[productQuerystring] %}
 {% if product == blank %}
     <h1>No product found</h1>
 {% else %}
