@@ -268,19 +268,20 @@ html2canvas(document.querySelector('#tool-imgg'), {
   scrollX: 0,
     onrendered: function(canvas) {
        
-      setTimeout(function() { window.scrollTo(0,scrollPos); }, 36.5);
+      //setTimeout(function() { window.scrollTo(0,scrollPos); }, 36.5);
       
-      window.scrollTo(0,scrollPos);
+      //window.scrollTo(0,scrollPos);
         
+      var dataURL = "";
       
-      $('.canvass').append( canvas );
-      window.scrollTo(0,scrollPos);
-        var dataURL = canvas.toDataURL();
-      	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
-      	setTimeout(function() { 
-  			$('.canvass canvas').remove();
+//       $('.canvass').append( canvas );
+//       window.scrollTo(0,scrollPos);
+//         dataURL = canvas.toDataURL();
+//       	$("#download").attr("download", "wheel-design.png").attr("href", dataURL);
+//       	setTimeout(function() { 
+//   			$('.canvass canvas').remove();
           
-  		}, 1000);
+//   		}, 1000);
       
       
       $(document).on('click','#addToDesign' ,function (e) {
@@ -305,8 +306,6 @@ html2canvas(document.querySelector('#tool-imgg'), {
       
       
       
-    },function(){
-    	window.scrollTo(0,scrollPos);
     }
 });
   
