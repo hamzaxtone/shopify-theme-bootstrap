@@ -110,6 +110,10 @@
 <img class="color-img spoke-insert" id="spoke-insert" data-src="{{spoke_insertURL}}" src="{{spoke_insertURL}}" alt="{{ spoke_insertURL.alt }}" />
 {% endif %}
   
+  {% if center_face contains "no-image" %}{% else %}
+<img class="color-img center_face" id="center_face" data-src="{{center_face}}" src="{{center_face}}" alt="{{ center_face.alt }}" />
+{% endif %}
+  
   
   
   {% if spoke_faceURL contains "no-image" %}{% else %}
