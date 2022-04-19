@@ -3,7 +3,7 @@
         {{ section.settings.max_width | prepend: 'max-width: ' | append: 'px;' }}
     {% endunless %}
 {% endcapture %}
-
+ 
 <article class="">
 
     <div 
@@ -11,7 +11,7 @@
         style="{{ max_width }}">
 
       <div class="google-sheet-sec">
-      <table class="google-sheet-output"></table>
+      <table class="google-sheet-output table table-hover table-striped"></table>
       </div>
   </div>
 </article>
@@ -61,6 +61,35 @@
 {% endschema %}
 
 {% stylesheet %}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+background-color
+}
+.table.table-hover.table-striped {
+    border: 1px solid #ececec;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+td.item-info-container {
+    padding-top: 20px !important;
+}
+
+
 {% endstylesheet %}
 
 {% javascript %}
