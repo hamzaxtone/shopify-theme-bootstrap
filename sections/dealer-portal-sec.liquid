@@ -133,7 +133,8 @@ jsonData.table.cols.forEach((heading) => {
             output.appendChild(tr);
  
             //extract row data:
-            jsonData.table.rows.forEach((rowData) => {
+            jsonData.table.rows.forEach((rowData,index) => {
+console.log(index);
                 const row = {};
                 colz.forEach((ele, ind) => {
                     row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
