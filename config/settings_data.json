@@ -1640,6 +1640,13 @@
           "margin_top": 0,
           "margin_bottom": 5
         }
+      },
+      "dealer-portal-sec": {
+        "type": "dealer-portal-sec",
+        "settings": {
+          "max_width": "1072",
+          "heading_size": "display-5"
+        }
       }
     },
     "content_for_index": [
