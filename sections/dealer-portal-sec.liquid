@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-
+  
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -136,6 +136,7 @@ jsonData.table.cols.forEach((heading) => {
             jsonData.table.rows.forEach((rowData,index) => {
 console.log(index);
                 const row = {};
+row[0] = index; 
                 colz.forEach((ele, ind) => {
                     row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
                 })
