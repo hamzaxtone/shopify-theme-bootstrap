@@ -1644,7 +1644,7 @@
       "dealer-portal-sec": {
         "type": "dealer-portal-sec",
         "settings": {
-          "max_width": "1250",
+          "max_width": "1320",
           "heading_size": "display-5"
         }
       }
