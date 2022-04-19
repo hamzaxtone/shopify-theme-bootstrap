@@ -1,5 +1,19 @@
+{% capture max_width %}
+    {% unless section.settings.max_width == blank %}
+        {{ section.settings.max_width | prepend: 'max-width: ' | append: 'px;' }}
+    {% endunless %}
+{% endcapture %}
 
-<h1>Deasd</h1>
+<article class="">
+
+    <div 
+        class="container mx-auto"
+        style="{{ max_width }}">
+
+      asdasdas
+      
+  </div>
+</article>
 
 {% schema %}
   {
