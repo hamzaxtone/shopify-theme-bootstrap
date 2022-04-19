@@ -15,7 +15,7 @@
       </div>
   </div>
 </article>
-
+    
 
 <!--   https://cdn.shopify.com/s/files/1/0586/8470/2877/files/sr12-hyper-silver_256x256_crop_center.jpg -->
 
@@ -117,7 +117,11 @@ function init() {
             const colz = [];
             const tr = document.createElement('tr');
             //Extract column labels
-            jsonData.table.cols.forEach((heading) => {
+const th = document.createElement('th');
+                    th.innerText = "#";
+                    tr.appendChild(th);            
+
+jsonData.table.cols.forEach((heading) => {
                 if (heading.label) {
                     let column = heading.label;
                     colz.push(column);
