@@ -32,13 +32,7 @@
                                     class="cart-product-item row align-items-center mb-5 gx-4"
                                     data-line-item-id="{{ forloop.index }}">
                                     <div class="col-4">
-                                      {% unless line_item.properties == empty %}
-<ul>
-  {% for property in line_item.properties %}
-    <li>{{ property.first }}: {{ property.last }}</li>
-  {% endfor %}
-</ul>
-{% endunless %}
+                                      
                                       
                                       
                                       
@@ -60,6 +54,14 @@
                                             </a>
                                         </h3>
                                         <!-- Variant title -->
+                                      {% unless line_item.properties == empty %}
+<ul>
+  {% for property in line_item.properties %}
+    <li>{{ property.first }}: {{ property.last }}</li>
+  {% endfor %}
+</ul>
+{% endunless %}
+                                      
                                         {% unless line_item.product.has_only_default_variant %}
                                             <p class="product-item-variant text-muted mb-2 small">
                                                 {{ line_item.variant.title }}
