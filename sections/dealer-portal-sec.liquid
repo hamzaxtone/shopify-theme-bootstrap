@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-                           
+                               
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -218,8 +218,6 @@ function asd(){
       var g_qty = trr.find("td:eq(8)").text();
       //console.log(tdd);
 
-
-
 let add_to_cart_data = `{
 "items": [
     {
@@ -241,14 +239,6 @@ let add_to_cart_data = `{
 
 trr.find("button").attr('data-json',add_to_cart_data);
 
-
-
-
-
-
-
-
-
   if( g_qty <= 0 ){
       trr.find("button").remove();    
   }
@@ -258,22 +248,22 @@ trr.find("button").attr('data-json',add_to_cart_data);
 
 $(document).on("click",".addtocartjs",function(){
 	var thisAddtoCart = $(this);
-	thisAddtoCart.toggleClass('active');
-
-});
-
+    var jsonD = thisAddtoCart.attr('data-json');
+	
 $.ajax({
   type: "POST",
   url: "/cart/add.js",
-  data: `{
-    "Id": 78912,
-    "Customer": "Jason Sweet",
-  }`,
+  data: jsonD,
   success: function (result) {
      console.log(result);
+               console.log('jaskdaskj');
   },
   dataType: "json"
 });
+               
+
+});
+
 
 
 
