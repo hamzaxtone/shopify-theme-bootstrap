@@ -9,7 +9,7 @@
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
-     
+                                 
       <div class="google-sheet-sec">
       <table class="google-sheet-output table table-hover table-striped"></table>
       </div>             
@@ -218,8 +218,9 @@ function asd(){
       var g_qty = trr.find("td:eq(8)").text();
       //console.log(tdd);
 
-let add_to_cart_data = `{
+let add_to_cart_data = {
 "items": [
+JSON.stringify(
     {
       "quantity": 1,
       "id": "41772642992285",
@@ -234,12 +235,15 @@ let add_to_cart_data = `{
 		"Color": trr.find("td:eq(7)").text()
       }
     }
-  ]
-}`;
+  )]
+};
+
+
+
 
 //console.log();
 
-trr.find("button").attr('data-json',JSON.stringify(add_to_cart_data));
+trr.find("button").attr('data-json', add_to_cart_data );
 
   if( g_qty <= 0 ){
       trr.find("button").remove();    
