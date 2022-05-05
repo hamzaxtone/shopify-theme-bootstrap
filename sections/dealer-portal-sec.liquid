@@ -5,14 +5,14 @@
 {% endcapture %}
  
 <article class="">
-                                  
+                               
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
   
       <div class="google-sheet-sec">
       <table class="google-sheet-output table table-hover table-striped"></table>
-      </div>   
+      </div>      
   </div>
 </article> 
     
@@ -218,11 +218,12 @@ function asd(){
       var g_qty = trr.find("td:eq(8)").text();
       //console.log(tdd);
 
-let add_to_cart_data = '{
+let add_to_cart_data = `{
 "items": [
     {
       "quantity": 1,
       "id": "41772642992285",
+	"title": trr.find("td:eq(2)").text(),
       "properties": {
         "Wheel Model": trr.find("td:eq(2)").text(),
 		"PN": trr.find("td:eq(1)").text(),
@@ -234,7 +235,7 @@ let add_to_cart_data = '{
       }
     }
   ]
-}';
+}`;
 
 
 trr.find("button").attr('data-json',add_to_cart_data);
