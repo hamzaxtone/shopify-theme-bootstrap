@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-                                                           
+                           
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -215,9 +215,42 @@ let add_to_cart_data = `{
 function asd(){
   $('.google-sheet-output tr').each(function(i,v){
   var trr = $(this);
-      var tdd = trr.find("td:eq(8)").text();
+      var g_qty = trr.find("td:eq(8)").text();
       //console.log(tdd);
-  if( tdd <= 0 ){
+
+
+
+let add_to_cart_data = `{
+"items": [
+    {
+      "quantity": 1,
+      "id": "41772642992285",
+      "properties": {
+        "Wheel Model": trr.find("td:eq(2)").text(),
+		"PN": trr.find("td:eq(1)").text(),
+		"Bolt Pattern": trr.find("td:eq(3)").text(),
+		"Diameter": trr.find("td:eq(4)").text(),
+		"Width": trr.find("td:eq(5)").text(),
+		"Offset": trr.find("td:eq(6)").text(),
+		"Color": trr.find("td:eq(7)").text(),
+		"Color": trr.find("td:eq(7)").text()
+      }
+    }
+  ]
+}`;
+
+
+trr.find("button").attr('data-json',add_to_cart_data);
+
+
+
+
+
+
+
+
+
+  if( g_qty <= 0 ){
       trr.find("button").remove();    
   }
 
