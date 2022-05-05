@@ -130,6 +130,9 @@ jsonData.table.cols.forEach((heading) => {
                     tr.appendChild(th);
                 }
             })
+			const th = document.createElement('th');
+			th.innerText = "Action";
+			tr.appendChild(th);
             output.appendChild(tr);
  
             //extract row data:
