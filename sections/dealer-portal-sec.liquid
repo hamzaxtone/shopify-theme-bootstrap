@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-               
+                                  
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -227,7 +227,18 @@ $(document).on('click','.addtocartjs',function(){
 
 });
 
-
+$.ajax({
+  type: "POST",
+  url: "/cart/add.js",
+  data: `{
+    "Id": 78912,
+    "Customer": "Jason Sweet",
+  }`,
+  success: function (result) {
+     console.log(result);
+  },
+  dataType: "json"
+});
 
 
 
