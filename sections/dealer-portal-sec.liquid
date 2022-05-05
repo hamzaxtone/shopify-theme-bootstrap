@@ -14,7 +14,7 @@
       <table class="google-sheet-output table table-hover table-striped"></table>
       </div>
   </div>
-</article>
+</article> 
     
   
 <!--   https://cdn.shopify.com/s/files/1/0586/8470/2877/files/sr12-hyper-silver_256x256_crop_center.jpg -->
@@ -159,7 +159,7 @@ function processRows(json) {
         keys.forEach((key) => {
             const td = document.createElement('td');
             td.textContent = row[key];
-			//console.log(td);
+			console.log(row);
             tr.appendChild(td);
         })
 		const tdA = document.createElement('td');
@@ -207,10 +207,15 @@ let add_to_cart_data = `{
 
 //xhr.send(add_to_cart_data);
 
+$(window).load(function(){
+
+	
+
+});
 
 $.ajax({
   type: "POST",
-  url: "https://reqbin.com/echo/post/json",
+  url: "/cart/add.js",
   data: `{
     "Id": 78912,
     "Customer": "Jason Sweet",
