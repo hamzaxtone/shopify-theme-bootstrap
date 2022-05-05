@@ -238,14 +238,27 @@ jss = JSON.stringify(jss);
 
 let add_to_cart_data = {
 "items": [
-    jss
+    {
+      "quantity": 1,
+      "id": "41772642992285",
+	"title": trr.find("td:eq(2)").text(),
+      "properties": {
+        "Wheel Model": trr.find("td:eq(2)").text(),
+		"PN": trr.find("td:eq(1)").text(),
+		"Bolt Pattern": trr.find("td:eq(3)").text(),
+		"Diameter": trr.find("td:eq(4)").text(),
+		"Width": trr.find("td:eq(5)").text(),
+		"Offset": trr.find("td:eq(6)").text(),
+		"Color": trr.find("td:eq(7)").text()
+      }
+    }
   ]
 };
 
 
 
 
-//console.log();
+console.log(add_to_cart_data);
 
 trr.find("button").attr('data-json', add_to_cart_data );
 
