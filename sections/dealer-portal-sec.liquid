@@ -15,7 +15,7 @@
         
         
         
-         
+           
         
       </div>                                                                                             
   </div>                                                                            
@@ -280,7 +280,7 @@ $(document).on("click",".addtocartjs",function(){
 $.ajax({
   type: "POST",
   url: "/cart/add.js",
-  data: jsonD,
+  data: $.parseJSON(jsonD),
   success: function (result) {
      console.log(result);
                console.log('jaskdaskj');
