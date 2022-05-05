@@ -161,4 +161,47 @@ function processRows(json) {
     })
 }
 
+
+
+
+
+//add to cart
+let xhr = new XMLHttpRequest();
+xhr.open("POST", "/cart/add.js");
+
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onload = () => console.log(xhr.responseText);
+
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    //console.log(xhr.status);
+    //console.log(xhr.responseText);
+	if( xhr.status == 200 ){
+		
+	}else{
+		
+	}
+  }};
+
+let data = `{
+"items": [
+    {
+      "quantity": 1,
+      "id": "41772642992285",
+      "properties": {
+        "First name": "Caroline"
+      }
+    }
+  ]
+}`;
+
+//xhr.send(data);
+
+
+
+
+
+
 {% endjavascript %}
