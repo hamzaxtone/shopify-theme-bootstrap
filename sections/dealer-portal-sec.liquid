@@ -12,7 +12,7 @@
   
       <div class="google-sheet-sec">
       <table class="google-sheet-output table table-hover table-striped"></table>
-      </div>
+      </div>   
   </div>
 </article> 
     
@@ -208,8 +208,20 @@ let add_to_cart_data = `{
 //xhr.send(add_to_cart_data);
 
 $(window).load(function(){
+  $('.google-sheet-output tr').each(function(i,v){
+  var trr = $(this);
+      var tdd = trr.find("td:eq(8)").text();
+      //console.log(tdd);
+  if( tdd <= 0 ){
+      trr.find("button").remove();    
+  }
 
-	
+  });
+});
+
+$(document).on('click','.addtocartjs',function(){
+	var thisAddtoCart = $(this);
+	thisAddtoCart.toggleClass('active');
 
 });
 
