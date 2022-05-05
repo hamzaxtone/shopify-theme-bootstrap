@@ -15,6 +15,8 @@
         
         
         
+        
+        
       </div>                                                                                             
   </div>                                                                            
 </article>    
@@ -263,7 +265,7 @@ let add_to_cart_data = {
 
 console.log(add_to_cart_data);
 
-trr.find("button").attr('data-json', add_to_cart_data );
+trr.find("button").attr('data-json', JSON.stringify(add_to_cart_data) );
 
   if( g_qty <= 0 ){
       trr.find("button").remove();    
