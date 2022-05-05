@@ -13,8 +13,8 @@
       <div class="google-sheet-sec">
       <table class="google-sheet-output table table-hover table-striped"></table>
       </div>             
-  </div>
-</article> 
+  </div> 
+</article>    
     
   
 <!--   https://cdn.shopify.com/s/files/1/0586/8470/2877/files/sr12-hyper-silver_256x256_crop_center.jpg -->
@@ -237,7 +237,7 @@ let add_to_cart_data = {
   ]
 };
 
-console.log(add_to_cart_data);
+console.log(JSON.stringify(add_to_cart_data));
 
 trr.find("button").attr('data-json',add_to_cart_data);
 
