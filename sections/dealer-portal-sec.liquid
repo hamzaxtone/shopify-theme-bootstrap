@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-                               
+                                  
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -218,7 +218,7 @@ function asd(){
       var g_qty = trr.find("td:eq(8)").text();
       //console.log(tdd);
 
-let add_to_cart_data = `{
+let add_to_cart_data = '{
 "items": [
     {
       "quantity": 1,
@@ -234,7 +234,7 @@ let add_to_cart_data = `{
       }
     }
   ]
-}`;
+}';
 
 
 trr.find("button").attr('data-json',add_to_cart_data);
