@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-   
+    
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -130,9 +130,9 @@ jsonData.table.cols.forEach((heading) => {
                     tr.appendChild(th);
                 }
             })
-			const th = document.createElement('th');
-			th.innerText = "Action";
-			tr.appendChild(th);
+			const thA = document.createElement('th');
+			thA.innerText = "Action";
+			tr.appendChild(thA);
             output.appendChild(tr);
  
             //extract row data:
