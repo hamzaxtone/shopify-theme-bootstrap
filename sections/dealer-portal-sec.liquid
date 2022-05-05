@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-                                  
+                                       
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -166,7 +166,10 @@ function processRows(json) {
 		tdA.innerHTML = "<button class='addtocartjs'>Add to Cart</button>";
 		tr.appendChild(tdA);
         output.appendChild(tr);
-    })
+    });
+
+
+asd();
 }
 
 
@@ -209,7 +212,7 @@ let add_to_cart_data = `{
 
 **/
 
-$(window).load(function(){
+function asd(){
   $('.google-sheet-output tr').each(function(i,v){
   var trr = $(this);
       var tdd = trr.find("td:eq(8)").text();
@@ -219,7 +222,7 @@ $(window).load(function(){
   }
 
   });
-});
+}
 
 $(document).on('click','.addtocartjs',function(){
 	var thisAddtoCart = $(this);
