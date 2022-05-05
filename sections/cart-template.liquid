@@ -32,6 +32,8 @@
                                     class="cart-product-item row align-items-center mb-5 gx-4"
                                     data-line-item-id="{{ forloop.index }}">
                                     <div class="col-4">
+                                      {{line_item.properties}}
+                                      
                                         <a href="{{ line_item.url }}">
                                             {% assign img_size = section.settings.img_width | append: 'x' | append: section.settings.img_height %}
                                             <img 
