@@ -16,7 +16,7 @@
         
         
            
-        
+          
       </div>                                                                                             
   </div>                                                                            
 </article>    
@@ -276,7 +276,10 @@ trr.find("button").attr('data-json', JSON.stringify(add_to_cart_data) );
 $(document).on("click",".addtocartjs",function(){
 	var thisAddtoCart = $(this);
     var jsonD = thisAddtoCart.attr('data-json');
-	
+	console.log(jsonD);
+               
+               
+               
 $.ajax({
   type: "POST",
   url: "/cart/add.js",
