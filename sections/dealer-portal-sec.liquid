@@ -155,6 +155,7 @@ function processRows(json) {
         keys.forEach((key) => {
             const td = document.createElement('td');
             td.textContent = row[key];
+console.log(td);
             tr.appendChild(td);
         })
         output.appendChild(tr);
