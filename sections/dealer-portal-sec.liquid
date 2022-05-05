@@ -5,7 +5,7 @@
 {% endcapture %}
  
 <article class="">
-    
+     
     <div 
         class="container mx-auto"
         style="{{ max_width }}">
@@ -158,9 +158,12 @@ function processRows(json) {
         keys.forEach((key) => {
             const td = document.createElement('td');
             td.textContent = row[key];
-console.log(td);
+			//console.log(td);
             tr.appendChild(td);
         })
+		const tdA = document.createElement('td');
+		tdA.innerHTML = "<button class='addtocartjs'>Add to Cart</button>";
+		tr.appendChild(tdA);
         output.appendChild(tr);
     })
 }
