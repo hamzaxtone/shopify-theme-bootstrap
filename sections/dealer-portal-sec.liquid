@@ -20,7 +20,7 @@
 <!--   https://cdn.shopify.com/s/files/1/0586/8470/2877/files/sr12-hyper-silver_256x256_crop_center.jpg -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
+
   
 {% schema %}
 {
@@ -208,6 +208,18 @@ let add_to_cart_data = `{
 //xhr.send(add_to_cart_data);
 
 
+$.ajax({
+  type: "POST",
+  url: "https://reqbin.com/echo/post/json",
+  data: `{
+    "Id": 78912,
+    "Customer": "Jason Sweet",
+  }`,
+  success: function (result) {
+     console.log(result);
+  },
+  dataType: "json"
+});
 
 
 
