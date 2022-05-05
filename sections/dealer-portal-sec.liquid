@@ -13,7 +13,7 @@
       <div class="google-sheet-sec">
       <table class="google-sheet-output table table-hover table-striped"></table>
       </div>             
-  </div> 
+  </div>        
 </article>    
     
   
@@ -237,9 +237,9 @@ let add_to_cart_data = {
   ]
 };
 
-console.log(JSON.stringify(add_to_cart_data));
+//console.log();
 
-trr.find("button").attr('data-json',add_to_cart_data);
+trr.find("button").attr('data-json',JSON.stringify(add_to_cart_data));
 
   if( g_qty <= 0 ){
       trr.find("button").remove();    
