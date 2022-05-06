@@ -329,7 +329,7 @@ $.ajax({
                                 style="object-fit: cover">
                             <div>
                                 <h4 class="h6 mb-1">
-                                    ${productTitle}
+                                    ${result.items[0].productTitle}
                                 </h4>
                                 <span class="mt-n1 mb-0 text-muted ${result.items[0].product_title == 'Default Title' ? 'd-none' : 'd-block'}">
                                     ${result.items[0].product_title} <br> ${result.items[0].properties["Wheel Model"]}
