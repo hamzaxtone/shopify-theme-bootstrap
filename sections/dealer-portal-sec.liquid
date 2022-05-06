@@ -18,8 +18,7 @@
         
           
            
-          
-        
+      
         
               
                 
@@ -288,6 +287,7 @@ trr.find("button").attr('data-json', JSON.stringify(add_to_cart_data) );
   });
 }
 
+               const cartNavItem           = document.querySelector('#cart-nav-item');
 $(document).on("click",".addtocartjs",function(){
 	var thisAddtoCart = $(this);
     var jsonD = thisAddtoCart.attr('data-json');
@@ -366,9 +366,9 @@ $.ajax({
 
                 // Error adding product to cart
                 else {
-                    const status = data.status;
-                    const message = data.message;
-                    const description = data.description;
+                    const status = 400;
+                    const message = "Error Occurred while adding to Cart!";
+                    const description = "Please refresh the page";
 
                     // Build toast
                     toastEl.querySelector('.toast-header strong').innerHTML = `
