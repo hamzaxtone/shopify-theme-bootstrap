@@ -319,7 +319,7 @@ $.ajax({
                             <img 
                                 class="me-2 ${toastEl.dataset.imgThumbnail ? 'img-thumbnail' : 'rounded'}" 
                                 src="https://cdn.shopify.com/s/files/1/0586/8470/2877/products/ImolaMonoC_8d5297eb-0229-40d9-8781-efabe49060d1_360x360_crop_center.png" 
-                                alt="${selectedVariant.featured_image?.alt || ''}" 
+                                alt="${result.items[0].product_title || ''}" 
                                 width="${toastEl.dataset.imgWidth}" 
                                 height="${toastEl.dataset.imgHeight}" 
                                 style="object-fit: cover">
@@ -327,8 +327,8 @@ $.ajax({
                                 <h4 class="h6 mb-1">
                                     ${productTitle}
                                 </h4>
-                                <span class="mt-n1 mb-0 text-muted ${selectedVariant.title == 'Default Title' ? 'd-none' : 'd-block'}">
-                                    ${selectedVariant.title}
+                                <span class="mt-n1 mb-0 text-muted ${result.items[0].product_title == 'Default Title' ? 'd-none' : 'd-block'}">
+                                    ${result.items[0].product_title} <br> ${result.items[0].properties["Wheel Model"]}
                                 </span>
                                 <p class="product-price text-muted mb-0">
                                     ${quantityEl.value || 1} x
