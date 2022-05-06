@@ -18,6 +18,7 @@
               
         
         
+        
           
              
         
@@ -282,7 +283,7 @@ trr.find("button").attr('data-json', JSON.stringify(add_to_cart_data) );
 $(document).on("click",".addtocartjs",function(){
 	var thisAddtoCart = $(this);
     var jsonD = thisAddtoCart.attr('data-json');
-	console.log(jsonD);
+	//console.log(jsonD);
                
                
                
@@ -293,6 +294,108 @@ $.ajax({
   success: function (result) {
      console.log(result);
                console.log('jaskdaskj');
+               
+               
+     const toastEl = document.querySelector('#toast');
+
+                // Product was successfully added to cart
+                if (result.items.length > 0) {
+                    
+                    // Build toast
+                    toastEl.querySelector('.toast-header strong').innerHTML = `
+                        ${window.theme.i18n.product.added_to_cart}
+                    `;
+
+                    toastEl.querySelector('.toast-body').innerHTML = `
+                        <div class="d-flex align-items-center mb-0">
+                            <img 
+                                class="me-2 ${toastEl.dataset.imgThumbnail ? 'img-thumbnail' : 'rounded'}" 
+                                src="${Shopify.resizeImage(selectedVariant.featured_image?.src || featuredImageSrc, `${toastEl.dataset.imgWidth}x${toastEl.dataset.imgHeight}_crop_center`)}" 
+                                alt="${selectedVariant.featured_image?.alt || ''}" 
+                                width="${toastEl.dataset.imgWidth}" 
+                                height="${toastEl.dataset.imgHeight}" 
+                                style="object-fit: cover">
+                            <div>
+                                <h4 class="h6 mb-1">
+                                    ${productTitle}
+                                </h4>
+                                <span class="mt-n1 mb-0 text-muted ${selectedVariant.title == 'Default Title' ? 'd-none' : 'd-block'}">
+                                    ${selectedVariant.title}
+                                </span>
+                                <p class="product-price text-muted mb-0">
+                                    ${quantityEl.value || 1} x
+                                    <span class="price">
+                                        ${Shopify.formatMoney(selectedVariant.price)}
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    `;
+
+                    toastEl.querySelector('.toast-footer').innerHTML = `
+                        <a 
+                            href="/cart" 
+                            class="btn w-100 ${toastEl.dataset.btnColor} ${toastEl.dataset.btnSize}">
+                            ${window.theme.i18n.product.view_cart}
+                        </a>
+                    `;
+
+                    // Update cart on navbar
+                    fetch(window.location)
+                        .then(res => res.text())
+                        .then(data => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(data, 'text/html');
+
+                            cartNavItem.innerHTML = doc.querySelector(`#${cartNavItem.id}`).innerHTML;
+                        });
+
+                }
+
+                // Error adding product to cart
+                else {
+                    const status = data.status;
+                    const message = data.message;
+                    const description = data.description;
+
+                    // Build toast
+                    toastEl.querySelector('.toast-header strong').innerHTML = `
+                        ${message} (Status: ${status})
+                    `;
+
+                    toastEl.querySelector('.toast-body').innerHTML = `
+                        <p class="mb-0">
+                            ${description ?? ''}
+                        </p>
+                    `;
+
+                    toastEl.querySelector('.toast-footer').innerHTML = `
+                        <a 
+                            href="/cart" 
+                            class="btn w-100 ${toastEl.dataset.btnColor} ${toastEl.dataset.btnSize}">
+                            ${window.theme.i18n.product.view_cart}
+                        </a>
+                    `;
+
+                    toastEl.querySelector('.toast-header strong').classList.add('text-danger');
+                }
+
+                // Display toast to the visitor
+                const toast = new bootstrap.Toast(toastEl);
+                toast.show();          
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
   },
   dataType: "json"
 });
