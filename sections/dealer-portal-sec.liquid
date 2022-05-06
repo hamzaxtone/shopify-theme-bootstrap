@@ -21,6 +21,10 @@
           
         
         
+         
+          
+         
+        
                
                 
            
@@ -333,7 +337,7 @@ $.ajax({
                                 <p class="product-price text-muted mb-0">
                                     ${quantityEl.value || 1} x
                                     <span class="price">
-                                        ${Shopify.formatMoney(selectedVariant.price)}
+                                        ${Shopify.formatMoney(result.items[0].discounted_price)}   
                                     </span>
                                 </p>
                             </div>
