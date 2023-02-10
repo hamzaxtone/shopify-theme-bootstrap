@@ -33,7 +33,7 @@
                 type="image/png">
         {% endif %}
         
-        {{ content_for_header }} 
+        {{ content_for_header }}{% if product %}<script id="hc_product_countdown_dates" data-p_id="{{ product.id }}" type="application/json">{{ shop.metafields.hc_product_countdown.dates_json }}</script>{% endif %}<script src="{{ 'hc_sdm_script.js' | asset_url }}" defer="defer"></script> 
 
         <!-- Styles -->
         <link 
